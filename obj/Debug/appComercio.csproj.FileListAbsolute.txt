@@ -1,0 +1,10 @@
+C:\Users\Fábio Leonel\source\repos\appComercio\bin\Debug\appComercio.exe.config
+C:\Users\Fábio Leonel\source\repos\appComercio\bin\Debug\appComercio.exe
+C:\Users\Fábio Leonel\source\repos\appComercio\bin\Debug\appComercio.pdb
+C:\Users\Fábio Leonel\source\repos\appComercio\obj\Debug\appComercio.csproj.AssemblyReference.cache
+C:\Users\Fábio Leonel\source\repos\appComercio\obj\Debug\appComercio.frmLogin.resources
+C:\Users\Fábio Leonel\source\repos\appComercio\obj\Debug\appComercio.Properties.Resources.resources
+C:\Users\Fábio Leonel\source\repos\appComercio\obj\Debug\appComercio.csproj.GenerateResource.cache
+C:\Users\Fábio Leonel\source\repos\appComercio\obj\Debug\appComercio.csproj.CoreCompileInputs.cache
+C:\Users\Fábio Leonel\source\repos\appComercio\obj\Debug\appComercio.exe
+C:\Users\Fábio Leonel\source\repos\appComercio\obj\Debug\appComercio.pdb

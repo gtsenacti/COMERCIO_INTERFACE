@@ -10,22 +10,18 @@ using System.Windows.Forms;
 
 namespace appComercio
 {
-    public partial class frmLogin : Form
+    public partial class frmCadastrar : Form
     {
-        public frmLogin()
+        public frmCadastrar()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
-           
-        }
+            
+         
 
-        private void btnCadastrar_Click(object sender, EventArgs e)
-        {
-            frmCadastrar cad = new frmCadastrar();
-            cad.Show();
         }
     }
 }

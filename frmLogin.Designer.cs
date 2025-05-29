@@ -133,50 +133,51 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Green;
+            this.button1.BackColor = System.Drawing.Color.GreenYellow;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(414, 234);
+            this.button1.Location = new System.Drawing.Point(403, 259);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 46);
+            this.button1.Size = new System.Drawing.Size(90, 31);
             this.button1.TabIndex = 2;
             this.button1.Text = "Entrar";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Red;
+            this.button2.BackColor = System.Drawing.Color.Tomato;
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(532, 235);
+            this.button2.Location = new System.Drawing.Point(529, 259);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(84, 45);
+            this.button2.Size = new System.Drawing.Size(84, 31);
             this.button2.TabIndex = 3;
             this.button2.Text = "Sair";
             this.button2.UseVisualStyleBackColor = false;
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.BackColor = System.Drawing.Color.Blue;
+            this.btnCadastrar.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCadastrar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrar.Location = new System.Drawing.Point(279, 235);
+            this.btnCadastrar.Location = new System.Drawing.Point(279, 259);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(96, 45);
+            this.btnCadastrar.Size = new System.Drawing.Size(91, 31);
             this.btnCadastrar.TabIndex = 4;
             this.btnCadastrar.Text = "Cadastro";
             this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Silver;
             this.pictureBox1.Image = global::appComercio.Properties.Resources.Gartoon_Team_Gartoon_Misc_Stock_New_Meeting_Hands_256;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(258, 278);
+            this.pictureBox1.Size = new System.Drawing.Size(259, 278);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
@@ -185,7 +186,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(624, 292);
+            this.ClientSize = new System.Drawing.Size(625, 302);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.button2);

@@ -138,7 +138,7 @@
             this.btnSalvarCadastroUsuario.Name = "btnSalvarCadastroUsuario";
             this.btnSalvarCadastroUsuario.Size = new System.Drawing.Size(79, 33);
             this.btnSalvarCadastroUsuario.TabIndex = 2;
-            this.btnSalvarCadastroUsuario.Text = "SALVAR";
+            this.btnSalvarCadastroUsuario.Text = "Salvar";
             this.btnSalvarCadastroUsuario.UseVisualStyleBackColor = false;
             // 
             // btnEditarCadastroUsuario
@@ -149,7 +149,7 @@
             this.btnEditarCadastroUsuario.Name = "btnEditarCadastroUsuario";
             this.btnEditarCadastroUsuario.Size = new System.Drawing.Size(75, 32);
             this.btnEditarCadastroUsuario.TabIndex = 3;
-            this.btnEditarCadastroUsuario.Text = "EDITAR";
+            this.btnEditarCadastroUsuario.Text = "Editar";
             this.btnEditarCadastroUsuario.UseVisualStyleBackColor = false;
             // 
             // btnApagarCadastroUsuario
@@ -160,7 +160,7 @@
             this.btnApagarCadastroUsuario.Name = "btnApagarCadastroUsuario";
             this.btnApagarCadastroUsuario.Size = new System.Drawing.Size(75, 32);
             this.btnApagarCadastroUsuario.TabIndex = 4;
-            this.btnApagarCadastroUsuario.Text = "APAGAR";
+            this.btnApagarCadastroUsuario.Text = "Apagar";
             this.btnApagarCadastroUsuario.UseVisualStyleBackColor = false;
             // 
             // dataGridView1
@@ -175,7 +175,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnApagarCadastroUsuario);

@@ -128,6 +128,7 @@
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogin";
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.frmLogin_Load);
             this.gbTelaLogin.ResumeLayout(false);
             this.gbTelaLogin.PerformLayout();

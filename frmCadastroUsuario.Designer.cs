@@ -29,20 +29,30 @@
         private void InitializeComponent()
         {
             this.gbCadastroUsuario = new System.Windows.Forms.GroupBox();
-            this.txtCadastroUsuario = new System.Windows.Forms.TextBox();
-            this.txtCadastroSenha = new System.Windows.Forms.TextBox();
-            this.cbCadastroSetor = new System.Windows.Forms.ComboBox();
             this.ckbAtivo = new System.Windows.Forms.CheckBox();
+            this.cbCadastroSetor = new System.Windows.Forms.ComboBox();
+            this.txtCadastroSenha = new System.Windows.Forms.TextBox();
+            this.txtCadastroUsuario = new System.Windows.Forms.TextBox();
             this.gbBuscarUsuario = new System.Windows.Forms.GroupBox();
+            this.btnBuscarUsuario = new System.Windows.Forms.Button();
+            this.txtBuscarUsuario = new System.Windows.Forms.TextBox();
+            this.btnSalvarCadastroUsuario = new System.Windows.Forms.Button();
+            this.btnEditarCadastroUsuario = new System.Windows.Forms.Button();
+            this.btnApagarCadastroUsuario = new System.Windows.Forms.Button();
+            this.dgvCadastroUsuario = new System.Windows.Forms.DataGridView();
             this.gbCadastroUsuario.SuspendLayout();
+            this.gbBuscarUsuario.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCadastroUsuario)).BeginInit();
             this.SuspendLayout();
             // 
             // gbCadastroUsuario
             // 
+            this.gbCadastroUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.gbCadastroUsuario.Controls.Add(this.ckbAtivo);
             this.gbCadastroUsuario.Controls.Add(this.cbCadastroSetor);
             this.gbCadastroUsuario.Controls.Add(this.txtCadastroSenha);
             this.gbCadastroUsuario.Controls.Add(this.txtCadastroUsuario);
+            this.gbCadastroUsuario.Font = new System.Drawing.Font("Arial", 12F);
             this.gbCadastroUsuario.Location = new System.Drawing.Point(-4, 2);
             this.gbCadastroUsuario.Name = "gbCadastroUsuario";
             this.gbCadastroUsuario.Size = new System.Drawing.Size(265, 234);
@@ -50,22 +60,20 @@
             this.gbCadastroUsuario.TabStop = false;
             this.gbCadastroUsuario.Text = "Cadastro do Usuário:";
             // 
-            // txtCadastroUsuario
+            // ckbAtivo
             // 
-            this.txtCadastroUsuario.Location = new System.Drawing.Point(21, 35);
-            this.txtCadastroUsuario.Name = "txtCadastroUsuario";
-            this.txtCadastroUsuario.Size = new System.Drawing.Size(221, 20);
-            this.txtCadastroUsuario.TabIndex = 0;
-            // 
-            // txtCadastroSenha
-            // 
-            this.txtCadastroSenha.Location = new System.Drawing.Point(21, 88);
-            this.txtCadastroSenha.Name = "txtCadastroSenha";
-            this.txtCadastroSenha.Size = new System.Drawing.Size(221, 20);
-            this.txtCadastroSenha.TabIndex = 1;
+            this.ckbAtivo.AutoSize = true;
+            this.ckbAtivo.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.ckbAtivo.Location = new System.Drawing.Point(21, 187);
+            this.ckbAtivo.Name = "ckbAtivo";
+            this.ckbAtivo.Size = new System.Drawing.Size(62, 20);
+            this.ckbAtivo.TabIndex = 3;
+            this.ckbAtivo.Text = "Ativo";
+            this.ckbAtivo.UseVisualStyleBackColor = true;
             // 
             // cbCadastroSetor
             // 
+            this.cbCadastroSetor.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Italic);
             this.cbCadastroSetor.FormattingEnabled = true;
             this.cbCadastroSetor.Items.AddRange(new object[] {
             "",
@@ -73,40 +81,120 @@
             "Administrativo"});
             this.cbCadastroSetor.Location = new System.Drawing.Point(21, 139);
             this.cbCadastroSetor.Name = "cbCadastroSetor";
-            this.cbCadastroSetor.Size = new System.Drawing.Size(221, 21);
+            this.cbCadastroSetor.Size = new System.Drawing.Size(221, 24);
             this.cbCadastroSetor.TabIndex = 2;
+            this.cbCadastroSetor.Text = "Setor";
             // 
-            // ckbAtivo
+            // txtCadastroSenha
             // 
-            this.ckbAtivo.AutoSize = true;
-            this.ckbAtivo.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ckbAtivo.Location = new System.Drawing.Point(21, 187);
-            this.ckbAtivo.Name = "ckbAtivo";
-            this.ckbAtivo.Size = new System.Drawing.Size(54, 20);
-            this.ckbAtivo.TabIndex = 3;
-            this.ckbAtivo.Text = "Ativo";
-            this.ckbAtivo.UseVisualStyleBackColor = true;
+            this.txtCadastroSenha.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Italic);
+            this.txtCadastroSenha.Location = new System.Drawing.Point(21, 88);
+            this.txtCadastroSenha.Name = "txtCadastroSenha";
+            this.txtCadastroSenha.Size = new System.Drawing.Size(221, 23);
+            this.txtCadastroSenha.TabIndex = 1;
+            this.txtCadastroSenha.Text = "Senha";
+            // 
+            // txtCadastroUsuario
+            // 
+            this.txtCadastroUsuario.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Italic);
+            this.txtCadastroUsuario.Location = new System.Drawing.Point(21, 35);
+            this.txtCadastroUsuario.Name = "txtCadastroUsuario";
+            this.txtCadastroUsuario.Size = new System.Drawing.Size(221, 23);
+            this.txtCadastroUsuario.TabIndex = 0;
+            this.txtCadastroUsuario.Text = "Cadastro";
+            this.txtCadastroUsuario.TextChanged += new System.EventHandler(this.txtCadastroUsuario_TextChanged);
             // 
             // gbBuscarUsuario
             // 
+            this.gbBuscarUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.gbBuscarUsuario.Controls.Add(this.btnBuscarUsuario);
+            this.gbBuscarUsuario.Controls.Add(this.txtBuscarUsuario);
+            this.gbBuscarUsuario.Font = new System.Drawing.Font("Arial", 12F);
             this.gbBuscarUsuario.Location = new System.Drawing.Point(-4, 278);
             this.gbBuscarUsuario.Name = "gbBuscarUsuario";
-            this.gbBuscarUsuario.Size = new System.Drawing.Size(265, 160);
+            this.gbBuscarUsuario.Size = new System.Drawing.Size(265, 69);
             this.gbBuscarUsuario.TabIndex = 1;
             this.gbBuscarUsuario.TabStop = false;
             this.gbBuscarUsuario.Text = "Buscar Usuário";
+            // 
+            // btnBuscarUsuario
+            // 
+            this.btnBuscarUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnBuscarUsuario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.btnBuscarUsuario.Location = new System.Drawing.Point(187, 25);
+            this.btnBuscarUsuario.Name = "btnBuscarUsuario";
+            this.btnBuscarUsuario.Size = new System.Drawing.Size(78, 29);
+            this.btnBuscarUsuario.TabIndex = 1;
+            this.btnBuscarUsuario.Text = "Buscar";
+            this.btnBuscarUsuario.UseVisualStyleBackColor = false;
+            // 
+            // txtBuscarUsuario
+            // 
+            this.txtBuscarUsuario.Location = new System.Drawing.Point(17, 27);
+            this.txtBuscarUsuario.Name = "txtBuscarUsuario";
+            this.txtBuscarUsuario.Size = new System.Drawing.Size(164, 26);
+            this.txtBuscarUsuario.TabIndex = 0;
+            // 
+            // btnSalvarCadastroUsuario
+            // 
+            this.btnSalvarCadastroUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnSalvarCadastroUsuario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.btnSalvarCadastroUsuario.Location = new System.Drawing.Point(17, 377);
+            this.btnSalvarCadastroUsuario.Name = "btnSalvarCadastroUsuario";
+            this.btnSalvarCadastroUsuario.Size = new System.Drawing.Size(74, 40);
+            this.btnSalvarCadastroUsuario.TabIndex = 2;
+            this.btnSalvarCadastroUsuario.Text = "Salvar";
+            this.btnSalvarCadastroUsuario.UseVisualStyleBackColor = false;
+            // 
+            // btnEditarCadastroUsuario
+            // 
+            this.btnEditarCadastroUsuario.BackColor = System.Drawing.Color.Yellow;
+            this.btnEditarCadastroUsuario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.btnEditarCadastroUsuario.Location = new System.Drawing.Point(97, 377);
+            this.btnEditarCadastroUsuario.Name = "btnEditarCadastroUsuario";
+            this.btnEditarCadastroUsuario.Size = new System.Drawing.Size(80, 40);
+            this.btnEditarCadastroUsuario.TabIndex = 3;
+            this.btnEditarCadastroUsuario.Text = "Editar";
+            this.btnEditarCadastroUsuario.UseVisualStyleBackColor = false;
+            // 
+            // btnApagarCadastroUsuario
+            // 
+            this.btnApagarCadastroUsuario.BackColor = System.Drawing.Color.Red;
+            this.btnApagarCadastroUsuario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.btnApagarCadastroUsuario.Location = new System.Drawing.Point(183, 377);
+            this.btnApagarCadastroUsuario.Name = "btnApagarCadastroUsuario";
+            this.btnApagarCadastroUsuario.Size = new System.Drawing.Size(77, 40);
+            this.btnApagarCadastroUsuario.TabIndex = 4;
+            this.btnApagarCadastroUsuario.Text = "Apagar";
+            this.btnApagarCadastroUsuario.UseVisualStyleBackColor = false;
+            // 
+            // dgvCadastroUsuario
+            // 
+            this.dgvCadastroUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCadastroUsuario.Location = new System.Drawing.Point(299, 2);
+            this.dgvCadastroUsuario.Name = "dgvCadastroUsuario";
+            this.dgvCadastroUsuario.Size = new System.Drawing.Size(489, 436);
+            this.dgvCadastroUsuario.TabIndex = 5;
             // 
             // frmCadastroUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.GhostWhite;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dgvCadastroUsuario);
+            this.Controls.Add(this.btnApagarCadastroUsuario);
+            this.Controls.Add(this.btnEditarCadastroUsuario);
+            this.Controls.Add(this.btnSalvarCadastroUsuario);
             this.Controls.Add(this.gbBuscarUsuario);
             this.Controls.Add(this.gbCadastroUsuario);
             this.Name = "frmCadastroUsuario";
-            this.Text = "frmCadastroUsuario";
+            this.Text = "Pica Pau Móveis Rusticos";
             this.gbCadastroUsuario.ResumeLayout(false);
             this.gbCadastroUsuario.PerformLayout();
+            this.gbBuscarUsuario.ResumeLayout(false);
+            this.gbBuscarUsuario.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCadastroUsuario)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -119,5 +207,11 @@
         private System.Windows.Forms.ComboBox cbCadastroSetor;
         private System.Windows.Forms.CheckBox ckbAtivo;
         private System.Windows.Forms.GroupBox gbBuscarUsuario;
+        private System.Windows.Forms.TextBox txtBuscarUsuario;
+        private System.Windows.Forms.Button btnBuscarUsuario;
+        private System.Windows.Forms.Button btnSalvarCadastroUsuario;
+        private System.Windows.Forms.Button btnEditarCadastroUsuario;
+        private System.Windows.Forms.Button btnApagarCadastroUsuario;
+        private System.Windows.Forms.DataGridView dgvCadastroUsuario;
     }
 }

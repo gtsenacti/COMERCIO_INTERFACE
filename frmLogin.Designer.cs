@@ -38,7 +38,7 @@
             this.lblSetor = new System.Windows.Forms.Label();
             this.cbSetor = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnSair = new System.Windows.Forms.Button();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbTelaLogin)).BeginInit();
@@ -48,6 +48,7 @@
             // 
             // pbTelaLogin
             // 
+            this.pbTelaLogin.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.pbTelaLogin.Location = new System.Drawing.Point(1, 2);
             this.pbTelaLogin.Name = "pbTelaLogin";
             this.pbTelaLogin.Size = new System.Drawing.Size(272, 289);
@@ -56,6 +57,7 @@
             // 
             // gbTelaLogin
             // 
+            this.gbTelaLogin.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.gbTelaLogin.Controls.Add(this.lblTituloLogin);
             this.gbTelaLogin.Controls.Add(this.lblUsuario);
             this.gbTelaLogin.Controls.Add(this.txtUsuario);
@@ -152,19 +154,21 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Entrar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnSair
             // 
-            this.button2.BackColor = System.Drawing.Color.LightCoral;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(550, 235);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(66, 45);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Sair";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnSair.BackColor = System.Drawing.Color.LightCoral;
+            this.btnSair.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSair.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSair.Location = new System.Drawing.Point(550, 235);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(66, 45);
+            this.btnSair.TabIndex = 3;
+            this.btnSair.Text = "Sair";
+            this.btnSair.UseVisualStyleBackColor = false;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // btnCadastrar
             // 
@@ -183,9 +187,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::appComercio.Properties.Resources.Iconarchive_Wild_Camping_Bird_Woodpecker_256;
-            this.pictureBox1.Location = new System.Drawing.Point(4, 6);
+            this.pictureBox1.Location = new System.Drawing.Point(24, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(268, 284);
+            this.pictureBox1.Size = new System.Drawing.Size(222, 257);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
@@ -193,10 +197,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(624, 292);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnCadastrar);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnSair);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.gbTelaLogin);
             this.Controls.Add(this.pbTelaLogin);
@@ -217,7 +222,7 @@
         private System.Windows.Forms.PictureBox pbTelaLogin;
         private System.Windows.Forms.GroupBox gbTelaLogin;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.ComboBox cbSetor;
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.TextBox txtUsuario;

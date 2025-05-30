@@ -16,5 +16,22 @@ namespace appComercio
         {
             InitializeComponent();
         }
+
+        private void lblPlaceholder_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCadastroLivros_Click(object sender, EventArgs e)
+        {
+            frmLivros frmLiv = new frmLivros();
+            this.Visible = false;
+            frmLiv.Show();
+        }
     }
 }

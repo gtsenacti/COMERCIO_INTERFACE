@@ -36,9 +36,9 @@
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.lblSetor = new System.Windows.Forms.Label();
             this.cbSetor = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnCadastrar = new System.Windows.Forms.Button();
+            this.btnEntrar = new System.Windows.Forms.Button();
+            this.btnSair = new System.Windows.Forms.Button();
+            this.btnCadastro = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gbTelaLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -46,7 +46,7 @@
             // 
             // gbTelaLogin
             // 
-            this.gbTelaLogin.BackColor = System.Drawing.Color.Silver;
+            this.gbTelaLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.gbTelaLogin.Controls.Add(this.lblTituloLogin);
             this.gbTelaLogin.Controls.Add(this.lblUsuario);
             this.gbTelaLogin.Controls.Add(this.txtUsuario);
@@ -55,7 +55,7 @@
             this.gbTelaLogin.Controls.Add(this.lblSetor);
             this.gbTelaLogin.Controls.Add(this.cbSetor);
             this.gbTelaLogin.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbTelaLogin.Location = new System.Drawing.Point(279, 2);
+            this.gbTelaLogin.Location = new System.Drawing.Point(279, 12);
             this.gbTelaLogin.Name = "gbTelaLogin";
             this.gbTelaLogin.Size = new System.Drawing.Size(337, 227);
             this.gbTelaLogin.TabIndex = 1;
@@ -84,6 +84,7 @@
             // 
             // txtUsuario
             // 
+            this.txtUsuario.BackColor = System.Drawing.Color.White;
             this.txtUsuario.Location = new System.Drawing.Point(7, 91);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(324, 26);
@@ -131,49 +132,50 @@
             this.cbSetor.Size = new System.Drawing.Size(325, 26);
             this.cbSetor.TabIndex = 0;
             // 
-            // button1
+            // btnEntrar
             // 
-            this.button1.BackColor = System.Drawing.Color.GreenYellow;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(403, 259);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 31);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Entrar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnEntrar.BackColor = System.Drawing.Color.GreenYellow;
+            this.btnEntrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEntrar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEntrar.Location = new System.Drawing.Point(403, 259);
+            this.btnEntrar.Name = "btnEntrar";
+            this.btnEntrar.Size = new System.Drawing.Size(90, 31);
+            this.btnEntrar.TabIndex = 2;
+            this.btnEntrar.Text = "Entrar";
+            this.btnEntrar.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnSair
             // 
-            this.button2.BackColor = System.Drawing.Color.Tomato;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(529, 259);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(84, 31);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Sair";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnSair.BackColor = System.Drawing.Color.Tomato;
+            this.btnSair.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSair.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSair.Location = new System.Drawing.Point(529, 259);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(84, 31);
+            this.btnSair.TabIndex = 3;
+            this.btnSair.Text = "Sair";
+            this.btnSair.UseVisualStyleBackColor = false;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
-            // btnCadastrar
+            // btnCadastro
             // 
-            this.btnCadastrar.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btnCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCadastrar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrar.Location = new System.Drawing.Point(279, 259);
-            this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(91, 31);
-            this.btnCadastrar.TabIndex = 4;
-            this.btnCadastrar.Text = "Cadastro";
-            this.btnCadastrar.UseVisualStyleBackColor = false;
-            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
+            this.btnCadastro.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnCadastro.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCadastro.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCadastro.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastro.Location = new System.Drawing.Point(279, 259);
+            this.btnCadastro.Name = "btnCadastro";
+            this.btnCadastro.Size = new System.Drawing.Size(91, 31);
+            this.btnCadastro.TabIndex = 4;
+            this.btnCadastro.Text = "Cadastro";
+            this.btnCadastro.UseVisualStyleBackColor = false;
+            this.btnCadastro.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Silver;
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox1.Image = global::appComercio.Properties.Resources.Gartoon_Team_Gartoon_Misc_Stock_New_Meeting_Hands_256;
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
@@ -188,9 +190,9 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(625, 302);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btnCadastrar);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCadastro);
+            this.Controls.Add(this.btnSair);
+            this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.gbTelaLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmLogin";
@@ -205,8 +207,8 @@
 
         #endregion
         private System.Windows.Forms.GroupBox gbTelaLogin;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnEntrar;
+        private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.ComboBox cbSetor;
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.TextBox txtUsuario;
@@ -214,7 +216,7 @@
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Label lblSetor;
         private System.Windows.Forms.Label lblTituloLogin;
-        private System.Windows.Forms.Button btnCadastrar;
+        private System.Windows.Forms.Button btnCadastro;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

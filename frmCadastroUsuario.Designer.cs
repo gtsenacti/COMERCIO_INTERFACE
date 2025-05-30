@@ -40,6 +40,11 @@
             this.btnEditarCadastroUsuario = new System.Windows.Forms.Button();
             this.btnApagarCadastroUsuario = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblUsuario = new System.Windows.Forms.Label();
+            this.lblCadastroUsuario = new System.Windows.Forms.Label();
+            this.lblCadastroSenha = new System.Windows.Forms.Label();
+            this.lblCadastroSetor = new System.Windows.Forms.Label();
             this.gbCadastroUsuario.SuspendLayout();
             this.gbBuscaUsuario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -47,16 +52,21 @@
             // 
             // gbCadastroUsuario
             // 
+            this.gbCadastroUsuario.Controls.Add(this.lblCadastroSetor);
+            this.gbCadastroUsuario.Controls.Add(this.lblCadastroSenha);
+            this.gbCadastroUsuario.Controls.Add(this.lblCadastroUsuario);
+            this.gbCadastroUsuario.Controls.Add(this.groupBox1);
             this.gbCadastroUsuario.Controls.Add(this.cbCadastroSetor);
             this.gbCadastroUsuario.Controls.Add(this.ckbAtivo);
             this.gbCadastroUsuario.Controls.Add(this.txtCadastroSenha);
             this.gbCadastroUsuario.Controls.Add(this.txtCadastroUsuario);
+            this.gbCadastroUsuario.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbCadastroUsuario.Location = new System.Drawing.Point(12, 12);
             this.gbCadastroUsuario.Name = "gbCadastroUsuario";
             this.gbCadastroUsuario.Size = new System.Drawing.Size(294, 229);
             this.gbCadastroUsuario.TabIndex = 0;
             this.gbCadastroUsuario.TabStop = false;
-            this.gbCadastroUsuario.Text = "Cadastro Usuário:";
+            this.gbCadastroUsuario.Text = "Cadastro Usuário";
             // 
             // cbCadastroSetor
             // 
@@ -104,7 +114,7 @@
             // 
             this.gbBuscaUsuario.Controls.Add(this.btnBuscaUsuario);
             this.gbBuscaUsuario.Controls.Add(this.txtBuscaUsuario);
-            this.gbBuscaUsuario.Location = new System.Drawing.Point(12, 247);
+            this.gbBuscaUsuario.Location = new System.Drawing.Point(12, 274);
             this.gbBuscaUsuario.Name = "gbBuscaUsuario";
             this.gbBuscaUsuario.Size = new System.Drawing.Size(294, 78);
             this.gbBuscaUsuario.TabIndex = 1;
@@ -165,11 +175,59 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(336, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(443, 413);
             this.dataGridView1.TabIndex = 5;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Location = new System.Drawing.Point(108, -78);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(200, 59);
+            this.groupBox1.TabIndex = 5;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Location = new System.Drawing.Point(435, 163);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(0, 13);
+            this.lblUsuario.TabIndex = 6;
+            // 
+            // lblCadastroUsuario
+            // 
+            this.lblCadastroUsuario.AutoSize = true;
+            this.lblCadastroUsuario.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCadastroUsuario.Location = new System.Drawing.Point(22, 11);
+            this.lblCadastroUsuario.Name = "lblCadastroUsuario";
+            this.lblCadastroUsuario.Size = new System.Drawing.Size(47, 14);
+            this.lblCadastroUsuario.TabIndex = 6;
+            this.lblCadastroUsuario.Text = "Usuário:";
+            // 
+            // lblCadastroSenha
+            // 
+            this.lblCadastroSenha.AutoSize = true;
+            this.lblCadastroSenha.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCadastroSenha.Location = new System.Drawing.Point(22, 65);
+            this.lblCadastroSenha.Name = "lblCadastroSenha";
+            this.lblCadastroSenha.Size = new System.Drawing.Size(41, 14);
+            this.lblCadastroSenha.TabIndex = 7;
+            this.lblCadastroSenha.Text = "Senha:";
+            // 
+            // lblCadastroSetor
+            // 
+            this.lblCadastroSetor.AutoSize = true;
+            this.lblCadastroSetor.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCadastroSetor.Location = new System.Drawing.Point(25, 122);
+            this.lblCadastroSetor.Name = "lblCadastroSetor";
+            this.lblCadastroSetor.Size = new System.Drawing.Size(36, 14);
+            this.lblCadastroSetor.TabIndex = 8;
+            this.lblCadastroSetor.Text = "Setor:";
             // 
             // frmCadastroUsuario
             // 
@@ -177,6 +235,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnApagarCadastroUsuario);
             this.Controls.Add(this.btnEditarCadastroUsuario);
@@ -191,6 +250,7 @@
             this.gbBuscaUsuario.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -208,5 +268,10 @@
         private System.Windows.Forms.Button btnEditarCadastroUsuario;
         private System.Windows.Forms.Button btnApagarCadastroUsuario;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.Label lblCadastroUsuario;
+        private System.Windows.Forms.Label lblCadastroSenha;
+        private System.Windows.Forms.Label lblCadastroSetor;
     }
 }

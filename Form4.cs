@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace appComercio
 {
-    public partial class frmLogin : Form
+    public partial class Adicionar : Form
     {
-        public frmLogin()
+        public Adicionar()
         {
             InitializeComponent();
         }

@@ -59,6 +59,12 @@
     <Compile Include="frmCadastroUsuario.Designer.cs">
       <DependentUpon>frmCadastroUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDadosProdutoServico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDadosProdutoServico.Designer.cs">
+      <DependentUpon>frmDadosProdutoServico.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,12 @@
     <Compile Include="frmProdutoServiço.Designer.cs">
       <DependentUpon>frmProdutoServiço.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTarefasProdutosServicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTarefasProdutosServicos.Designer.cs">
+      <DependentUpon>frmTarefasProdutosServicos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmCadastroProdutoServicos.resx">
@@ -79,11 +91,17 @@
     <EmbeddedResource Include="frmCadastroUsuario.resx">
       <DependentUpon>frmCadastroUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDadosProdutoServico.resx">
+      <DependentUpon>frmDadosProdutoServico.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmProdutoServiço.resx">
       <DependentUpon>frmProdutoServiço.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTarefasProdutosServicos.resx">
+      <DependentUpon>frmTarefasProdutosServicos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

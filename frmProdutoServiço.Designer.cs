@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnCadastro = new System.Windows.Forms.Button();
             this.btnDados = new System.Windows.Forms.Button();
             this.btnTarefas = new System.Windows.Forms.Button();
+            this.btnCadastro = new System.Windows.Forms.Button();
             this.lblProdutoServiço = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -54,24 +54,12 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(546, 114);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // btnCadastro
-            // 
-            this.btnCadastro.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCadastro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnCadastro.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastro.Location = new System.Drawing.Point(6, 6);
-            this.btnCadastro.Name = "btnCadastro";
-            this.btnCadastro.Size = new System.Drawing.Size(172, 46);
-            this.btnCadastro.TabIndex = 0;
-            this.btnCadastro.Text = "Cadastro";
-            this.btnCadastro.UseVisualStyleBackColor = false;
-            // 
             // btnDados
             // 
             this.btnDados.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDados.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnDados.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDados.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDados.Location = new System.Drawing.Point(187, 62);
             this.btnDados.Name = "btnDados";
@@ -85,6 +73,7 @@
             this.btnTarefas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnTarefas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnTarefas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTarefas.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTarefas.Location = new System.Drawing.Point(368, 6);
             this.btnTarefas.Name = "btnTarefas";
@@ -92,6 +81,20 @@
             this.btnTarefas.TabIndex = 2;
             this.btnTarefas.Text = "Tarefas";
             this.btnTarefas.UseVisualStyleBackColor = false;
+            // 
+            // btnCadastro
+            // 
+            this.btnCadastro.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCadastro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnCadastro.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCadastro.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastro.Location = new System.Drawing.Point(6, 6);
+            this.btnCadastro.Name = "btnCadastro";
+            this.btnCadastro.Size = new System.Drawing.Size(172, 46);
+            this.btnCadastro.TabIndex = 0;
+            this.btnCadastro.Text = "Cadastro";
+            this.btnCadastro.UseVisualStyleBackColor = false;
             // 
             // lblProdutoServiço
             // 
@@ -111,6 +114,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblProdutoServiço);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Name = "frmProdutoServiço";
             this.Text = "Casa Fernandes - Produtos e Serviços";
             this.tableLayoutPanel1.ResumeLayout(false);

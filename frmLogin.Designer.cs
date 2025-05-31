@@ -136,7 +136,6 @@
             // 
             this.btnEntrar.BackColor = System.Drawing.Color.GreenYellow;
             this.btnEntrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEntrar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEntrar.Location = new System.Drawing.Point(403, 259);
             this.btnEntrar.Name = "btnEntrar";
@@ -149,7 +148,6 @@
             // 
             this.btnSair.BackColor = System.Drawing.Color.Tomato;
             this.btnSair.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSair.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSair.Location = new System.Drawing.Point(529, 259);
             this.btnSair.Name = "btnSair";
@@ -163,7 +161,6 @@
             // 
             this.btnCadastro.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnCadastro.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCadastro.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCadastro.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastro.Location = new System.Drawing.Point(279, 259);
             this.btnCadastro.Name = "btnCadastro";
@@ -194,6 +191,7 @@
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.gbTelaLogin);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

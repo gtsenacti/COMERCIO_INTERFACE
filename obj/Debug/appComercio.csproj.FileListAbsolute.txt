@@ -10,3 +10,5 @@ D:\GitHub\COMERCIO_INTERFACE\obj\Debug\appComercio.csproj.CoreCompileInputs.cach
 D:\GitHub\COMERCIO_INTERFACE\obj\Debug\appComercio.exe
 D:\GitHub\COMERCIO_INTERFACE\obj\Debug\appComercio.pdb
 D:\GitHub\COMERCIO_INTERFACE\obj\Debug\appComercio.exe.config
+D:\GitHub\COMERCIO_INTERFACE\obj\Debug\appComercio.frmCadastroProdutoServico.resources
+D:\GitHub\COMERCIO_INTERFACE\obj\Debug\appComercio.frmProdutosServicos.resources

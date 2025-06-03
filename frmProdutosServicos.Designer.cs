@@ -67,30 +67,39 @@
             // 
             // btnCadastroProdutoServico
             // 
+            this.btnCadastroProdutoServico.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCadastroProdutoServico.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastroProdutoServico.Location = new System.Drawing.Point(4, 4);
             this.btnCadastroProdutoServico.Name = "btnCadastroProdutoServico";
-            this.btnCadastroProdutoServico.Size = new System.Drawing.Size(184, 40);
+            this.btnCadastroProdutoServico.Size = new System.Drawing.Size(215, 97);
             this.btnCadastroProdutoServico.TabIndex = 0;
             this.btnCadastroProdutoServico.Text = "Cadastro";
             this.btnCadastroProdutoServico.UseVisualStyleBackColor = true;
             // 
             // btnDadosProdutosSevico
             // 
+            this.btnDadosProdutosSevico.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDadosProdutosSevico.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDadosProdutosSevico.Location = new System.Drawing.Point(226, 4);
             this.btnDadosProdutosSevico.Name = "btnDadosProdutosSevico";
-            this.btnDadosProdutosSevico.Size = new System.Drawing.Size(171, 39);
+            this.btnDadosProdutosSevico.Size = new System.Drawing.Size(215, 97);
             this.btnDadosProdutosSevico.TabIndex = 1;
             this.btnDadosProdutosSevico.Text = "Dados";
             this.btnDadosProdutosSevico.UseVisualStyleBackColor = true;
             // 
             // btnTarefaProdutoServico
             // 
+            this.btnTarefaProdutoServico.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnTarefaProdutoServico.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTarefaProdutoServico.Location = new System.Drawing.Point(448, 4);
             this.btnTarefaProdutoServico.Name = "btnTarefaProdutoServico";
-            this.btnTarefaProdutoServico.Size = new System.Drawing.Size(173, 29);
+            this.btnTarefaProdutoServico.Size = new System.Drawing.Size(217, 97);
             this.btnTarefaProdutoServico.TabIndex = 2;
             this.btnTarefaProdutoServico.Text = "Tarefas";
             this.btnTarefaProdutoServico.UseVisualStyleBackColor = true;

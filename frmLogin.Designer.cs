@@ -47,6 +47,7 @@
             // pbTelaLogin
             // 
             this.pbTelaLogin.BackgroundImage = global::appComercio.Properties.Resources.teste_resized;
+            this.pbTelaLogin.Image = global::appComercio.Properties.Resources.teste_resized;
             this.pbTelaLogin.Location = new System.Drawing.Point(1, 2);
             this.pbTelaLogin.Name = "pbTelaLogin";
             this.pbTelaLogin.Size = new System.Drawing.Size(488, 340);
@@ -145,7 +146,7 @@
             this.btnEntrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEntrar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEntrar.Location = new System.Drawing.Point(630, 265);
+            this.btnEntrar.Location = new System.Drawing.Point(630, 281);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(129, 46);
             this.btnEntrar.TabIndex = 5;
@@ -158,12 +159,13 @@
             this.btnSair.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSair.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSair.Location = new System.Drawing.Point(766, 266);
+            this.btnSair.Location = new System.Drawing.Point(766, 282);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(66, 45);
             this.btnSair.TabIndex = 6;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = false;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // btnCadastrar
             // 
@@ -171,17 +173,19 @@
             this.btnCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCadastrar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrar.Location = new System.Drawing.Point(495, 266);
+            this.btnCadastrar.Location = new System.Drawing.Point(495, 282);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(129, 45);
             this.btnCadastrar.TabIndex = 4;
             this.btnCadastrar.Text = "Cadastro";
             this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(846, 357);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.btnSair);

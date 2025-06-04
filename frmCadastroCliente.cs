@@ -30,5 +30,10 @@ namespace appComercio
             Color minhaCor4 = Color.FromArgb(245, 98, 98);
             EstiloBotoes.AplicarEstiloArredondado(btnApagarCadastroUsuario, minhaCor4);
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

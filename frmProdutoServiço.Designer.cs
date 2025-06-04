@@ -67,6 +67,7 @@
             this.btnDados.TabIndex = 1;
             this.btnDados.Text = "Dados";
             this.btnDados.UseVisualStyleBackColor = false;
+            this.btnDados.Click += new System.EventHandler(this.btnDados_Click);
             // 
             // btnTarefas
             // 
@@ -81,6 +82,7 @@
             this.btnTarefas.TabIndex = 2;
             this.btnTarefas.Text = "Tarefas";
             this.btnTarefas.UseVisualStyleBackColor = false;
+            this.btnTarefas.Click += new System.EventHandler(this.btnTarefas_Click);
             // 
             // btnCadastro
             // 
@@ -95,6 +97,7 @@
             this.btnCadastro.TabIndex = 0;
             this.btnCadastro.Text = "Cadastro";
             this.btnCadastro.UseVisualStyleBackColor = false;
+            this.btnCadastro.Click += new System.EventHandler(this.btnCadastro_Click);
             // 
             // lblProdutoServiço
             // 

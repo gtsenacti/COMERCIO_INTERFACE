@@ -20,13 +20,19 @@ namespace appComercio
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             frmCadastroUsuario frmCadUs = new frmCadastroUsuario();
-            frmCadUs.Show();
+            frmCadUs.ShowDialog();
 
         }
 
         private void btnSair_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+            frmProdutoServiço frmProSer = new frmProdutoServiço();
+            frmProSer.ShowDialog();
         }
     }
 }

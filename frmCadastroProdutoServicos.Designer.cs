@@ -30,8 +30,8 @@
         {
             this.gbCadastroProdutoServiço = new System.Windows.Forms.GroupBox();
             this.gbBuscaCadastroProdutoServiços = new System.Windows.Forms.GroupBox();
-            this.txtBuscaCadastroServico = new System.Windows.Forms.TextBox();
             this.btnBusca = new System.Windows.Forms.Button();
+            this.txtBuscaCadastroServico = new System.Windows.Forms.TextBox();
             this.dgvCadastroProdutoServico = new System.Windows.Forms.DataGridView();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
@@ -62,6 +62,18 @@
             this.gbBuscaCadastroProdutoServiços.TabStop = false;
             this.gbBuscaCadastroProdutoServiços.Text = "Busca Cadastro Produto Serviço";
             // 
+            // btnBusca
+            // 
+            this.btnBusca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnBusca.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBusca.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBusca.Location = new System.Drawing.Point(212, 25);
+            this.btnBusca.Name = "btnBusca";
+            this.btnBusca.Size = new System.Drawing.Size(75, 29);
+            this.btnBusca.TabIndex = 1;
+            this.btnBusca.Text = "Busca";
+            this.btnBusca.UseVisualStyleBackColor = false;
+            // 
             // txtBuscaCadastroServico
             // 
             this.txtBuscaCadastroServico.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -69,17 +81,6 @@
             this.txtBuscaCadastroServico.Name = "txtBuscaCadastroServico";
             this.txtBuscaCadastroServico.Size = new System.Drawing.Size(154, 26);
             this.txtBuscaCadastroServico.TabIndex = 0;
-            // 
-            // btnBusca
-            // 
-            this.btnBusca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnBusca.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBusca.Location = new System.Drawing.Point(212, 25);
-            this.btnBusca.Name = "btnBusca";
-            this.btnBusca.Size = new System.Drawing.Size(75, 29);
-            this.btnBusca.TabIndex = 1;
-            this.btnBusca.Text = "Busca";
-            this.btnBusca.UseVisualStyleBackColor = false;
             // 
             // dgvCadastroProdutoServico
             // 
@@ -93,6 +94,7 @@
             // btnSalvar
             // 
             this.btnSalvar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.Location = new System.Drawing.Point(21, 381);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 35);
@@ -103,6 +105,7 @@
             // btnEditar
             // 
             this.btnEditar.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.Location = new System.Drawing.Point(133, 381);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(75, 35);
@@ -113,6 +116,7 @@
             // btnApagar
             // 
             this.btnApagar.BackColor = System.Drawing.Color.Tomato;
+            this.btnApagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnApagar.Location = new System.Drawing.Point(242, 381);
             this.btnApagar.Name = "btnApagar";
             this.btnApagar.Size = new System.Drawing.Size(75, 35);

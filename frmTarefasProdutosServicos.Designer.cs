@@ -31,8 +31,8 @@
             this.gbTarefaProdutoServico = new System.Windows.Forms.GroupBox();
             this.gbResultado = new System.Windows.Forms.GroupBox();
             this.gbBuscaTarefaProdutoSevico = new System.Windows.Forms.GroupBox();
-            this.btnBusca = new System.Windows.Forms.Button();
             this.txtBuscaTarefaProdutoServico = new System.Windows.Forms.TextBox();
+            this.btnBusca = new System.Windows.Forms.Button();
             this.dgvTarefaProdutoServico = new System.Windows.Forms.DataGridView();
             this.btnCadastroTarefaProdutoServico = new System.Windows.Forms.Button();
             this.btnEditarTarefaProdutoServico = new System.Windows.Forms.Button();
@@ -60,7 +60,7 @@
             // gbResultado
             // 
             this.gbResultado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.gbResultado.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbResultado.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbResultado.Location = new System.Drawing.Point(12, 372);
             this.gbResultado.Name = "gbResultado";
             this.gbResultado.Size = new System.Drawing.Size(245, 66);
@@ -80,16 +80,6 @@
             this.gbBuscaTarefaProdutoSevico.TabStop = false;
             this.gbBuscaTarefaProdutoSevico.Text = "Busca Tarefa Produto Serviço";
             // 
-            // btnBusca
-            // 
-            this.btnBusca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnBusca.Location = new System.Drawing.Point(164, 19);
-            this.btnBusca.Name = "btnBusca";
-            this.btnBusca.Size = new System.Drawing.Size(75, 23);
-            this.btnBusca.TabIndex = 0;
-            this.btnBusca.Text = "Busca";
-            this.btnBusca.UseVisualStyleBackColor = false;
-            // 
             // txtBuscaTarefaProdutoServico
             // 
             this.txtBuscaTarefaProdutoServico.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -97,6 +87,17 @@
             this.txtBuscaTarefaProdutoServico.Name = "txtBuscaTarefaProdutoServico";
             this.txtBuscaTarefaProdutoServico.Size = new System.Drawing.Size(133, 22);
             this.txtBuscaTarefaProdutoServico.TabIndex = 1;
+            // 
+            // btnBusca
+            // 
+            this.btnBusca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnBusca.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBusca.Location = new System.Drawing.Point(164, 19);
+            this.btnBusca.Name = "btnBusca";
+            this.btnBusca.Size = new System.Drawing.Size(75, 23);
+            this.btnBusca.TabIndex = 0;
+            this.btnBusca.Text = "Busca";
+            this.btnBusca.UseVisualStyleBackColor = false;
             // 
             // dgvTarefaProdutoServico
             // 
@@ -222,7 +223,7 @@
             this.Controls.Add(this.gbResultado);
             this.Controls.Add(this.gbTarefaProdutoServico);
             this.Name = "frmTarefasProdutosServicos";
-            this.Text = "Casa Fernandes Tarefas Produtos Servicos";
+            this.Text = " Casa Fernandes Tarefa Produtos e Serviços";
             this.gbBuscaTarefaProdutoSevico.ResumeLayout(false);
             this.gbBuscaTarefaProdutoSevico.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTarefaProdutoServico)).EndInit();

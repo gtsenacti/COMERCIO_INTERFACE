@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroUsuario));
             this.gbCadastroUsuario = new System.Windows.Forms.GroupBox();
             this.lblCadastroSetor = new System.Windows.Forms.Label();
             this.lblCadastroSenha = new System.Windows.Forms.Label();
@@ -246,6 +247,7 @@
             this.Controls.Add(this.gbBuscaUsuario);
             this.Controls.Add(this.gbCadastroUsuario);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCadastroUsuario";
             this.Text = "Casa Fernandes - Tela de Cadastro de Usuários";
             this.gbCadastroUsuario.ResumeLayout(false);

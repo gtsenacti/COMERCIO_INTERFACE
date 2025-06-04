@@ -16,5 +16,11 @@ namespace appComercio
         {
             InitializeComponent();
         }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            frmCadastroUsuario frmCadUsu = new frmCadastroUsuario();
+            frmCadUsu.ShowDialog();
+        }
     }
 }

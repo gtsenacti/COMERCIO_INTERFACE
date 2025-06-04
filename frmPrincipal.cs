@@ -15,6 +15,18 @@ namespace appComercio
         public frmPrincipal()
         {
             InitializeComponent();
+            this.Load += frmPrincipal_Load;
+        }
+
+      
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+            Color minhaCor = Color.FromArgb(40, 46, 166);
+            EstiloBotoes.AplicarEstiloArredondado(btnCadastroProdutoServico, minhaCor);
+            Color minhaCor2 = Color.FromArgb(40, 166, 73);
+            EstiloBotoes.AplicarEstiloArredondado(btnDadosProdutoServico, minhaCor2);
+            Color minhaCor3 = Color.FromArgb(245, 98, 98);
+            EstiloBotoes.AplicarEstiloArredondado(btnTarefasProdutosServico, minhaCor3);
         }
     }
 }

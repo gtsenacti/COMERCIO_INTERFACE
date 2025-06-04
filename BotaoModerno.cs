@@ -17,7 +17,7 @@ namespace appComercio
             botao.FlatAppearance.BorderSize = 0;
             botao.BackColor =  corFundo;
             botao.ForeColor = Color.White;
-            botao.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            botao.Font = new Font("Segoe UI", 18, FontStyle.Bold);
 
             botao.SizeChanged += (s, e) =>
             {

@@ -30,9 +30,9 @@
         {
             this.lblProdutoServico = new System.Windows.Forms.Label();
             this.tlpTelaPrincipal = new System.Windows.Forms.TableLayoutPanel();
-            this.btnCadastroProdutoServico = new System.Windows.Forms.Button();
+            this.btnTarefasProdutosServico = new System.Windows.Forms.Button();
             this.btnDadosProdutoServico = new System.Windows.Forms.Button();
-            this.btbTarefasProdutosServico = new System.Windows.Forms.Button();
+            this.btnCadastroProdutoServico = new System.Windows.Forms.Button();
             this.tlpTelaPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,7 +56,7 @@
             this.tlpTelaPrincipal.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33F));
             this.tlpTelaPrincipal.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33F));
             this.tlpTelaPrincipal.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34F));
-            this.tlpTelaPrincipal.Controls.Add(this.btbTarefasProdutosServico, 2, 0);
+            this.tlpTelaPrincipal.Controls.Add(this.btnTarefasProdutosServico, 2, 0);
             this.tlpTelaPrincipal.Controls.Add(this.btnDadosProdutoServico, 1, 0);
             this.tlpTelaPrincipal.Controls.Add(this.btnCadastroProdutoServico, 0, 0);
             this.tlpTelaPrincipal.Location = new System.Drawing.Point(40, 121);
@@ -66,15 +66,15 @@
             this.tlpTelaPrincipal.Size = new System.Drawing.Size(717, 152);
             this.tlpTelaPrincipal.TabIndex = 1;
             // 
-            // btnCadastroProdutoServico
+            // btnTarefasProdutosServico
             // 
-            this.btnCadastroProdutoServico.Font = new System.Drawing.Font("Arial Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastroProdutoServico.Location = new System.Drawing.Point(3, 3);
-            this.btnCadastroProdutoServico.Name = "btnCadastroProdutoServico";
-            this.btnCadastroProdutoServico.Size = new System.Drawing.Size(230, 146);
-            this.btnCadastroProdutoServico.TabIndex = 0;
-            this.btnCadastroProdutoServico.Text = "Cadastro";
-            this.btnCadastroProdutoServico.UseVisualStyleBackColor = true;
+            this.btnTarefasProdutosServico.Font = new System.Drawing.Font("Arial Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTarefasProdutosServico.Location = new System.Drawing.Point(475, 3);
+            this.btnTarefasProdutosServico.Name = "btnTarefasProdutosServico";
+            this.btnTarefasProdutosServico.Size = new System.Drawing.Size(239, 146);
+            this.btnTarefasProdutosServico.TabIndex = 2;
+            this.btnTarefasProdutosServico.Text = "Tarefas";
+            this.btnTarefasProdutosServico.UseVisualStyleBackColor = true;
             // 
             // btnDadosProdutoServico
             // 
@@ -86,20 +86,21 @@
             this.btnDadosProdutoServico.Text = "Dados";
             this.btnDadosProdutoServico.UseVisualStyleBackColor = true;
             // 
-            // btbTarefasProdutosServico
+            // btnCadastroProdutoServico
             // 
-            this.btbTarefasProdutosServico.Font = new System.Drawing.Font("Arial Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btbTarefasProdutosServico.Location = new System.Drawing.Point(475, 3);
-            this.btbTarefasProdutosServico.Name = "btbTarefasProdutosServico";
-            this.btbTarefasProdutosServico.Size = new System.Drawing.Size(239, 146);
-            this.btbTarefasProdutosServico.TabIndex = 2;
-            this.btbTarefasProdutosServico.Text = "Tarefas";
-            this.btbTarefasProdutosServico.UseVisualStyleBackColor = true;
+            this.btnCadastroProdutoServico.Font = new System.Drawing.Font("Arial Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastroProdutoServico.Location = new System.Drawing.Point(3, 3);
+            this.btnCadastroProdutoServico.Name = "btnCadastroProdutoServico";
+            this.btnCadastroProdutoServico.Size = new System.Drawing.Size(230, 146);
+            this.btnCadastroProdutoServico.TabIndex = 0;
+            this.btnCadastroProdutoServico.Text = "Cadastro";
+            this.btnCadastroProdutoServico.UseVisualStyleBackColor = true;
             // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(800, 381);
             this.Controls.Add(this.tlpTelaPrincipal);
             this.Controls.Add(this.lblProdutoServico);
@@ -116,7 +117,7 @@
         private System.Windows.Forms.Label lblProdutoServico;
         private System.Windows.Forms.TableLayoutPanel tlpTelaPrincipal;
         private System.Windows.Forms.Button btnCadastroProdutoServico;
-        private System.Windows.Forms.Button btbTarefasProdutosServico;
+        private System.Windows.Forms.Button btnTarefasProdutosServico;
         private System.Windows.Forms.Button btnDadosProdutoServico;
     }
 }

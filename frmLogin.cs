@@ -43,8 +43,6 @@ namespace appComercio
         {
             Application.Exit();
         }
-
-      
     }
 }
 

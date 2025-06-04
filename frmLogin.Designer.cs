@@ -179,7 +179,7 @@
             this.btnCadastrar.TabIndex = 4;
             this.btnCadastrar.Text = "Cadastro";
             this.btnCadastrar.UseVisualStyleBackColor = false;
-            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
+            this.btnCadastrar.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // frmLogin
             // 
@@ -196,6 +196,7 @@
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogin";
+            this.Load += new System.EventHandler(this.btnCadastrar_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pbTelaLogin)).EndInit();
             this.gbTelaLogin.ResumeLayout(false);
             this.gbTelaLogin.PerformLayout();

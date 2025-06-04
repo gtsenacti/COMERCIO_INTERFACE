@@ -36,7 +36,7 @@ namespace appComercio
             frmCadastroCliente FrmCadastroCliente = new frmCadastroCliente();
             FrmCadastroCliente.Show();
             this.Visible = false;
-            
+
         }
 
         private void btnSair_Click(object sender, EventArgs e)

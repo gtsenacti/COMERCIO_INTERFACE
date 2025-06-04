@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pbTelaLogin = new System.Windows.Forms.PictureBox();
             this.gbTelaLogin = new System.Windows.Forms.GroupBox();
             this.lblTituloLogin = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
@@ -37,27 +36,19 @@
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.lblSetor = new System.Windows.Forms.Label();
             this.cbSetor = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnEntrar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pbTelaLogin)).BeginInit();
+            this.pbTelaLogin = new System.Windows.Forms.PictureBox();
             this.gbTelaLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbTelaLogin)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pbTelaLogin
-            // 
-            this.pbTelaLogin.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.pbTelaLogin.Location = new System.Drawing.Point(1, 2);
-            this.pbTelaLogin.Name = "pbTelaLogin";
-            this.pbTelaLogin.Size = new System.Drawing.Size(272, 289);
-            this.pbTelaLogin.TabIndex = 0;
-            this.pbTelaLogin.TabStop = false;
             // 
             // gbTelaLogin
             // 
-            this.gbTelaLogin.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.gbTelaLogin.BackColor = System.Drawing.Color.Gainsboro;
             this.gbTelaLogin.Controls.Add(this.lblTituloLogin);
             this.gbTelaLogin.Controls.Add(this.lblUsuario);
             this.gbTelaLogin.Controls.Add(this.txtUsuario);
@@ -68,7 +59,7 @@
             this.gbTelaLogin.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbTelaLogin.Location = new System.Drawing.Point(279, 2);
             this.gbTelaLogin.Name = "gbTelaLogin";
-            this.gbTelaLogin.Size = new System.Drawing.Size(337, 227);
+            this.gbTelaLogin.Size = new System.Drawing.Size(376, 227);
             this.gbTelaLogin.TabIndex = 1;
             this.gbTelaLogin.TabStop = false;
             this.gbTelaLogin.Text = "Dados do usuário";
@@ -142,29 +133,29 @@
             this.cbSetor.Size = new System.Drawing.Size(325, 26);
             this.cbSetor.TabIndex = 0;
             // 
-            // button1
+            // btnEntrar
             // 
-            this.button1.BackColor = System.Drawing.Color.LimeGreen;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(414, 234);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(129, 46);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Entrar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnEntrar.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnEntrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEntrar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEntrar.Location = new System.Drawing.Point(414, 245);
+            this.btnEntrar.Name = "btnEntrar";
+            this.btnEntrar.Size = new System.Drawing.Size(122, 46);
+            this.btnEntrar.TabIndex = 2;
+            this.btnEntrar.Text = "Entrar";
+            this.btnEntrar.UseVisualStyleBackColor = false;
+            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
             // btnSair
             // 
-            this.btnSair.BackColor = System.Drawing.Color.LightCoral;
+            this.btnSair.BackColor = System.Drawing.Color.Red;
             this.btnSair.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSair.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSair.Location = new System.Drawing.Point(550, 235);
+            this.btnSair.Location = new System.Drawing.Point(550, 245);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(66, 45);
+            this.btnSair.Size = new System.Drawing.Size(105, 45);
             this.btnSair.TabIndex = 3;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = false;
@@ -176,9 +167,9 @@
             this.btnCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCadastrar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrar.Location = new System.Drawing.Point(279, 235);
+            this.btnCadastrar.Location = new System.Drawing.Point(279, 246);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(129, 45);
+            this.btnCadastrar.Size = new System.Drawing.Size(117, 45);
             this.btnCadastrar.TabIndex = 4;
             this.btnCadastrar.Text = "Cadastro";
             this.btnCadastrar.UseVisualStyleBackColor = false;
@@ -193,26 +184,35 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
+            // pbTelaLogin
+            // 
+            this.pbTelaLogin.BackColor = System.Drawing.Color.Gainsboro;
+            this.pbTelaLogin.Location = new System.Drawing.Point(1, 2);
+            this.pbTelaLogin.Name = "pbTelaLogin";
+            this.pbTelaLogin.Size = new System.Drawing.Size(272, 289);
+            this.pbTelaLogin.TabIndex = 0;
+            this.pbTelaLogin.TabStop = false;
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(738, 390);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.btnSair);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.gbTelaLogin);
             this.Controls.Add(this.pbTelaLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogin";
-            ((System.ComponentModel.ISupportInitialize)(this.pbTelaLogin)).EndInit();
             this.gbTelaLogin.ResumeLayout(false);
             this.gbTelaLogin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbTelaLogin)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -221,7 +221,7 @@
 
         private System.Windows.Forms.PictureBox pbTelaLogin;
         private System.Windows.Forms.GroupBox gbTelaLogin;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnEntrar;
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.ComboBox cbSetor;
         private System.Windows.Forms.Label lblUsuario;

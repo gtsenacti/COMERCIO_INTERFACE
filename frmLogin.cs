@@ -28,9 +28,10 @@ namespace appComercio
             Application.Exit();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnEntrar_Click(object sender, EventArgs e)
         {
-
+            frmProdutosServicos frmProSer = new frmProdutosServicos();
+            frmProSer.ShowDialog();
         }
     }
 }

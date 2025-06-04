@@ -30,14 +30,20 @@
         {
             this.gbCadastroProdutoServico = new System.Windows.Forms.GroupBox();
             this.gbBuscarCadastroProdutoServico = new System.Windows.Forms.GroupBox();
-            this.txtBuscarCadastroProdutoServico = new System.Windows.Forms.TextBox();
             this.btnBuscarCadastroProdutoServico = new System.Windows.Forms.Button();
+            this.txtBuscarCadastroProdutoServico = new System.Windows.Forms.TextBox();
+            this.btnSalvarCadastroProdutoServico = new System.Windows.Forms.Button();
+            this.btnEditarCadastroProdutoServico = new System.Windows.Forms.Button();
+            this.btnApagarCadastroProdutoServico = new System.Windows.Forms.Button();
+            this.dgvCadastroProdutoServico = new System.Windows.Forms.DataGridView();
             this.gbBuscarCadastroProdutoServico.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCadastroProdutoServico)).BeginInit();
             this.SuspendLayout();
             // 
             // gbCadastroProdutoServico
             // 
-            this.gbCadastroProdutoServico.Font = new System.Drawing.Font("Arial", 12F);
+            this.gbCadastroProdutoServico.BackColor = System.Drawing.Color.Gainsboro;
+            this.gbCadastroProdutoServico.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbCadastroProdutoServico.Location = new System.Drawing.Point(26, 20);
             this.gbCadastroProdutoServico.Name = "gbCadastroProdutoServico";
             this.gbCadastroProdutoServico.Size = new System.Drawing.Size(268, 191);
@@ -48,8 +54,10 @@
             // 
             // gbBuscarCadastroProdutoServico
             // 
+            this.gbBuscarCadastroProdutoServico.BackColor = System.Drawing.Color.Gainsboro;
             this.gbBuscarCadastroProdutoServico.Controls.Add(this.btnBuscarCadastroProdutoServico);
             this.gbBuscarCadastroProdutoServico.Controls.Add(this.txtBuscarCadastroProdutoServico);
+            this.gbBuscarCadastroProdutoServico.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbBuscarCadastroProdutoServico.Location = new System.Drawing.Point(30, 239);
             this.gbBuscarCadastroProdutoServico.Name = "gbBuscarCadastroProdutoServico";
             this.gbBuscarCadastroProdutoServico.Size = new System.Drawing.Size(263, 61);
@@ -57,6 +65,17 @@
             this.gbBuscarCadastroProdutoServico.TabStop = false;
             this.gbBuscarCadastroProdutoServico.Text = "Buscar Cadastro:";
             this.gbBuscarCadastroProdutoServico.Enter += new System.EventHandler(this.groupBox1_Enter_1);
+            // 
+            // btnBuscarCadastroProdutoServico
+            // 
+            this.btnBuscarCadastroProdutoServico.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnBuscarCadastroProdutoServico.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarCadastroProdutoServico.Location = new System.Drawing.Point(184, 19);
+            this.btnBuscarCadastroProdutoServico.Name = "btnBuscarCadastroProdutoServico";
+            this.btnBuscarCadastroProdutoServico.Size = new System.Drawing.Size(59, 29);
+            this.btnBuscarCadastroProdutoServico.TabIndex = 1;
+            this.btnBuscarCadastroProdutoServico.Text = "Buscar";
+            this.btnBuscarCadastroProdutoServico.UseVisualStyleBackColor = false;
             // 
             // txtBuscarCadastroProdutoServico
             // 
@@ -66,27 +85,64 @@
             this.txtBuscarCadastroProdutoServico.Size = new System.Drawing.Size(144, 23);
             this.txtBuscarCadastroProdutoServico.TabIndex = 0;
             // 
-            // btnBuscarCadastroProdutoServico
+            // btnSalvarCadastroProdutoServico
             // 
-            this.btnBuscarCadastroProdutoServico.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarCadastroProdutoServico.Location = new System.Drawing.Point(184, 19);
-            this.btnBuscarCadastroProdutoServico.Name = "btnBuscarCadastroProdutoServico";
-            this.btnBuscarCadastroProdutoServico.Size = new System.Drawing.Size(59, 29);
-            this.btnBuscarCadastroProdutoServico.TabIndex = 1;
-            this.btnBuscarCadastroProdutoServico.Text = "Buscar";
-            this.btnBuscarCadastroProdutoServico.UseVisualStyleBackColor = true;
+            this.btnSalvarCadastroProdutoServico.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnSalvarCadastroProdutoServico.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvarCadastroProdutoServico.Location = new System.Drawing.Point(36, 357);
+            this.btnSalvarCadastroProdutoServico.Name = "btnSalvarCadastroProdutoServico";
+            this.btnSalvarCadastroProdutoServico.Size = new System.Drawing.Size(80, 36);
+            this.btnSalvarCadastroProdutoServico.TabIndex = 2;
+            this.btnSalvarCadastroProdutoServico.Text = "Salvar";
+            this.btnSalvarCadastroProdutoServico.UseVisualStyleBackColor = false;
+            // 
+            // btnEditarCadastroProdutoServico
+            // 
+            this.btnEditarCadastroProdutoServico.BackColor = System.Drawing.Color.Yellow;
+            this.btnEditarCadastroProdutoServico.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.btnEditarCadastroProdutoServico.Location = new System.Drawing.Point(122, 358);
+            this.btnEditarCadastroProdutoServico.Name = "btnEditarCadastroProdutoServico";
+            this.btnEditarCadastroProdutoServico.Size = new System.Drawing.Size(89, 34);
+            this.btnEditarCadastroProdutoServico.TabIndex = 3;
+            this.btnEditarCadastroProdutoServico.Text = "Editar";
+            this.btnEditarCadastroProdutoServico.UseVisualStyleBackColor = false;
+            // 
+            // btnApagarCadastroProdutoServico
+            // 
+            this.btnApagarCadastroProdutoServico.BackColor = System.Drawing.Color.Red;
+            this.btnApagarCadastroProdutoServico.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.btnApagarCadastroProdutoServico.Location = new System.Drawing.Point(217, 359);
+            this.btnApagarCadastroProdutoServico.Name = "btnApagarCadastroProdutoServico";
+            this.btnApagarCadastroProdutoServico.Size = new System.Drawing.Size(76, 33);
+            this.btnApagarCadastroProdutoServico.TabIndex = 4;
+            this.btnApagarCadastroProdutoServico.Text = "Apagar";
+            this.btnApagarCadastroProdutoServico.UseVisualStyleBackColor = false;
+            // 
+            // dgvCadastroProdutoServico
+            // 
+            this.dgvCadastroProdutoServico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCadastroProdutoServico.Location = new System.Drawing.Point(363, 31);
+            this.dgvCadastroProdutoServico.Name = "dgvCadastroProdutoServico";
+            this.dgvCadastroProdutoServico.Size = new System.Drawing.Size(394, 376);
+            this.dgvCadastroProdutoServico.TabIndex = 5;
             // 
             // frmCadastroProdutoServico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dgvCadastroProdutoServico);
+            this.Controls.Add(this.btnApagarCadastroProdutoServico);
+            this.Controls.Add(this.btnEditarCadastroProdutoServico);
+            this.Controls.Add(this.btnSalvarCadastroProdutoServico);
             this.Controls.Add(this.gbBuscarCadastroProdutoServico);
             this.Controls.Add(this.gbCadastroProdutoServico);
             this.Name = "frmCadastroProdutoServico";
             this.Text = "frmCadastroProdutoServico";
             this.gbBuscarCadastroProdutoServico.ResumeLayout(false);
             this.gbBuscarCadastroProdutoServico.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCadastroProdutoServico)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -97,5 +153,9 @@
         private System.Windows.Forms.GroupBox gbBuscarCadastroProdutoServico;
         private System.Windows.Forms.TextBox txtBuscarCadastroProdutoServico;
         private System.Windows.Forms.Button btnBuscarCadastroProdutoServico;
+        private System.Windows.Forms.Button btnSalvarCadastroProdutoServico;
+        private System.Windows.Forms.Button btnEditarCadastroProdutoServico;
+        private System.Windows.Forms.Button btnApagarCadastroProdutoServico;
+        private System.Windows.Forms.DataGridView dgvCadastroProdutoServico;
     }
 }

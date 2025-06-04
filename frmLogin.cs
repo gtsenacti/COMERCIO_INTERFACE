@@ -28,13 +28,6 @@ namespace appComercio
 
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            linkCadastro.LinkColor = Color.Blue;
-            frmCadastro frmC = new frmCadastro();
-            this.Visible = false;
-            frmC.Show();
-        }
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
@@ -43,7 +36,7 @@ namespace appComercio
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtEmailUsuario.Text == "Jhenny" && txtSenha.Text == "1234")
+            if (txtEmailUsuario.Text == "BlibliComicCEntreprise@hotmail.com.br" && txtSenha.Text == "J9K7M5R9")
             {
                 btnLogin.Text = "Login realizado";
                 btnLogin.BackColor = Color.DodgerBlue;
@@ -53,9 +46,19 @@ namespace appComercio
             }
             else
             {
-                MessageBox.Show("Usuário ou Senha não encontrado. Tente novamente");
+                MessageBox.Show("Email ou senha incorretos. Tente novamente");
                 txtEmailUsuario.Text = txtSenha.Text = "";
             }
+        }
+
+        private void txtEmailUsuario_TextChanged(object sender, EventArgs e)
+        {
+            txtEmailUsuario.Text = "Example@hotmail.com.br";
+        }
+
+        private void linklblVoltar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
         }
     }
 }

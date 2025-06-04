@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace appComercio
 {
-    public partial class frmLivros : Form
+    public partial class frmReservas : Form
     {
-        public frmLivros()
+        public frmReservas()
         {
             InitializeComponent();
-        }
-
-        private void frmLivros_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -27,7 +22,12 @@ namespace appComercio
 
         }
 
-        private void btnModificar_Click(object sender, EventArgs e)
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gbBtn_Enter(object sender, EventArgs e)
         {
 
         }
@@ -35,20 +35,13 @@ namespace appComercio
         private void linklblVoltar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             frmPrincipal frmP = new frmPrincipal();
-            frmP.Show();
             this.Visible = false;
+            frmP.Show(); 
         }
 
-        private void gbCadastroLivros_Enter(object sender, EventArgs e)
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
-        }
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            frmPrincipal frmP = new frmPrincipal();
-            frmP.Show();
-            this.Close();
         }
     }
 }

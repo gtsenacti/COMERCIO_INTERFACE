@@ -24,7 +24,9 @@ namespace appComercio
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            frmCadastroUsuario frmCadU = new frmCadastroUsuario();
+            this.Visible = false;
+            frmCadU.Show();
         }
 
         private void btnCadastroLivros_Click(object sender, EventArgs e)
@@ -32,6 +34,25 @@ namespace appComercio
             frmLivros frmLiv = new frmLivros();
             this.Visible = false;
             frmLiv.Show();
+        }
+
+        private void btnCadastroEditora_Click(object sender, EventArgs e)
+        {
+            frmEditora frmE = new frmEditora();
+            this.Visible = false;
+            frmE.Show();   
+        }
+
+        private void btnReserva_Click(object sender, EventArgs e)
+        {
+            frmReservas frmR = new frmReservas();
+            this.Visible = false;
+            frmR.Show();
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

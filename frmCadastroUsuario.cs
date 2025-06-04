@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace appComercio
 {
-    public partial class frmCadastro : Form
+    public partial class frmCadastroUsuario : Form
     {
-        public frmCadastro()
+        public frmCadastroUsuario()
         {
             InitializeComponent();
         }
@@ -31,22 +31,47 @@ namespace appComercio
             else
             {
                 //adicionar o usuário no db
-                    frmLogin frmL = new frmLogin();
-                    this.Visible = false;
-                    frmL.Show();
+                //Adicionar o nome usuário no gb usuario
             }
         }
 
         private void frmCadastro_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void linkLabelLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            frmLogin frmL = new frmLogin();
+            frmLogin frmLU = new frmLogin();
             this.Visible = false;
-            frmL.Show();
+            frmLU.Show();
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linklblVoltar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmPrincipal frmP = new frmPrincipal();
+            frmP.Show();
+            this.Visible = false;
+        }
+
+        private void lblCidade_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

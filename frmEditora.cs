@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace appComercio
 {
-    public partial class frmLivros : Form
+    public partial class frmEditora : Form
     {
-        public frmLivros()
+        public frmEditora()
         {
             InitializeComponent();
-        }
-
-        private void frmLivros_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -27,9 +22,15 @@ namespace appComercio
 
         }
 
-        private void btnModificar_Click(object sender, EventArgs e)
+        private void lblUsuario_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnReserva_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Editora já cadastrada, insira os dados de uma nova editora");
+            //Consultar o banco para checar se não há uma editora já cadastrada com o mesmo nome e se não adicionar editora no banco
         }
 
         private void linklblVoltar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -39,16 +40,13 @@ namespace appComercio
             this.Visible = false;
         }
 
-        private void gbCadastroLivros_Enter(object sender, EventArgs e)
+        private void frmEditora_Load(object sender, EventArgs e)
         {
-
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void groupBox2_Enter(object sender, EventArgs e)
         {
-            frmPrincipal frmP = new frmPrincipal();
-            frmP.Show();
-            this.Close();
+
         }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroProdutoServicos));
             this.gbCadastroProdutoServiço = new System.Windows.Forms.GroupBox();
             this.gbBuscaCadastroProdutoServiços = new System.Windows.Forms.GroupBox();
             this.btnBusca = new System.Windows.Forms.Button();
@@ -36,6 +37,13 @@
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnApagar = new System.Windows.Forms.Button();
+            this.txtCadastro = new System.Windows.Forms.TextBox();
+            this.txtProduto = new System.Windows.Forms.TextBox();
+            this.txtServiços = new System.Windows.Forms.TextBox();
+            this.lblCadastro = new System.Windows.Forms.Label();
+            this.lblProdutos = new System.Windows.Forms.Label();
+            this.lblServiços = new System.Windows.Forms.Label();
+            this.gbCadastroProdutoServiço.SuspendLayout();
             this.gbBuscaCadastroProdutoServiços.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCadastroProdutoServico)).BeginInit();
             this.SuspendLayout();
@@ -43,6 +51,12 @@
             // gbCadastroProdutoServiço
             // 
             this.gbCadastroProdutoServiço.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.gbCadastroProdutoServiço.Controls.Add(this.lblServiços);
+            this.gbCadastroProdutoServiço.Controls.Add(this.lblProdutos);
+            this.gbCadastroProdutoServiço.Controls.Add(this.lblCadastro);
+            this.gbCadastroProdutoServiço.Controls.Add(this.txtServiços);
+            this.gbCadastroProdutoServiço.Controls.Add(this.txtProduto);
+            this.gbCadastroProdutoServiço.Controls.Add(this.txtCadastro);
             this.gbCadastroProdutoServiço.Location = new System.Drawing.Point(12, 12);
             this.gbCadastroProdutoServiço.Name = "gbCadastroProdutoServiço";
             this.gbCadastroProdutoServiço.Size = new System.Drawing.Size(305, 248);
@@ -70,17 +84,17 @@
             this.btnBusca.Location = new System.Drawing.Point(212, 25);
             this.btnBusca.Name = "btnBusca";
             this.btnBusca.Size = new System.Drawing.Size(75, 29);
-            this.btnBusca.TabIndex = 1;
+            this.btnBusca.TabIndex = 2;
             this.btnBusca.Text = "Busca";
             this.btnBusca.UseVisualStyleBackColor = false;
             // 
             // txtBuscaCadastroServico
             // 
             this.txtBuscaCadastroServico.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscaCadastroServico.Location = new System.Drawing.Point(21, 28);
+            this.txtBuscaCadastroServico.Location = new System.Drawing.Point(9, 28);
             this.txtBuscaCadastroServico.Name = "txtBuscaCadastroServico";
-            this.txtBuscaCadastroServico.Size = new System.Drawing.Size(154, 26);
-            this.txtBuscaCadastroServico.TabIndex = 0;
+            this.txtBuscaCadastroServico.Size = new System.Drawing.Size(177, 26);
+            this.txtBuscaCadastroServico.TabIndex = 1;
             // 
             // dgvCadastroProdutoServico
             // 
@@ -89,7 +103,7 @@
             this.dgvCadastroProdutoServico.Location = new System.Drawing.Point(336, 12);
             this.dgvCadastroProdutoServico.Name = "dgvCadastroProdutoServico";
             this.dgvCadastroProdutoServico.Size = new System.Drawing.Size(452, 426);
-            this.dgvCadastroProdutoServico.TabIndex = 2;
+            this.dgvCadastroProdutoServico.TabIndex = 6;
             // 
             // btnSalvar
             // 
@@ -124,6 +138,60 @@
             this.btnApagar.Text = "Apagar";
             this.btnApagar.UseVisualStyleBackColor = false;
             // 
+            // txtCadastro
+            // 
+            this.txtCadastro.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCadastro.Location = new System.Drawing.Point(6, 38);
+            this.txtCadastro.Name = "txtCadastro";
+            this.txtCadastro.Size = new System.Drawing.Size(293, 32);
+            this.txtCadastro.TabIndex = 0;
+            // 
+            // txtProduto
+            // 
+            this.txtProduto.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProduto.Location = new System.Drawing.Point(9, 122);
+            this.txtProduto.Name = "txtProduto";
+            this.txtProduto.Size = new System.Drawing.Size(290, 32);
+            this.txtProduto.TabIndex = 1;
+            // 
+            // txtServiços
+            // 
+            this.txtServiços.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtServiços.Location = new System.Drawing.Point(9, 206);
+            this.txtServiços.Name = "txtServiços";
+            this.txtServiços.Size = new System.Drawing.Size(293, 32);
+            this.txtServiços.TabIndex = 2;
+            // 
+            // lblCadastro
+            // 
+            this.lblCadastro.AutoSize = true;
+            this.lblCadastro.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCadastro.Location = new System.Drawing.Point(6, 22);
+            this.lblCadastro.Name = "lblCadastro";
+            this.lblCadastro.Size = new System.Drawing.Size(51, 14);
+            this.lblCadastro.TabIndex = 3;
+            this.lblCadastro.Text = "Cadastro";
+            // 
+            // lblProdutos
+            // 
+            this.lblProdutos.AutoSize = true;
+            this.lblProdutos.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProdutos.Location = new System.Drawing.Point(11, 106);
+            this.lblProdutos.Name = "lblProdutos";
+            this.lblProdutos.Size = new System.Drawing.Size(44, 14);
+            this.lblProdutos.TabIndex = 4;
+            this.lblProdutos.Text = "Produto";
+            // 
+            // lblServiços
+            // 
+            this.lblServiços.AutoSize = true;
+            this.lblServiços.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblServiços.Location = new System.Drawing.Point(6, 190);
+            this.lblServiços.Name = "lblServiços";
+            this.lblServiços.Size = new System.Drawing.Size(50, 14);
+            this.lblServiços.TabIndex = 5;
+            this.lblServiços.Text = "Serviços";
+            // 
             // frmCadastroProdutoServicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -136,8 +204,11 @@
             this.Controls.Add(this.dgvCadastroProdutoServico);
             this.Controls.Add(this.gbBuscaCadastroProdutoServiços);
             this.Controls.Add(this.gbCadastroProdutoServiço);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCadastroProdutoServicos";
             this.Text = "Casa Fernandes Cadastro Produtos e Serviços";
+            this.gbCadastroProdutoServiço.ResumeLayout(false);
+            this.gbCadastroProdutoServiço.PerformLayout();
             this.gbBuscaCadastroProdutoServiços.ResumeLayout(false);
             this.gbBuscaCadastroProdutoServiços.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCadastroProdutoServico)).EndInit();
@@ -155,5 +226,11 @@
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnApagar;
+        private System.Windows.Forms.TextBox txtServiços;
+        private System.Windows.Forms.TextBox txtProduto;
+        private System.Windows.Forms.TextBox txtCadastro;
+        private System.Windows.Forms.Label lblServiços;
+        private System.Windows.Forms.Label lblProdutos;
+        private System.Windows.Forms.Label lblCadastro;
     }
 }

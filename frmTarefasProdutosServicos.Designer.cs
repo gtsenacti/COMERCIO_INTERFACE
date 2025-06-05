@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTarefasProdutosServicos));
             this.gbTarefaProdutoServico = new System.Windows.Forms.GroupBox();
             this.gbResultado = new System.Windows.Forms.GroupBox();
             this.gbBuscaTarefaProdutoSevico = new System.Windows.Forms.GroupBox();
@@ -42,6 +43,13 @@
             this.rbMultiplicar = new System.Windows.Forms.RadioButton();
             this.rbDividir = new System.Windows.Forms.RadioButton();
             this.btnCalcularTarefaProdutoServico = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.lblCadastro = new System.Windows.Forms.Label();
+            this.lblProduto = new System.Windows.Forms.Label();
+            this.lblServiços = new System.Windows.Forms.Label();
+            this.gbTarefaProdutoServico.SuspendLayout();
             this.gbBuscaTarefaProdutoSevico.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTarefaProdutoServico)).BeginInit();
             this.SuspendLayout();
@@ -49,6 +57,12 @@
             // gbTarefaProdutoServico
             // 
             this.gbTarefaProdutoServico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.gbTarefaProdutoServico.Controls.Add(this.lblServiços);
+            this.gbTarefaProdutoServico.Controls.Add(this.lblProduto);
+            this.gbTarefaProdutoServico.Controls.Add(this.lblCadastro);
+            this.gbTarefaProdutoServico.Controls.Add(this.textBox3);
+            this.gbTarefaProdutoServico.Controls.Add(this.textBox2);
+            this.gbTarefaProdutoServico.Controls.Add(this.textBox1);
             this.gbTarefaProdutoServico.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbTarefaProdutoServico.Location = new System.Drawing.Point(12, 12);
             this.gbTarefaProdutoServico.Name = "gbTarefaProdutoServico";
@@ -64,7 +78,7 @@
             this.gbResultado.Location = new System.Drawing.Point(12, 372);
             this.gbResultado.Name = "gbResultado";
             this.gbResultado.Size = new System.Drawing.Size(245, 66);
-            this.gbResultado.TabIndex = 1;
+            this.gbResultado.TabIndex = 3;
             this.gbResultado.TabStop = false;
             this.gbResultado.Text = "Resultado";
             // 
@@ -95,7 +109,7 @@
             this.btnBusca.Location = new System.Drawing.Point(164, 19);
             this.btnBusca.Name = "btnBusca";
             this.btnBusca.Size = new System.Drawing.Size(75, 23);
-            this.btnBusca.TabIndex = 0;
+            this.btnBusca.TabIndex = 2;
             this.btnBusca.Text = "Busca";
             this.btnBusca.UseVisualStyleBackColor = false;
             // 
@@ -106,7 +120,7 @@
             this.dgvTarefaProdutoServico.Location = new System.Drawing.Point(276, 12);
             this.dgvTarefaProdutoServico.Name = "dgvTarefaProdutoServico";
             this.dgvTarefaProdutoServico.Size = new System.Drawing.Size(512, 281);
-            this.dgvTarefaProdutoServico.TabIndex = 3;
+            this.dgvTarefaProdutoServico.TabIndex = 4;
             // 
             // btnCadastroTarefaProdutoServico
             // 
@@ -115,7 +129,7 @@
             this.btnCadastroTarefaProdutoServico.Location = new System.Drawing.Point(307, 310);
             this.btnCadastroTarefaProdutoServico.Name = "btnCadastroTarefaProdutoServico";
             this.btnCadastroTarefaProdutoServico.Size = new System.Drawing.Size(113, 30);
-            this.btnCadastroTarefaProdutoServico.TabIndex = 4;
+            this.btnCadastroTarefaProdutoServico.TabIndex = 5;
             this.btnCadastroTarefaProdutoServico.Text = "Cadastro";
             this.btnCadastroTarefaProdutoServico.UseVisualStyleBackColor = false;
             // 
@@ -126,7 +140,7 @@
             this.btnEditarTarefaProdutoServico.Location = new System.Drawing.Point(470, 310);
             this.btnEditarTarefaProdutoServico.Name = "btnEditarTarefaProdutoServico";
             this.btnEditarTarefaProdutoServico.Size = new System.Drawing.Size(113, 30);
-            this.btnEditarTarefaProdutoServico.TabIndex = 5;
+            this.btnEditarTarefaProdutoServico.TabIndex = 6;
             this.btnEditarTarefaProdutoServico.Text = "Editar";
             this.btnEditarTarefaProdutoServico.UseVisualStyleBackColor = false;
             // 
@@ -137,7 +151,7 @@
             this.btnApagarTarefaProdutoServico.Location = new System.Drawing.Point(639, 310);
             this.btnApagarTarefaProdutoServico.Name = "btnApagarTarefaProdutoServico";
             this.btnApagarTarefaProdutoServico.Size = new System.Drawing.Size(113, 30);
-            this.btnApagarTarefaProdutoServico.TabIndex = 6;
+            this.btnApagarTarefaProdutoServico.TabIndex = 7;
             this.btnApagarTarefaProdutoServico.Text = "Apagar";
             this.btnApagarTarefaProdutoServico.UseVisualStyleBackColor = false;
             // 
@@ -149,7 +163,7 @@
             this.rbSomar.Location = new System.Drawing.Point(307, 372);
             this.rbSomar.Name = "rbSomar";
             this.rbSomar.Size = new System.Drawing.Size(67, 20);
-            this.rbSomar.TabIndex = 7;
+            this.rbSomar.TabIndex = 8;
             this.rbSomar.TabStop = true;
             this.rbSomar.Text = "Somar";
             this.rbSomar.UseVisualStyleBackColor = false;
@@ -162,7 +176,7 @@
             this.rbSubtrair.Location = new System.Drawing.Point(424, 372);
             this.rbSubtrair.Name = "rbSubtrair";
             this.rbSubtrair.Size = new System.Drawing.Size(76, 20);
-            this.rbSubtrair.TabIndex = 8;
+            this.rbSubtrair.TabIndex = 9;
             this.rbSubtrair.TabStop = true;
             this.rbSubtrair.Text = "Subtrair";
             this.rbSubtrair.UseVisualStyleBackColor = false;
@@ -175,7 +189,7 @@
             this.rbMultiplicar.Location = new System.Drawing.Point(550, 372);
             this.rbMultiplicar.Name = "rbMultiplicar";
             this.rbMultiplicar.Size = new System.Drawing.Size(92, 20);
-            this.rbMultiplicar.TabIndex = 9;
+            this.rbMultiplicar.TabIndex = 10;
             this.rbMultiplicar.TabStop = true;
             this.rbMultiplicar.Text = "Multiplicar";
             this.rbMultiplicar.UseVisualStyleBackColor = false;
@@ -188,7 +202,7 @@
             this.rbDividir.Location = new System.Drawing.Point(686, 372);
             this.rbDividir.Name = "rbDividir";
             this.rbDividir.Size = new System.Drawing.Size(66, 20);
-            this.rbDividir.TabIndex = 10;
+            this.rbDividir.TabIndex = 11;
             this.rbDividir.TabStop = true;
             this.rbDividir.Text = "Dividir";
             this.rbDividir.UseVisualStyleBackColor = false;
@@ -200,9 +214,60 @@
             this.btnCalcularTarefaProdutoServico.Location = new System.Drawing.Point(307, 415);
             this.btnCalcularTarefaProdutoServico.Name = "btnCalcularTarefaProdutoServico";
             this.btnCalcularTarefaProdutoServico.Size = new System.Drawing.Size(445, 23);
-            this.btnCalcularTarefaProdutoServico.TabIndex = 11;
+            this.btnCalcularTarefaProdutoServico.TabIndex = 12;
             this.btnCalcularTarefaProdutoServico.Text = "Calcular";
             this.btnCalcularTarefaProdutoServico.UseVisualStyleBackColor = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(18, 41);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(207, 32);
+            this.textBox1.TabIndex = 0;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(18, 119);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(207, 32);
+            this.textBox2.TabIndex = 1;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(18, 204);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(207, 32);
+            this.textBox3.TabIndex = 2;
+            // 
+            // lblCadastro
+            // 
+            this.lblCadastro.AutoSize = true;
+            this.lblCadastro.Location = new System.Drawing.Point(18, 29);
+            this.lblCadastro.Name = "lblCadastro";
+            this.lblCadastro.Size = new System.Drawing.Size(51, 14);
+            this.lblCadastro.TabIndex = 3;
+            this.lblCadastro.Text = "Cadastro";
+            // 
+            // lblProduto
+            // 
+            this.lblProduto.AutoSize = true;
+            this.lblProduto.Location = new System.Drawing.Point(21, 106);
+            this.lblProduto.Name = "lblProduto";
+            this.lblProduto.Size = new System.Drawing.Size(44, 14);
+            this.lblProduto.TabIndex = 4;
+            this.lblProduto.Text = "Produto";
+            // 
+            // lblServiços
+            // 
+            this.lblServiços.AutoSize = true;
+            this.lblServiços.Location = new System.Drawing.Point(21, 187);
+            this.lblServiços.Name = "lblServiços";
+            this.lblServiços.Size = new System.Drawing.Size(50, 14);
+            this.lblServiços.TabIndex = 5;
+            this.lblServiços.Text = "Serviços";
             // 
             // frmTarefasProdutosServicos
             // 
@@ -222,8 +287,11 @@
             this.Controls.Add(this.gbBuscaTarefaProdutoSevico);
             this.Controls.Add(this.gbResultado);
             this.Controls.Add(this.gbTarefaProdutoServico);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmTarefasProdutosServicos";
             this.Text = " Casa Fernandes Tarefa Produtos e Serviços";
+            this.gbTarefaProdutoServico.ResumeLayout(false);
+            this.gbTarefaProdutoServico.PerformLayout();
             this.gbBuscaTarefaProdutoSevico.ResumeLayout(false);
             this.gbBuscaTarefaProdutoSevico.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTarefaProdutoServico)).EndInit();
@@ -248,5 +316,11 @@
         private System.Windows.Forms.RadioButton rbMultiplicar;
         private System.Windows.Forms.RadioButton rbDividir;
         private System.Windows.Forms.Button btnCalcularTarefaProdutoServico;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblServiços;
+        private System.Windows.Forms.Label lblProduto;
+        private System.Windows.Forms.Label lblCadastro;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }

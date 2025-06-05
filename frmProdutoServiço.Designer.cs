@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProdutoServiço));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnDados = new System.Windows.Forms.Button();
             this.btnTarefas = new System.Windows.Forms.Button();
@@ -118,6 +119,7 @@
             this.Controls.Add(this.lblProdutoServiço);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmProdutoServiço";
             this.Text = "Casa Fernandes - Produtos e Serviços";
             this.tableLayoutPanel1.ResumeLayout(false);

@@ -88,7 +88,7 @@
             this.txtUsuario.Location = new System.Drawing.Point(7, 91);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(324, 26);
-            this.txtUsuario.TabIndex = 4;
+            this.txtUsuario.TabIndex = 0;
             // 
             // lblSenha
             // 
@@ -105,7 +105,7 @@
             this.txtSenha.Location = new System.Drawing.Point(6, 141);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(325, 26);
-            this.txtSenha.TabIndex = 2;
+            this.txtSenha.TabIndex = 1;
             // 
             // lblSetor
             // 
@@ -130,7 +130,7 @@
             this.cbSetor.Location = new System.Drawing.Point(6, 191);
             this.cbSetor.Name = "cbSetor";
             this.cbSetor.Size = new System.Drawing.Size(325, 26);
-            this.cbSetor.TabIndex = 0;
+            this.cbSetor.TabIndex = 2;
             // 
             // btnEntrar
             // 
@@ -140,7 +140,7 @@
             this.btnEntrar.Location = new System.Drawing.Point(403, 259);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(90, 31);
-            this.btnEntrar.TabIndex = 2;
+            this.btnEntrar.TabIndex = 4;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = false;
             this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
@@ -153,7 +153,7 @@
             this.btnSair.Location = new System.Drawing.Point(529, 259);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(84, 31);
-            this.btnSair.TabIndex = 3;
+            this.btnSair.TabIndex = 5;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = false;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
@@ -166,7 +166,7 @@
             this.btnCadastro.Location = new System.Drawing.Point(279, 259);
             this.btnCadastro.Name = "btnCadastro";
             this.btnCadastro.Size = new System.Drawing.Size(91, 31);
-            this.btnCadastro.TabIndex = 4;
+            this.btnCadastro.TabIndex = 3;
             this.btnCadastro.Text = "Cadastro";
             this.btnCadastro.UseVisualStyleBackColor = false;
             this.btnCadastro.Click += new System.EventHandler(this.btnCadastrar_Click);

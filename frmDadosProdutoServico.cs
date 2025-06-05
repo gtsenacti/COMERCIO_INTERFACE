@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace appComercio
 {
-    public partial class dgvDadosProdutoServico : Form
+    public partial class frmDadosProdutoServico : Form
     {
-        public dgvDadosProdutoServico()
+        public frmDadosProdutoServico()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace appComercio
 {
-    partial class dgvDadosProdutoServico
+    partial class frmDadosProdutoServico
     {
         /// <summary>
         /// Required designer variable.

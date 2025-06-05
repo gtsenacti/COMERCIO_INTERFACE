@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.gbCadastroUsuario = new System.Windows.Forms.GroupBox();
+            this.lblSetor = new System.Windows.Forms.Label();
+            this.lblSenha = new System.Windows.Forms.Label();
+            this.lblCadastro = new System.Windows.Forms.Label();
             this.ckbAtivo = new System.Windows.Forms.CheckBox();
             this.cbCadastroSetor = new System.Windows.Forms.ComboBox();
             this.txtCadastroSenha = new System.Windows.Forms.TextBox();
@@ -40,9 +43,6 @@
             this.btnEditarCadastroUsuario = new System.Windows.Forms.Button();
             this.btnApagarCadastroUsuario = new System.Windows.Forms.Button();
             this.dgvCadastroUsuario = new System.Windows.Forms.DataGridView();
-            this.lblCadastro = new System.Windows.Forms.Label();
-            this.lblSenha = new System.Windows.Forms.Label();
-            this.lblSetor = new System.Windows.Forms.Label();
             this.gbCadastroUsuario.SuspendLayout();
             this.gbBuscarUsuario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCadastroUsuario)).BeginInit();
@@ -65,6 +65,36 @@
             this.gbCadastroUsuario.TabIndex = 0;
             this.gbCadastroUsuario.TabStop = false;
             this.gbCadastroUsuario.Text = "Cadastro do Usuário:";
+            // 
+            // lblSetor
+            // 
+            this.lblSetor.AutoSize = true;
+            this.lblSetor.Font = new System.Drawing.Font("Arial", 10F);
+            this.lblSetor.Location = new System.Drawing.Point(25, 126);
+            this.lblSetor.Name = "lblSetor";
+            this.lblSetor.Size = new System.Drawing.Size(41, 16);
+            this.lblSetor.TabIndex = 6;
+            this.lblSetor.Text = "Setor";
+            // 
+            // lblSenha
+            // 
+            this.lblSenha.AutoSize = true;
+            this.lblSenha.Font = new System.Drawing.Font("Arial", 10F);
+            this.lblSenha.Location = new System.Drawing.Point(23, 75);
+            this.lblSenha.Name = "lblSenha";
+            this.lblSenha.Size = new System.Drawing.Size(48, 16);
+            this.lblSenha.TabIndex = 5;
+            this.lblSenha.Text = "Senha";
+            // 
+            // lblCadastro
+            // 
+            this.lblCadastro.AutoSize = true;
+            this.lblCadastro.Font = new System.Drawing.Font("Arial", 10F);
+            this.lblCadastro.Location = new System.Drawing.Point(23, 25);
+            this.lblCadastro.Name = "lblCadastro";
+            this.lblCadastro.Size = new System.Drawing.Size(65, 16);
+            this.lblCadastro.TabIndex = 4;
+            this.lblCadastro.Text = "Cadastro";
             // 
             // ckbAtivo
             // 
@@ -97,6 +127,8 @@
             this.txtCadastroSenha.Name = "txtCadastroSenha";
             this.txtCadastroSenha.Size = new System.Drawing.Size(221, 23);
             this.txtCadastroSenha.TabIndex = 1;
+            this.txtCadastroSenha.Text = "dd";
+            this.txtCadastroSenha.TextChanged += new System.EventHandler(this.txtCadastroSenha_TextChanged);
             // 
             // txtCadastroUsuario
             // 
@@ -105,6 +137,7 @@
             this.txtCadastroUsuario.Name = "txtCadastroUsuario";
             this.txtCadastroUsuario.Size = new System.Drawing.Size(221, 23);
             this.txtCadastroUsuario.TabIndex = 0;
+            this.txtCadastroUsuario.Text = "d";
             this.txtCadastroUsuario.TextChanged += new System.EventHandler(this.txtCadastroUsuario_TextChanged);
             // 
             // gbBuscarUsuario
@@ -178,36 +211,6 @@
             this.dgvCadastroUsuario.Name = "dgvCadastroUsuario";
             this.dgvCadastroUsuario.Size = new System.Drawing.Size(489, 436);
             this.dgvCadastroUsuario.TabIndex = 5;
-            // 
-            // lblCadastro
-            // 
-            this.lblCadastro.AutoSize = true;
-            this.lblCadastro.Font = new System.Drawing.Font("Arial", 10F);
-            this.lblCadastro.Location = new System.Drawing.Point(23, 25);
-            this.lblCadastro.Name = "lblCadastro";
-            this.lblCadastro.Size = new System.Drawing.Size(65, 16);
-            this.lblCadastro.TabIndex = 4;
-            this.lblCadastro.Text = "Cadastro";
-            // 
-            // lblSenha
-            // 
-            this.lblSenha.AutoSize = true;
-            this.lblSenha.Font = new System.Drawing.Font("Arial", 10F);
-            this.lblSenha.Location = new System.Drawing.Point(23, 75);
-            this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(48, 16);
-            this.lblSenha.TabIndex = 5;
-            this.lblSenha.Text = "Senha";
-            // 
-            // lblSetor
-            // 
-            this.lblSetor.AutoSize = true;
-            this.lblSetor.Font = new System.Drawing.Font("Arial", 10F);
-            this.lblSetor.Location = new System.Drawing.Point(25, 126);
-            this.lblSetor.Name = "lblSetor";
-            this.lblSetor.Size = new System.Drawing.Size(41, 16);
-            this.lblSetor.TabIndex = 6;
-            this.lblSetor.Text = "Setor";
             // 
             // frmCadastroUsuario
             // 

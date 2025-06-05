@@ -21,5 +21,10 @@ namespace appComercio
         {
 
         }
+
+        private void txtCadastroSenha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -26,5 +26,23 @@ namespace appComercio
         {
 
         }
+
+        private void btnCadastroProdutoServico_Click(object sender, EventArgs e)
+        {
+            frmCadastroProdutoServico CaProSer = new frmCadastroProdutoServico();
+            CaProSer.ShowDialog();
+        }
+
+        private void btnDadosProdutosSevico_Click(object sender, EventArgs e)
+        {
+            frmDadosProdutoServico DaProSer = new frmDadosProdutoServico();
+            DaProSer.ShowDialog();
+        }
+
+        private void btnTarefaProdutoServico_Click(object sender, EventArgs e)
+        {
+            frmTarefasProdutosServicos TaProSer = new frmTarefasProdutosServicos();
+            TaProSer.ShowDialog();
+        }
     }
 }

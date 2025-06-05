@@ -31,7 +31,7 @@
             this.lblProdutoServicos = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnCadastroProdutoServico = new System.Windows.Forms.Button();
-            this.btnDadosProdutosSevico = new System.Windows.Forms.Button();
+            this.btnDadosProdutosServicos = new System.Windows.Forms.Button();
             this.btnTarefaProdutoServico = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -54,7 +54,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableLayoutPanel1.Controls.Add(this.btnCadastroProdutoServico, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnDadosProdutosSevico, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnDadosProdutosServicos, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnTarefaProdutoServico, 2, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(64, 198);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -77,19 +77,21 @@
             this.btnCadastroProdutoServico.TabIndex = 0;
             this.btnCadastroProdutoServico.Text = "Cadastro";
             this.btnCadastroProdutoServico.UseVisualStyleBackColor = true;
+            this.btnCadastroProdutoServico.Click += new System.EventHandler(this.btnCadastroProdutoServico_Click);
             // 
-            // btnDadosProdutosSevico
+            // btnDadosProdutosServicos
             // 
-            this.btnDadosProdutosSevico.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnDadosProdutosServicos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDadosProdutosSevico.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDadosProdutosSevico.Location = new System.Drawing.Point(226, 4);
-            this.btnDadosProdutosSevico.Name = "btnDadosProdutosSevico";
-            this.btnDadosProdutosSevico.Size = new System.Drawing.Size(215, 97);
-            this.btnDadosProdutosSevico.TabIndex = 1;
-            this.btnDadosProdutosSevico.Text = "Dados";
-            this.btnDadosProdutosSevico.UseVisualStyleBackColor = true;
+            this.btnDadosProdutosServicos.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDadosProdutosServicos.Location = new System.Drawing.Point(226, 4);
+            this.btnDadosProdutosServicos.Name = "btnDadosProdutosServicos";
+            this.btnDadosProdutosServicos.Size = new System.Drawing.Size(215, 97);
+            this.btnDadosProdutosServicos.TabIndex = 1;
+            this.btnDadosProdutosServicos.Text = "Dados";
+            this.btnDadosProdutosServicos.UseVisualStyleBackColor = true;
+            this.btnDadosProdutosServicos.Click += new System.EventHandler(this.btnDadosProdutosSevico_Click);
             // 
             // btnTarefaProdutoServico
             // 
@@ -103,6 +105,7 @@
             this.btnTarefaProdutoServico.TabIndex = 2;
             this.btnTarefaProdutoServico.Text = "Tarefas";
             this.btnTarefaProdutoServico.UseVisualStyleBackColor = true;
+            this.btnTarefaProdutoServico.Click += new System.EventHandler(this.btnTarefaProdutoServico_Click);
             // 
             // frmProdutosServicos
             // 
@@ -125,7 +128,7 @@
         private System.Windows.Forms.Label lblProdutoServicos;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button btnCadastroProdutoServico;
-        private System.Windows.Forms.Button btnDadosProdutosSevico;
+        private System.Windows.Forms.Button btnDadosProdutosServicos;
         private System.Windows.Forms.Button btnTarefaProdutoServico;
     }
 }

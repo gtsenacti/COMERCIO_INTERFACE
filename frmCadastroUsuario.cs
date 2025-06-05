@@ -12,6 +12,9 @@ namespace appComercio
 {
     public partial class frmCadastroUsuario : Form
     {
+        public string email;
+        public string cidade;
+
         public frmCadastroUsuario()
         {
             InitializeComponent();
@@ -24,37 +27,27 @@ namespace appComercio
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtEmail.Text == "sla") //Percorrer pelo banco e procurar se o dado já está cadastrado
+            if (txtEmail.Text == "" || txtCidade.Text == "")
             {
-                MessageBox.Show("Esse usuário já está cadastrado, faça o login");
+                MessageBox.Show("Campo vazio. Nenhum dado foi cadastrado");
             }
-            else
-            {
-                //adicionar o usuário no db
-                //Adicionar o nome usuário no gb usuario
+            else {
+                if (txtEmail.Text == "sla") //Percorrer pelo banco e procurar se o dado já está cadastrado
+                {
+                    MessageBox.Show("Esse usuário já está cadastrado, faça o login");
+                }else
+                {
+                    email = txtEmail.Text;
+                    cidade = txtCidade.Text;
+                    //adicionar o usuário no db
+                    //Adicionar o usuário no dgv usuario
+                }
             }
         }
 
         private void frmCadastro_Load(object sender, EventArgs e)
         {
             
-        }
-
-        private void linkLabelLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            frmLogin frmLU = new frmLogin();
-            this.Visible = false;
-            frmLU.Show();
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void linklblVoltar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -70,6 +63,21 @@ namespace appComercio
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dgvUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
         {
 
         }

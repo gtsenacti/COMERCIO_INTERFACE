@@ -12,22 +12,15 @@ namespace appComercio
 {
     public partial class frmReservas : Form
     {
+        public string livro;
+        public string usuario;
+        public string editora;
         public frmReservas()
         {
             InitializeComponent();
         }
 
         private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnExcluir_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gbBtn_Enter(object sender, EventArgs e)
         {
 
         }
@@ -40,6 +33,35 @@ namespace appComercio
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnUsuario_Click(object sender, EventArgs e)
+        {
+            if (txtUsuario.Text == "" || txtLivro.Text == "" || dtReserva.Text == "")
+            {
+                MessageBox.Show("Campo vazio. Nenhum dado foi cadastrado");
+            }
+
+            livro = txtLivro.Text;
+            editora = cbEditora.Text;
+            usuario = txtUsuario.Text;
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //Incluir data atual 
+            DateTime d = DateTime.Now;
+            Console.WriteLine(d);
+        }
+
+        private void tableLayoutPanel4_Paint(object sender, PaintEventArgs e)
         {
 
         }

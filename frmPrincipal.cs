@@ -54,5 +54,12 @@ namespace appComercio
         {
 
         }
+
+        private void linkLblLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmLogin frmL = new frmLogin();
+            this.Visible = false;
+            frmL.Show();
+        }
     }
 }

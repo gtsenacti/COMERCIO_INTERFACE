@@ -13,3 +13,4 @@ C:\Users\992714\OneDrive\Documentos\GitHub\COMERCIO_INTERFACE\obj\Debug\appComer
 C:\Users\992714\OneDrive\Documentos\GitHub\COMERCIO_INTERFACE\obj\Debug\appComercio.csproj.CoreCompileInputs.cache
 C:\Users\992714\OneDrive\Documentos\GitHub\COMERCIO_INTERFACE\obj\Debug\appComercio.exe
 C:\Users\992714\OneDrive\Documentos\GitHub\COMERCIO_INTERFACE\obj\Debug\appComercio.pdb
+C:\Users\992714\OneDrive\Documentos\GitHub\COMERCIO_INTERFACE\obj\Debug\appComercio.exe.config

@@ -35,14 +35,14 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.gbCadastroReservas = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.lblDataReserva = new System.Windows.Forms.Label();
+            this.dtReserva = new System.Windows.Forms.DateTimePicker();
             this.cbEditora = new System.Windows.Forms.ComboBox();
             this.lblEditora = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.txtLivro = new System.Windows.Forms.TextBox();
             this.lblLivro = new System.Windows.Forms.Label();
-            this.lblDate = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.gbReservas = new System.Windows.Forms.GroupBox();
             this.dgvUsuarios = new System.Windows.Forms.DataGridView();
@@ -135,14 +135,14 @@
             this.gbCadastroReservas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gbCadastroReservas.Controls.Add(this.dateTimePicker1);
+            this.gbCadastroReservas.Controls.Add(this.lblDataReserva);
+            this.gbCadastroReservas.Controls.Add(this.dtReserva);
             this.gbCadastroReservas.Controls.Add(this.cbEditora);
             this.gbCadastroReservas.Controls.Add(this.lblEditora);
             this.gbCadastroReservas.Controls.Add(this.txtUsuario);
             this.gbCadastroReservas.Controls.Add(this.lblUsuario);
             this.gbCadastroReservas.Controls.Add(this.txtLivro);
             this.gbCadastroReservas.Controls.Add(this.lblLivro);
-            this.gbCadastroReservas.Controls.Add(this.lblDate);
             this.gbCadastroReservas.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbCadastroReservas.Location = new System.Drawing.Point(48, 3);
             this.gbCadastroReservas.Name = "gbCadastroReservas";
@@ -151,17 +151,29 @@
             this.gbCadastroReservas.TabStop = false;
             this.gbCadastroReservas.Text = "Cadastro Reservas";
             // 
-            // dateTimePicker1
+            // lblDataReserva
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(62, 347);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(647, 26);
-            this.dateTimePicker1.TabIndex = 1;
+            this.lblDataReserva.AutoSize = true;
+            this.lblDataReserva.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDataReserva.Location = new System.Drawing.Point(58, 319);
+            this.lblDataReserva.Name = "lblDataReserva";
+            this.lblDataReserva.Size = new System.Drawing.Size(177, 19);
+            this.lblDataReserva.TabIndex = 9;
+            this.lblDataReserva.Text = "Data de encerramento";
+            this.lblDataReserva.Click += new System.EventHandler(this.label1_Click_1);
+            // 
+            // dtReserva
+            // 
+            this.dtReserva.Location = new System.Drawing.Point(58, 352);
+            this.dtReserva.Name = "dtReserva";
+            this.dtReserva.Size = new System.Drawing.Size(647, 26);
+            this.dtReserva.TabIndex = 8;
+            this.dtReserva.Value = new System.DateTime(2025, 6, 5, 20, 4, 16, 0);
             // 
             // cbEditora
             // 
             this.cbEditora.FormattingEnabled = true;
-            this.cbEditora.Location = new System.Drawing.Point(62, 274);
+            this.cbEditora.Location = new System.Drawing.Point(58, 263);
             this.cbEditora.Name = "cbEditora";
             this.cbEditora.Size = new System.Drawing.Size(647, 26);
             this.cbEditora.TabIndex = 7;
@@ -170,7 +182,7 @@
             // 
             this.lblEditora.AutoSize = true;
             this.lblEditora.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEditora.Location = new System.Drawing.Point(58, 242);
+            this.lblEditora.Location = new System.Drawing.Point(54, 231);
             this.lblEditora.Name = "lblEditora";
             this.lblEditora.Size = new System.Drawing.Size(64, 19);
             this.lblEditora.TabIndex = 6;
@@ -179,7 +191,7 @@
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(62, 202);
+            this.txtUsuario.Location = new System.Drawing.Point(58, 191);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(647, 26);
             this.txtUsuario.TabIndex = 5;
@@ -188,7 +200,7 @@
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(58, 170);
+            this.lblUsuario.Location = new System.Drawing.Point(54, 159);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(69, 19);
             this.lblUsuario.TabIndex = 4;
@@ -196,7 +208,7 @@
             // 
             // txtLivro
             // 
-            this.txtLivro.Location = new System.Drawing.Point(62, 130);
+            this.txtLivro.Location = new System.Drawing.Point(58, 119);
             this.txtLivro.Name = "txtLivro";
             this.txtLivro.Size = new System.Drawing.Size(647, 26);
             this.txtLivro.TabIndex = 3;
@@ -205,21 +217,11 @@
             // 
             this.lblLivro.AutoSize = true;
             this.lblLivro.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLivro.Location = new System.Drawing.Point(58, 96);
+            this.lblLivro.Location = new System.Drawing.Point(54, 85);
             this.lblLivro.Name = "lblLivro";
             this.lblLivro.Size = new System.Drawing.Size(48, 19);
             this.lblLivro.TabIndex = 2;
             this.lblLivro.Text = "Livro";
-            // 
-            // lblDate
-            // 
-            this.lblDate.AutoSize = true;
-            this.lblDate.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Location = new System.Drawing.Point(58, 314);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(44, 19);
-            this.lblDate.TabIndex = 1;
-            this.lblDate.Text = "Data";
             // 
             // tableLayoutPanel5
             // 
@@ -262,6 +264,7 @@
             this.dgvUsuarios.Name = "dgvUsuarios";
             this.dgvUsuarios.Size = new System.Drawing.Size(767, 491);
             this.dgvUsuarios.TabIndex = 0;
+            this.dgvUsuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsuarios_CellContentClick);
             // 
             // tableLayoutPanel4
             // 
@@ -282,6 +285,7 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(917, 126);
             this.tableLayoutPanel4.TabIndex = 14;
+            this.tableLayoutPanel4.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel4_Paint);
             // 
             // btnUsuario
             // 
@@ -298,6 +302,7 @@
             this.btnUsuario.TabIndex = 3;
             this.btnUsuario.Text = "Cadastrar";
             this.btnUsuario.UseVisualStyleBackColor = false;
+            this.btnUsuario.Click += new System.EventHandler(this.btnUsuario_Click);
             // 
             // btnSalvar
             // 
@@ -395,14 +400,12 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.LinkLabel linklblVoltar;
         private System.Windows.Forms.GroupBox gbCadastroReservas;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ComboBox cbEditora;
         private System.Windows.Forms.Label lblEditora;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.TextBox txtLivro;
         private System.Windows.Forms.Label lblLivro;
-        private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnModificar;
@@ -413,5 +416,7 @@
         private System.Windows.Forms.GroupBox gbReservas;
         private System.Windows.Forms.DataGridView dgvUsuarios;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private System.Windows.Forms.Label lblDataReserva;
+        private System.Windows.Forms.DateTimePicker dtReserva;
     }
 }

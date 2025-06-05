@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace appComercio
 {
@@ -49,6 +50,26 @@ namespace appComercio
             frmPrincipal frmP = new frmPrincipal();
             frmP.Show();
             this.Close();
+        }
+
+        private void btnUsuario_Click(object sender, EventArgs e)
+        {
+            if (txtTitulo.Text == "" || txtISBN.Text == "" || txtGenero.Text=="")
+            {
+                MessageBox.Show("Campo vazio. Nenhum dado foi cadastrado");
+            }
+            else
+            {
+                if (txtISBN.Text == "sla") //Percorrer pelo banco e procurar se o dado já está cadastrado
+                {
+                    MessageBox.Show("Esse livro já está cadastrado.");
+                }
+                else
+                {
+                    //adicionar o usuário no db
+                    //Adicionar o usuário no dgv usuario
+                }
+            }
         }
     }
 }

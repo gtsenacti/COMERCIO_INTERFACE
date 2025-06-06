@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroUsuario));
             this.gbCadastroUsuario = new System.Windows.Forms.GroupBox();
+            this.txtCadastroSetor = new System.Windows.Forms.TextBox();
             this.lblCadastroSetor = new System.Windows.Forms.Label();
             this.lblCadastroSenha = new System.Windows.Forms.Label();
             this.lblCadastroUsuario = new System.Windows.Forms.Label();
@@ -45,7 +46,6 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.btnApagarCadastroUsuario = new System.Windows.Forms.Button();
-            this.txtCadastroSetor = new System.Windows.Forms.TextBox();
             this.gbCadastroUsuario.SuspendLayout();
             this.gbBuscaUsuario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -69,6 +69,14 @@
             this.gbCadastroUsuario.TabIndex = 0;
             this.gbCadastroUsuario.TabStop = false;
             this.gbCadastroUsuario.Text = "Cadastro Usuário";
+            // 
+            // txtCadastroSetor
+            // 
+            this.txtCadastroSetor.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCadastroSetor.Location = new System.Drawing.Point(25, 151);
+            this.txtCadastroSetor.Name = "txtCadastroSetor";
+            this.txtCadastroSetor.Size = new System.Drawing.Size(255, 29);
+            this.txtCadastroSetor.TabIndex = 2;
             // 
             // lblCadastroSetor
             // 
@@ -116,7 +124,7 @@
             this.ckbAtivo.Location = new System.Drawing.Point(25, 193);
             this.ckbAtivo.Name = "ckbAtivo";
             this.ckbAtivo.Size = new System.Drawing.Size(54, 20);
-            this.ckbAtivo.TabIndex = 4;
+            this.ckbAtivo.TabIndex = 3;
             this.ckbAtivo.Text = "Ativo";
             this.ckbAtivo.UseVisualStyleBackColor = true;
             // 
@@ -156,7 +164,7 @@
             this.btnBuscaUsuario.Location = new System.Drawing.Point(203, 28);
             this.btnBuscaUsuario.Name = "btnBuscaUsuario";
             this.btnBuscaUsuario.Size = new System.Drawing.Size(77, 29);
-            this.btnBuscaUsuario.TabIndex = 6;
+            this.btnBuscaUsuario.TabIndex = 5;
             this.btnBuscaUsuario.Text = "Buscar";
             this.btnBuscaUsuario.UseVisualStyleBackColor = false;
             // 
@@ -166,7 +174,7 @@
             this.txtBuscaUsuario.Location = new System.Drawing.Point(6, 28);
             this.txtBuscaUsuario.Name = "txtBuscaUsuario";
             this.txtBuscaUsuario.Size = new System.Drawing.Size(181, 29);
-            this.txtBuscaUsuario.TabIndex = 5;
+            this.txtBuscaUsuario.TabIndex = 4;
             // 
             // btnSalvarCadastroUsuario
             // 
@@ -176,7 +184,7 @@
             this.btnSalvarCadastroUsuario.Location = new System.Drawing.Point(12, 360);
             this.btnSalvarCadastroUsuario.Name = "btnSalvarCadastroUsuario";
             this.btnSalvarCadastroUsuario.Size = new System.Drawing.Size(79, 33);
-            this.btnSalvarCadastroUsuario.TabIndex = 7;
+            this.btnSalvarCadastroUsuario.TabIndex = 6;
             this.btnSalvarCadastroUsuario.Text = "Salvar";
             this.btnSalvarCadastroUsuario.UseVisualStyleBackColor = false;
             // 
@@ -188,7 +196,7 @@
             this.btnEditarCadastroUsuario.Location = new System.Drawing.Point(120, 360);
             this.btnEditarCadastroUsuario.Name = "btnEditarCadastroUsuario";
             this.btnEditarCadastroUsuario.Size = new System.Drawing.Size(79, 32);
-            this.btnEditarCadastroUsuario.TabIndex = 8;
+            this.btnEditarCadastroUsuario.TabIndex = 7;
             this.btnEditarCadastroUsuario.Text = "Editar";
             this.btnEditarCadastroUsuario.UseVisualStyleBackColor = false;
             // 
@@ -199,7 +207,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(336, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(443, 413);
-            this.dataGridView1.TabIndex = 10;
+            this.dataGridView1.TabIndex = 9;
             // 
             // lblUsuario
             // 
@@ -218,17 +226,9 @@
             this.btnApagarCadastroUsuario.Location = new System.Drawing.Point(217, 361);
             this.btnApagarCadastroUsuario.Name = "btnApagarCadastroUsuario";
             this.btnApagarCadastroUsuario.Size = new System.Drawing.Size(91, 32);
-            this.btnApagarCadastroUsuario.TabIndex = 9;
+            this.btnApagarCadastroUsuario.TabIndex = 8;
             this.btnApagarCadastroUsuario.Text = "Apagar";
             this.btnApagarCadastroUsuario.UseVisualStyleBackColor = false;
-            // 
-            // txtCadastroSetor
-            // 
-            this.txtCadastroSetor.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCadastroSetor.Location = new System.Drawing.Point(25, 151);
-            this.txtCadastroSetor.Name = "txtCadastroSetor";
-            this.txtCadastroSetor.Size = new System.Drawing.Size(255, 29);
-            this.txtCadastroSetor.TabIndex = 9;
             // 
             // frmCadastroUsuario
             // 
@@ -244,6 +244,7 @@
             this.Controls.Add(this.gbBuscaUsuario);
             this.Controls.Add(this.gbCadastroUsuario);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCadastroUsuario";
             this.Text = "Casa Fernandes - Tela de Cadastro de Usuários";

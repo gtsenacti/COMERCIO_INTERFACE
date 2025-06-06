@@ -37,12 +37,12 @@
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.gbCadastroProdutoServiço = new System.Windows.Forms.GroupBox();
-            this.txtCadastro = new System.Windows.Forms.TextBox();
-            this.txtProduto = new System.Windows.Forms.TextBox();
-            this.txtServiços = new System.Windows.Forms.TextBox();
-            this.lblCadastro = new System.Windows.Forms.Label();
-            this.lblProduto = new System.Windows.Forms.Label();
             this.lblServiços = new System.Windows.Forms.Label();
+            this.lblProduto = new System.Windows.Forms.Label();
+            this.lblCadastro = new System.Windows.Forms.Label();
+            this.txtServiços = new System.Windows.Forms.TextBox();
+            this.txtProduto = new System.Windows.Forms.TextBox();
+            this.txtCadastro = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCadastroProdutoServico)).BeginInit();
             this.gbBuscaCadastroProdutoServiços.SuspendLayout();
             this.gbCadastroProdutoServiço.SuspendLayout();
@@ -55,7 +55,7 @@
             this.dgvCadastroProdutoServico.Location = new System.Drawing.Point(336, 12);
             this.dgvCadastroProdutoServico.Name = "dgvCadastroProdutoServico";
             this.dgvCadastroProdutoServico.Size = new System.Drawing.Size(452, 426);
-            this.dgvCadastroProdutoServico.TabIndex = 6;
+            this.dgvCadastroProdutoServico.TabIndex = 8;
             // 
             // gbBuscaCadastroProdutoServiços
             // 
@@ -77,7 +77,7 @@
             this.btnBusca.Location = new System.Drawing.Point(212, 25);
             this.btnBusca.Name = "btnBusca";
             this.btnBusca.Size = new System.Drawing.Size(75, 29);
-            this.btnBusca.TabIndex = 2;
+            this.btnBusca.TabIndex = 4;
             this.btnBusca.Text = "Busca";
             this.btnBusca.UseVisualStyleBackColor = false;
             // 
@@ -87,38 +87,41 @@
             this.txtBuscaCadastroServico.Location = new System.Drawing.Point(9, 28);
             this.txtBuscaCadastroServico.Name = "txtBuscaCadastroServico";
             this.txtBuscaCadastroServico.Size = new System.Drawing.Size(174, 26);
-            this.txtBuscaCadastroServico.TabIndex = 1;
+            this.txtBuscaCadastroServico.TabIndex = 3;
             // 
             // btnApagar
             // 
             this.btnApagar.BackColor = System.Drawing.Color.Tomato;
+            this.btnApagar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnApagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnApagar.Location = new System.Drawing.Point(242, 381);
             this.btnApagar.Name = "btnApagar";
             this.btnApagar.Size = new System.Drawing.Size(75, 35);
-            this.btnApagar.TabIndex = 5;
+            this.btnApagar.TabIndex = 7;
             this.btnApagar.Text = "Apagar";
             this.btnApagar.UseVisualStyleBackColor = false;
             // 
             // btnEditar
             // 
             this.btnEditar.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.Location = new System.Drawing.Point(133, 381);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(75, 35);
-            this.btnEditar.TabIndex = 4;
+            this.btnEditar.TabIndex = 6;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = false;
             // 
             // btnSalvar
             // 
             this.btnSalvar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.Location = new System.Drawing.Point(21, 381);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 35);
-            this.btnSalvar.TabIndex = 3;
+            this.btnSalvar.TabIndex = 5;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = false;
             // 
@@ -138,39 +141,15 @@
             this.gbCadastroProdutoServiço.TabStop = false;
             this.gbCadastroProdutoServiço.Text = "Cadastro-Produtos/Serviços";
             // 
-            // txtCadastro
+            // lblServiços
             // 
-            this.txtCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCadastro.Location = new System.Drawing.Point(9, 30);
-            this.txtCadastro.Name = "txtCadastro";
-            this.txtCadastro.Size = new System.Drawing.Size(290, 31);
-            this.txtCadastro.TabIndex = 0;
-            // 
-            // txtProduto
-            // 
-            this.txtProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProduto.Location = new System.Drawing.Point(9, 114);
-            this.txtProduto.Name = "txtProduto";
-            this.txtProduto.Size = new System.Drawing.Size(290, 31);
-            this.txtProduto.TabIndex = 1;
-            // 
-            // txtServiços
-            // 
-            this.txtServiços.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtServiços.Location = new System.Drawing.Point(9, 203);
-            this.txtServiços.Name = "txtServiços";
-            this.txtServiços.Size = new System.Drawing.Size(290, 31);
-            this.txtServiços.TabIndex = 2;
-            // 
-            // lblCadastro
-            // 
-            this.lblCadastro.AutoSize = true;
-            this.lblCadastro.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCadastro.Location = new System.Drawing.Point(6, 16);
-            this.lblCadastro.Name = "lblCadastro";
-            this.lblCadastro.Size = new System.Drawing.Size(51, 14);
-            this.lblCadastro.TabIndex = 3;
-            this.lblCadastro.Text = "Cadastro";
+            this.lblServiços.AutoSize = true;
+            this.lblServiços.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblServiços.Location = new System.Drawing.Point(6, 187);
+            this.lblServiços.Name = "lblServiços";
+            this.lblServiços.Size = new System.Drawing.Size(50, 14);
+            this.lblServiços.TabIndex = 5;
+            this.lblServiços.Text = "Serviços";
             // 
             // lblProduto
             // 
@@ -182,15 +161,39 @@
             this.lblProduto.TabIndex = 4;
             this.lblProduto.Text = "Produto";
             // 
-            // lblServiços
+            // lblCadastro
             // 
-            this.lblServiços.AutoSize = true;
-            this.lblServiços.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblServiços.Location = new System.Drawing.Point(6, 187);
-            this.lblServiços.Name = "lblServiços";
-            this.lblServiços.Size = new System.Drawing.Size(50, 14);
-            this.lblServiços.TabIndex = 5;
-            this.lblServiços.Text = "Serviços";
+            this.lblCadastro.AutoSize = true;
+            this.lblCadastro.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCadastro.Location = new System.Drawing.Point(6, 16);
+            this.lblCadastro.Name = "lblCadastro";
+            this.lblCadastro.Size = new System.Drawing.Size(51, 14);
+            this.lblCadastro.TabIndex = 3;
+            this.lblCadastro.Text = "Cadastro";
+            // 
+            // txtServiços
+            // 
+            this.txtServiços.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtServiços.Location = new System.Drawing.Point(9, 203);
+            this.txtServiços.Name = "txtServiços";
+            this.txtServiços.Size = new System.Drawing.Size(290, 31);
+            this.txtServiços.TabIndex = 2;
+            // 
+            // txtProduto
+            // 
+            this.txtProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProduto.Location = new System.Drawing.Point(9, 114);
+            this.txtProduto.Name = "txtProduto";
+            this.txtProduto.Size = new System.Drawing.Size(290, 31);
+            this.txtProduto.TabIndex = 1;
+            // 
+            // txtCadastro
+            // 
+            this.txtCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCadastro.Location = new System.Drawing.Point(9, 30);
+            this.txtCadastro.Name = "txtCadastro";
+            this.txtCadastro.Size = new System.Drawing.Size(290, 31);
+            this.txtCadastro.TabIndex = 0;
             // 
             // frmDadosProdutoServico
             // 

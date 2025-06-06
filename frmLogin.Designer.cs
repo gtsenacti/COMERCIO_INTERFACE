@@ -30,15 +30,15 @@
         {
             this.pbTelaLogin = new System.Windows.Forms.PictureBox();
             this.gbTelaLogin = new System.Windows.Forms.GroupBox();
+            this.lblTituloLogin = new System.Windows.Forms.Label();
+            this.lblUsuario = new System.Windows.Forms.Label();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.lblSenha = new System.Windows.Forms.Label();
+            this.txtSenha = new System.Windows.Forms.TextBox();
+            this.lblSetor = new System.Windows.Forms.Label();
+            this.cbSetor = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.cbSetor = new System.Windows.Forms.ComboBox();
-            this.lblSetor = new System.Windows.Forms.Label();
-            this.txtSenha = new System.Windows.Forms.TextBox();
-            this.lblSenha = new System.Windows.Forms.Label();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.lblUsuario = new System.Windows.Forms.Label();
-            this.lblTituloLogin = new System.Windows.Forms.Label();
             this.btnCadastrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbTelaLogin)).BeginInit();
             this.gbTelaLogin.SuspendLayout();
@@ -46,11 +46,13 @@
             // 
             // pbTelaLogin
             // 
-            this.pbTelaLogin.Location = new System.Drawing.Point(1, 2);
+            this.pbTelaLogin.BackColor = System.Drawing.SystemColors.Control;
+            this.pbTelaLogin.Location = new System.Drawing.Point(1, 12);
             this.pbTelaLogin.Name = "pbTelaLogin";
-            this.pbTelaLogin.Size = new System.Drawing.Size(272, 289);
+            this.pbTelaLogin.Size = new System.Drawing.Size(272, 268);
             this.pbTelaLogin.TabIndex = 0;
             this.pbTelaLogin.TabStop = false;
+            this.pbTelaLogin.Click += new System.EventHandler(this.pbTelaLogin_Click);
             // 
             // gbTelaLogin
             // 
@@ -69,33 +71,60 @@
             this.gbTelaLogin.TabStop = false;
             this.gbTelaLogin.Text = "Dados do usuário";
             // 
-            // button1
+            // lblTituloLogin
             // 
-            this.button1.BackColor = System.Drawing.Color.LimeGreen;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(414, 234);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(129, 46);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Entrar";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = false;
+            this.lblTituloLogin.AutoSize = true;
+            this.lblTituloLogin.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTituloLogin.Location = new System.Drawing.Point(51, 31);
+            this.lblTituloLogin.Name = "lblTituloLogin";
+            this.lblTituloLogin.Size = new System.Drawing.Size(240, 29);
+            this.lblTituloLogin.TabIndex = 6;
+            this.lblTituloLogin.Text = "Sistemas de Gestão";
             // 
-            // button2
+            // lblUsuario
             // 
-            this.button2.BackColor = System.Drawing.Color.LightCoral;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(550, 235);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(66, 45);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Sair";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = false;
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.Location = new System.Drawing.Point(6, 70);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(75, 19);
+            this.lblUsuario.TabIndex = 5;
+            this.lblUsuario.Text = "Usuário:";
+            // 
+            // txtUsuario
+            // 
+            this.txtUsuario.Location = new System.Drawing.Point(7, 91);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(324, 26);
+            this.txtUsuario.TabIndex = 4;
+            this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
+            // 
+            // lblSenha
+            // 
+            this.lblSenha.AutoSize = true;
+            this.lblSenha.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSenha.Location = new System.Drawing.Point(3, 120);
+            this.lblSenha.Name = "lblSenha";
+            this.lblSenha.Size = new System.Drawing.Size(64, 19);
+            this.lblSenha.TabIndex = 3;
+            this.lblSenha.Text = "Senha:";
+            // 
+            // txtSenha
+            // 
+            this.txtSenha.Location = new System.Drawing.Point(6, 141);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.Size = new System.Drawing.Size(325, 26);
+            this.txtSenha.TabIndex = 2;
+            // 
+            // lblSetor
+            // 
+            this.lblSetor.AutoSize = true;
+            this.lblSetor.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSetor.Location = new System.Drawing.Point(3, 170);
+            this.lblSetor.Name = "lblSetor";
+            this.lblSetor.Size = new System.Drawing.Size(56, 19);
+            this.lblSetor.TabIndex = 1;
+            this.lblSetor.Text = "Setor:";
             // 
             // cbSetor
             // 
@@ -112,59 +141,33 @@
             this.cbSetor.Size = new System.Drawing.Size(325, 26);
             this.cbSetor.TabIndex = 0;
             // 
-            // lblSetor
+            // button1
             // 
-            this.lblSetor.AutoSize = true;
-            this.lblSetor.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSetor.Location = new System.Drawing.Point(3, 170);
-            this.lblSetor.Name = "lblSetor";
-            this.lblSetor.Size = new System.Drawing.Size(56, 19);
-            this.lblSetor.TabIndex = 1;
-            this.lblSetor.Text = "Setor:";
+            this.button1.BackColor = System.Drawing.Color.LimeGreen;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(414, 234);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(129, 46);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Entrar        ";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = false;
             // 
-            // txtSenha
+            // button2
             // 
-            this.txtSenha.Location = new System.Drawing.Point(6, 141);
-            this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(325, 26);
-            this.txtSenha.TabIndex = 2;
-            // 
-            // lblSenha
-            // 
-            this.lblSenha.AutoSize = true;
-            this.lblSenha.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSenha.Location = new System.Drawing.Point(3, 120);
-            this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(64, 19);
-            this.lblSenha.TabIndex = 3;
-            this.lblSenha.Text = "Senha:";
-            // 
-            // txtUsuario
-            // 
-            this.txtUsuario.Location = new System.Drawing.Point(7, 91);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(324, 26);
-            this.txtUsuario.TabIndex = 4;
-            // 
-            // lblUsuario
-            // 
-            this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(6, 70);
-            this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(75, 19);
-            this.lblUsuario.TabIndex = 5;
-            this.lblUsuario.Text = "Usuário:";
-            // 
-            // lblTituloLogin
-            // 
-            this.lblTituloLogin.AutoSize = true;
-            this.lblTituloLogin.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTituloLogin.Location = new System.Drawing.Point(51, 31);
-            this.lblTituloLogin.Name = "lblTituloLogin";
-            this.lblTituloLogin.Size = new System.Drawing.Size(240, 29);
-            this.lblTituloLogin.TabIndex = 6;
-            this.lblTituloLogin.Text = "Sistemas de Gestão";
+            this.button2.BackColor = System.Drawing.Color.LightCoral;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(550, 235);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(66, 45);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Sair   ";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // btnCadastrar
             // 
@@ -176,14 +179,16 @@
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(129, 45);
             this.btnCadastrar.TabIndex = 4;
-            this.btnCadastrar.Text = "Cadastro";
+            this.btnCadastrar.Text = "Cadastrar     ";
             this.btnCadastrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(624, 292);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.button2);
@@ -194,6 +199,7 @@
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogin";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbTelaLogin)).EndInit();
             this.gbTelaLogin.ResumeLayout(false);
             this.gbTelaLogin.PerformLayout();

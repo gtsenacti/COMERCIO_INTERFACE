@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>appComercio</RootNamespace>
     <AssemblyName>appComercio</AssemblyName>
-    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -46,16 +47,58 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastro.Designer.cs">
+      <DependentUpon>frmCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadatroProdutoServiços.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadatroProdutoServiços.Designer.cs">
+      <DependentUpon>frmCadatroProdutoServiços.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDadosProdutosServiço.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDadosProdutosServiço.Designer.cs">
+      <DependentUpon>frmDadosProdutosServiço.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmProdutoServiço.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProdutoServiço.Designer.cs">
+      <DependentUpon>frmProdutoServiço.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frmTarefasProdutosServiço.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTarefasProdutosServiço.Designer.cs">
+      <DependentUpon>frmTarefasProdutosServiço.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmCadastro.resx">
+      <DependentUpon>frmCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadatroProdutoServiços.resx">
+      <DependentUpon>frmCadatroProdutoServiços.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDadosProdutosServiço.resx">
+      <DependentUpon>frmDadosProdutosServiço.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProdutoServiço.resx">
+      <DependentUpon>frmProdutoServiço.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -65,7 +108,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="frmTarefasProdutosServiço.resx">
+      <DependentUpon>frmTarefasProdutosServiço.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

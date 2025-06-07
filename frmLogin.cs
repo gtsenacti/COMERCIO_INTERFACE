@@ -31,7 +31,7 @@ namespace appComercio
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            frmProdutoServiço frmProSer = new frmProdutoServiço();
+            frmProdutoServico frmProSer = new frmProdutoServico();
             frmProSer.ShowDialog();
         }
     }

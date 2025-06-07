@@ -33,10 +33,11 @@
             this.lblServiços = new System.Windows.Forms.Label();
             this.lblProduto = new System.Windows.Forms.Label();
             this.lblCadastro = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtServico = new System.Windows.Forms.TextBox();
+            this.txtProduto = new System.Windows.Forms.TextBox();
+            this.txtCadastro = new System.Windows.Forms.TextBox();
             this.gbResultado = new System.Windows.Forms.GroupBox();
+            this.txtResultado = new System.Windows.Forms.TextBox();
             this.gbBuscaTarefaProdutoSevico = new System.Windows.Forms.GroupBox();
             this.txtBuscaTarefaProdutoServico = new System.Windows.Forms.TextBox();
             this.btnBusca = new System.Windows.Forms.Button();
@@ -49,7 +50,6 @@
             this.rbMultiplicar = new System.Windows.Forms.RadioButton();
             this.rbDividir = new System.Windows.Forms.RadioButton();
             this.btnCalcularTarefaProdutoServico = new System.Windows.Forms.Button();
-            this.txtResultado = new System.Windows.Forms.TextBox();
             this.gbTarefaProdutoServico.SuspendLayout();
             this.gbResultado.SuspendLayout();
             this.gbBuscaTarefaProdutoSevico.SuspendLayout();
@@ -62,9 +62,9 @@
             this.gbTarefaProdutoServico.Controls.Add(this.lblServiços);
             this.gbTarefaProdutoServico.Controls.Add(this.lblProduto);
             this.gbTarefaProdutoServico.Controls.Add(this.lblCadastro);
-            this.gbTarefaProdutoServico.Controls.Add(this.textBox3);
-            this.gbTarefaProdutoServico.Controls.Add(this.textBox2);
-            this.gbTarefaProdutoServico.Controls.Add(this.textBox1);
+            this.gbTarefaProdutoServico.Controls.Add(this.txtServico);
+            this.gbTarefaProdutoServico.Controls.Add(this.txtProduto);
+            this.gbTarefaProdutoServico.Controls.Add(this.txtCadastro);
             this.gbTarefaProdutoServico.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbTarefaProdutoServico.Location = new System.Drawing.Point(12, 12);
             this.gbTarefaProdutoServico.Name = "gbTarefaProdutoServico";
@@ -78,51 +78,51 @@
             this.lblServiços.AutoSize = true;
             this.lblServiços.Location = new System.Drawing.Point(21, 187);
             this.lblServiços.Name = "lblServiços";
-            this.lblServiços.Size = new System.Drawing.Size(50, 14);
+            this.lblServiços.Size = new System.Drawing.Size(53, 14);
             this.lblServiços.TabIndex = 5;
-            this.lblServiços.Text = "Serviços";
+            this.lblServiços.Text = "Serviços:";
             // 
             // lblProduto
             // 
             this.lblProduto.AutoSize = true;
             this.lblProduto.Location = new System.Drawing.Point(21, 106);
             this.lblProduto.Name = "lblProduto";
-            this.lblProduto.Size = new System.Drawing.Size(44, 14);
+            this.lblProduto.Size = new System.Drawing.Size(47, 14);
             this.lblProduto.TabIndex = 4;
-            this.lblProduto.Text = "Produto";
+            this.lblProduto.Text = "Produto:";
             // 
             // lblCadastro
             // 
             this.lblCadastro.AutoSize = true;
             this.lblCadastro.Location = new System.Drawing.Point(18, 29);
             this.lblCadastro.Name = "lblCadastro";
-            this.lblCadastro.Size = new System.Drawing.Size(51, 14);
+            this.lblCadastro.Size = new System.Drawing.Size(54, 14);
             this.lblCadastro.TabIndex = 3;
-            this.lblCadastro.Text = "Cadastro";
+            this.lblCadastro.Text = "Cadastro:";
             // 
-            // textBox3
+            // txtServico
             // 
-            this.textBox3.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(18, 204);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(207, 32);
-            this.textBox3.TabIndex = 2;
+            this.txtServico.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtServico.Location = new System.Drawing.Point(18, 204);
+            this.txtServico.Name = "txtServico";
+            this.txtServico.Size = new System.Drawing.Size(207, 32);
+            this.txtServico.TabIndex = 2;
             // 
-            // textBox2
+            // txtProduto
             // 
-            this.textBox2.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(18, 119);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(207, 32);
-            this.textBox2.TabIndex = 1;
+            this.txtProduto.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProduto.Location = new System.Drawing.Point(18, 119);
+            this.txtProduto.Name = "txtProduto";
+            this.txtProduto.Size = new System.Drawing.Size(207, 32);
+            this.txtProduto.TabIndex = 1;
             // 
-            // textBox1
+            // txtCadastro
             // 
-            this.textBox1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(18, 41);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(207, 32);
-            this.textBox1.TabIndex = 0;
+            this.txtCadastro.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCadastro.Location = new System.Drawing.Point(18, 41);
+            this.txtCadastro.Name = "txtCadastro";
+            this.txtCadastro.Size = new System.Drawing.Size(207, 32);
+            this.txtCadastro.TabIndex = 0;
             // 
             // gbResultado
             // 
@@ -134,7 +134,16 @@
             this.gbResultado.Size = new System.Drawing.Size(245, 66);
             this.gbResultado.TabIndex = 3;
             this.gbResultado.TabStop = false;
-            this.gbResultado.Text = "Resultado";
+            this.gbResultado.Text = "Resultado:";
+            // 
+            // txtResultado
+            // 
+            this.txtResultado.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtResultado.Location = new System.Drawing.Point(36, 21);
+            this.txtResultado.Name = "txtResultado";
+            this.txtResultado.Size = new System.Drawing.Size(176, 35);
+            this.txtResultado.TabIndex = 5;
+            this.txtResultado.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // gbBuscaTarefaProdutoSevico
             // 
@@ -279,15 +288,6 @@
             this.btnCalcularTarefaProdutoServico.Text = "Calcular";
             this.btnCalcularTarefaProdutoServico.UseVisualStyleBackColor = false;
             // 
-            // txtResultado
-            // 
-            this.txtResultado.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtResultado.Location = new System.Drawing.Point(36, 21);
-            this.txtResultado.Name = "txtResultado";
-            this.txtResultado.Size = new System.Drawing.Size(176, 35);
-            this.txtResultado.TabIndex = 5;
-            this.txtResultado.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // frmTarefasProdutosServicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -306,6 +306,7 @@
             this.Controls.Add(this.gbBuscaTarefaProdutoSevico);
             this.Controls.Add(this.gbResultado);
             this.Controls.Add(this.gbTarefaProdutoServico);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmTarefasProdutosServicos";
             this.Text = " Casa Fernandes Tarefa Produtos e Serviços";
@@ -337,12 +338,12 @@
         private System.Windows.Forms.RadioButton rbMultiplicar;
         private System.Windows.Forms.RadioButton rbDividir;
         private System.Windows.Forms.Button btnCalcularTarefaProdutoServico;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtProduto;
+        private System.Windows.Forms.TextBox txtCadastro;
         private System.Windows.Forms.Label lblServiços;
         private System.Windows.Forms.Label lblProduto;
         private System.Windows.Forms.Label lblCadastro;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtServico;
         private System.Windows.Forms.TextBox txtResultado;
     }
 }

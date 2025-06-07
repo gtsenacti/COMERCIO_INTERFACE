@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.gbTelaLogin = new System.Windows.Forms.GroupBox();
-            this.lblTituloLogin = new System.Windows.Forms.Label();
+            this.lblSistemadeGestao = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.lblSenha = new System.Windows.Forms.Label();
@@ -39,15 +39,15 @@
             this.btnEntrar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
             this.btnCadastro = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbTelaLogin = new System.Windows.Forms.PictureBox();
             this.gbTelaLogin.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbTelaLogin)).BeginInit();
             this.SuspendLayout();
             // 
             // gbTelaLogin
             // 
             this.gbTelaLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.gbTelaLogin.Controls.Add(this.lblTituloLogin);
+            this.gbTelaLogin.Controls.Add(this.lblSistemadeGestao);
             this.gbTelaLogin.Controls.Add(this.lblUsuario);
             this.gbTelaLogin.Controls.Add(this.txtUsuario);
             this.gbTelaLogin.Controls.Add(this.lblSenha);
@@ -60,17 +60,17 @@
             this.gbTelaLogin.Size = new System.Drawing.Size(337, 227);
             this.gbTelaLogin.TabIndex = 1;
             this.gbTelaLogin.TabStop = false;
-            this.gbTelaLogin.Text = "Dados do usuário";
+            this.gbTelaLogin.Text = "Dados do usuário:";
             // 
-            // lblTituloLogin
+            // lblSistemadeGestao
             // 
-            this.lblTituloLogin.AutoSize = true;
-            this.lblTituloLogin.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTituloLogin.Location = new System.Drawing.Point(51, 31);
-            this.lblTituloLogin.Name = "lblTituloLogin";
-            this.lblTituloLogin.Size = new System.Drawing.Size(240, 29);
-            this.lblTituloLogin.TabIndex = 6;
-            this.lblTituloLogin.Text = "Sistemas de Gestão";
+            this.lblSistemadeGestao.AutoSize = true;
+            this.lblSistemadeGestao.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSistemadeGestao.Location = new System.Drawing.Point(51, 31);
+            this.lblSistemadeGestao.Name = "lblSistemadeGestao";
+            this.lblSistemadeGestao.Size = new System.Drawing.Size(240, 29);
+            this.lblSistemadeGestao.TabIndex = 6;
+            this.lblSistemadeGestao.Text = "Sistemas de Gestão";
             // 
             // lblUsuario
             // 
@@ -171,15 +171,15 @@
             this.btnCadastro.UseVisualStyleBackColor = false;
             this.btnCadastro.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
-            // pictureBox1
+            // pbTelaLogin
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.pictureBox1.Image = global::appComercio.Properties.Resources.Gartoon_Team_Gartoon_Misc_Stock_New_Meeting_Hands_256;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(259, 278);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
+            this.pbTelaLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pbTelaLogin.Image = global::appComercio.Properties.Resources.Gartoon_Team_Gartoon_Misc_Stock_New_Meeting_Hands_256;
+            this.pbTelaLogin.Location = new System.Drawing.Point(12, 12);
+            this.pbTelaLogin.Name = "pbTelaLogin";
+            this.pbTelaLogin.Size = new System.Drawing.Size(259, 278);
+            this.pbTelaLogin.TabIndex = 5;
+            this.pbTelaLogin.TabStop = false;
             // 
             // frmLogin
             // 
@@ -187,7 +187,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(625, 302);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pbTelaLogin);
             this.Controls.Add(this.btnCadastro);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnEntrar);
@@ -199,7 +199,7 @@
             this.Text = "frmLogin";
             this.gbTelaLogin.ResumeLayout(false);
             this.gbTelaLogin.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbTelaLogin)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -214,9 +214,9 @@
         private System.Windows.Forms.Label lblSenha;
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Label lblSetor;
-        private System.Windows.Forms.Label lblTituloLogin;
+        private System.Windows.Forms.Label lblSistemadeGestao;
         private System.Windows.Forms.Button btnCadastro;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbTelaLogin;
     }
 }
 

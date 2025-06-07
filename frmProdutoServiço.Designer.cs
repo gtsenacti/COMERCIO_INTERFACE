@@ -1,6 +1,6 @@
 ﻿namespace appComercio
 {
-    partial class frmProdutoServiço
+    partial class frmProdutoServico
     {
         /// <summary>
         /// Required designer variable.
@@ -28,32 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProdutoServiço));
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProdutoServico));
+            this.tlpTelaPrincipal = new System.Windows.Forms.TableLayoutPanel();
             this.btnDados = new System.Windows.Forms.Button();
             this.btnTarefas = new System.Windows.Forms.Button();
             this.btnCadastro = new System.Windows.Forms.Button();
             this.lblProdutoServiço = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.tlpTelaPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // tlpTelaPrincipal
             // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.InsetDouble;
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.Controls.Add(this.btnDados, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnTarefas, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnCadastro, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(117, 203);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(546, 114);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.tlpTelaPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tlpTelaPrincipal.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.InsetDouble;
+            this.tlpTelaPrincipal.ColumnCount = 3;
+            this.tlpTelaPrincipal.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tlpTelaPrincipal.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tlpTelaPrincipal.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tlpTelaPrincipal.Controls.Add(this.btnDados, 1, 0);
+            this.tlpTelaPrincipal.Controls.Add(this.btnTarefas, 2, 0);
+            this.tlpTelaPrincipal.Controls.Add(this.btnCadastro, 0, 0);
+            this.tlpTelaPrincipal.Location = new System.Drawing.Point(117, 203);
+            this.tlpTelaPrincipal.Name = "tlpTelaPrincipal";
+            this.tlpTelaPrincipal.RowCount = 1;
+            this.tlpTelaPrincipal.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpTelaPrincipal.Size = new System.Drawing.Size(546, 114);
+            this.tlpTelaPrincipal.TabIndex = 0;
             // 
             // btnDados
             // 
@@ -110,19 +110,20 @@
             this.lblProdutoServiço.TabIndex = 1;
             this.lblProdutoServiço.Text = "Produtos / Serviços";
             // 
-            // frmProdutoServiço
+            // frmProdutoServico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblProdutoServiço);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.tlpTelaPrincipal);
             this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "frmProdutoServiço";
+            this.Name = "frmProdutoServico";
             this.Text = "Casa Fernandes - Produtos e Serviços";
-            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tlpTelaPrincipal.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -130,7 +131,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tlpTelaPrincipal;
         private System.Windows.Forms.Button btnCadastro;
         private System.Windows.Forms.Button btnDados;
         private System.Windows.Forms.Button btnTarefas;

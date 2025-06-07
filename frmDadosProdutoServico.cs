@@ -16,5 +16,20 @@ namespace appComercio
         {
             InitializeComponent();
         }
+
+        private void txtBuscarDadosProdutosServicos_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gbBuscarDadosProdutosServicos_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gbDadosProdutosServicos_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

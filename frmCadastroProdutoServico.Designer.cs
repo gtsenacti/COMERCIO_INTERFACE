@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.gbCadastroProdutoServico = new System.Windows.Forms.GroupBox();
+            this.lblCadastro = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.gbBuscarCadastroProdutoServico = new System.Windows.Forms.GroupBox();
             this.btnBuscarCadastroProdutoServico = new System.Windows.Forms.Button();
             this.txtBuscarCadastroProdutoServico = new System.Windows.Forms.TextBox();
@@ -36,10 +40,8 @@
             this.btnEditarCadastroProdutoServico = new System.Windows.Forms.Button();
             this.btnApagarCadastroProdutoServico = new System.Windows.Forms.Button();
             this.dgvCadastroProdutoServico = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblProduto = new System.Windows.Forms.Label();
+            this.lblServico = new System.Windows.Forms.Label();
             this.gbCadastroProdutoServico.SuspendLayout();
             this.gbBuscarCadastroProdutoServico.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCadastroProdutoServico)).BeginInit();
@@ -48,7 +50,9 @@
             // gbCadastroProdutoServico
             // 
             this.gbCadastroProdutoServico.BackColor = System.Drawing.Color.Gainsboro;
-            this.gbCadastroProdutoServico.Controls.Add(this.label1);
+            this.gbCadastroProdutoServico.Controls.Add(this.lblServico);
+            this.gbCadastroProdutoServico.Controls.Add(this.lblProduto);
+            this.gbCadastroProdutoServico.Controls.Add(this.lblCadastro);
             this.gbCadastroProdutoServico.Controls.Add(this.textBox3);
             this.gbCadastroProdutoServico.Controls.Add(this.textBox2);
             this.gbCadastroProdutoServico.Controls.Add(this.textBox1);
@@ -60,6 +64,38 @@
             this.gbCadastroProdutoServico.TabStop = false;
             this.gbCadastroProdutoServico.Text = "Cadastro Produto/Serviço";
             this.gbCadastroProdutoServico.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // lblCadastro
+            // 
+            this.lblCadastro.AutoSize = true;
+            this.lblCadastro.Font = new System.Drawing.Font("Arial", 8F);
+            this.lblCadastro.Location = new System.Drawing.Point(16, 21);
+            this.lblCadastro.Name = "lblCadastro";
+            this.lblCadastro.Size = new System.Drawing.Size(54, 14);
+            this.lblCadastro.TabIndex = 3;
+            this.lblCadastro.Text = "Cadastro:";
+            this.lblCadastro.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(25, 145);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(206, 22);
+            this.textBox3.TabIndex = 2;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(23, 94);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(209, 22);
+            this.textBox2.TabIndex = 1;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(19, 38);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(214, 22);
+            this.textBox1.TabIndex = 0;
             // 
             // gbBuscarCadastroProdutoServico
             // 
@@ -135,36 +171,25 @@
             this.dgvCadastroProdutoServico.Size = new System.Drawing.Size(394, 376);
             this.dgvCadastroProdutoServico.TabIndex = 5;
             // 
-            // textBox1
+            // lblProduto
             // 
-            this.textBox1.Location = new System.Drawing.Point(19, 38);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(214, 22);
-            this.textBox1.TabIndex = 0;
+            this.lblProduto.AutoSize = true;
+            this.lblProduto.Font = new System.Drawing.Font("Arial", 8F);
+            this.lblProduto.Location = new System.Drawing.Point(20, 78);
+            this.lblProduto.Name = "lblProduto";
+            this.lblProduto.Size = new System.Drawing.Size(47, 14);
+            this.lblProduto.TabIndex = 4;
+            this.lblProduto.Text = "Produto:";
             // 
-            // textBox2
+            // lblServico
             // 
-            this.textBox2.Location = new System.Drawing.Point(23, 94);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(209, 22);
-            this.textBox2.TabIndex = 1;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(25, 145);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(206, 22);
-            this.textBox3.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(16, 16);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "C";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lblServico.AutoSize = true;
+            this.lblServico.Font = new System.Drawing.Font("Arial", 8F);
+            this.lblServico.Location = new System.Drawing.Point(22, 132);
+            this.lblServico.Name = "lblServico";
+            this.lblServico.Size = new System.Drawing.Size(47, 14);
+            this.lblServico.TabIndex = 5;
+            this.lblServico.Text = "Serviço:";
             // 
             // frmCadastroProdutoServico
             // 
@@ -199,9 +224,11 @@
         private System.Windows.Forms.Button btnEditarCadastroProdutoServico;
         private System.Windows.Forms.Button btnApagarCadastroProdutoServico;
         private System.Windows.Forms.DataGridView dgvCadastroProdutoServico;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblCadastro;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblProduto;
+        private System.Windows.Forms.Label lblServico;
     }
 }

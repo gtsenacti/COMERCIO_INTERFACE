@@ -69,32 +69,32 @@
             // lblSetor
             // 
             this.lblSetor.AutoSize = true;
-            this.lblSetor.Font = new System.Drawing.Font("Arial", 10F);
-            this.lblSetor.Location = new System.Drawing.Point(25, 126);
+            this.lblSetor.Font = new System.Drawing.Font("Arial", 8F);
+            this.lblSetor.Location = new System.Drawing.Point(18, 126);
             this.lblSetor.Name = "lblSetor";
-            this.lblSetor.Size = new System.Drawing.Size(41, 16);
+            this.lblSetor.Size = new System.Drawing.Size(33, 14);
             this.lblSetor.TabIndex = 6;
             this.lblSetor.Text = "Setor";
             // 
             // lblSenha
             // 
             this.lblSenha.AutoSize = true;
-            this.lblSenha.Font = new System.Drawing.Font("Arial", 10F);
-            this.lblSenha.Location = new System.Drawing.Point(23, 75);
+            this.lblSenha.Font = new System.Drawing.Font("Arial", 8F);
+            this.lblSenha.Location = new System.Drawing.Point(18, 75);
             this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(48, 16);
+            this.lblSenha.Size = new System.Drawing.Size(41, 14);
             this.lblSenha.TabIndex = 5;
-            this.lblSenha.Text = "Senha";
+            this.lblSenha.Text = "Senha:";
             // 
             // lblCadastro
             // 
             this.lblCadastro.AutoSize = true;
-            this.lblCadastro.Font = new System.Drawing.Font("Arial", 10F);
-            this.lblCadastro.Location = new System.Drawing.Point(23, 25);
+            this.lblCadastro.Font = new System.Drawing.Font("Arial", 8F);
+            this.lblCadastro.Location = new System.Drawing.Point(18, 25);
             this.lblCadastro.Name = "lblCadastro";
-            this.lblCadastro.Size = new System.Drawing.Size(65, 16);
+            this.lblCadastro.Size = new System.Drawing.Size(54, 14);
             this.lblCadastro.TabIndex = 4;
-            this.lblCadastro.Text = "Cadastro";
+            this.lblCadastro.Text = "Cadastro:";
             // 
             // ckbAtivo
             // 
@@ -127,7 +127,6 @@
             this.txtCadastroSenha.Name = "txtCadastroSenha";
             this.txtCadastroSenha.Size = new System.Drawing.Size(221, 23);
             this.txtCadastroSenha.TabIndex = 1;
-            this.txtCadastroSenha.Text = "dd";
             this.txtCadastroSenha.TextChanged += new System.EventHandler(this.txtCadastroSenha_TextChanged);
             // 
             // txtCadastroUsuario
@@ -137,7 +136,6 @@
             this.txtCadastroUsuario.Name = "txtCadastroUsuario";
             this.txtCadastroUsuario.Size = new System.Drawing.Size(221, 23);
             this.txtCadastroUsuario.TabIndex = 0;
-            this.txtCadastroUsuario.Text = "d";
             this.txtCadastroUsuario.TextChanged += new System.EventHandler(this.txtCadastroUsuario_TextChanged);
             // 
             // gbBuscarUsuario

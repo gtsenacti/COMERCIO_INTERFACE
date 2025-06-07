@@ -30,8 +30,8 @@
         {
             this.gbDadosProdutosServicos = new System.Windows.Forms.GroupBox();
             this.gbBuscarDadosProdutosServicos = new System.Windows.Forms.GroupBox();
-            this.txtBuscarDadosProdutosServicos = new System.Windows.Forms.TextBox();
             this.btnBuscarDadosProdutosServicos = new System.Windows.Forms.Button();
+            this.txtBuscarDadosProdutosServicos = new System.Windows.Forms.TextBox();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnApagar = new System.Windows.Forms.Button();
@@ -43,32 +43,28 @@
             // gbDadosProdutosServicos
             // 
             this.gbDadosProdutosServicos.BackColor = System.Drawing.Color.Gainsboro;
-            this.gbDadosProdutosServicos.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbDadosProdutosServicos.Font = new System.Drawing.Font("Arial", 8F);
             this.gbDadosProdutosServicos.Location = new System.Drawing.Point(45, 30);
             this.gbDadosProdutosServicos.Name = "gbDadosProdutosServicos";
-            this.gbDadosProdutosServicos.Size = new System.Drawing.Size(304, 202);
+            this.gbDadosProdutosServicos.Size = new System.Drawing.Size(303, 202);
             this.gbDadosProdutosServicos.TabIndex = 0;
             this.gbDadosProdutosServicos.TabStop = false;
             this.gbDadosProdutosServicos.Text = "Dados Produtos Serviços";
+            this.gbDadosProdutosServicos.Enter += new System.EventHandler(this.gbDadosProdutosServicos_Enter);
             // 
             // gbBuscarDadosProdutosServicos
             // 
             this.gbBuscarDadosProdutosServicos.BackColor = System.Drawing.Color.Gainsboro;
             this.gbBuscarDadosProdutosServicos.Controls.Add(this.btnBuscarDadosProdutosServicos);
             this.gbBuscarDadosProdutosServicos.Controls.Add(this.txtBuscarDadosProdutosServicos);
-            this.gbBuscarDadosProdutosServicos.Font = new System.Drawing.Font("Arial", 10F);
-            this.gbBuscarDadosProdutosServicos.Location = new System.Drawing.Point(43, 270);
+            this.gbBuscarDadosProdutosServicos.Font = new System.Drawing.Font("Arial", 8F);
+            this.gbBuscarDadosProdutosServicos.Location = new System.Drawing.Point(43, 258);
             this.gbBuscarDadosProdutosServicos.Name = "gbBuscarDadosProdutosServicos";
-            this.gbBuscarDadosProdutosServicos.Size = new System.Drawing.Size(305, 78);
+            this.gbBuscarDadosProdutosServicos.Size = new System.Drawing.Size(305, 77);
             this.gbBuscarDadosProdutosServicos.TabIndex = 1;
             this.gbBuscarDadosProdutosServicos.TabStop = false;
-            // 
-            // txtBuscarDadosProdutosServicos
-            // 
-            this.txtBuscarDadosProdutosServicos.Location = new System.Drawing.Point(18, 26);
-            this.txtBuscarDadosProdutosServicos.Name = "txtBuscarDadosProdutosServicos";
-            this.txtBuscarDadosProdutosServicos.Size = new System.Drawing.Size(167, 23);
-            this.txtBuscarDadosProdutosServicos.TabIndex = 0;
+            this.gbBuscarDadosProdutosServicos.Text = "Busca Cadastro Produto Serviço";
+            this.gbBuscarDadosProdutosServicos.Enter += new System.EventHandler(this.gbBuscarDadosProdutosServicos_Enter);
             // 
             // btnBuscarDadosProdutosServicos
             // 
@@ -80,6 +76,14 @@
             this.btnBuscarDadosProdutosServicos.TabIndex = 1;
             this.btnBuscarDadosProdutosServicos.Text = "Buscar";
             this.btnBuscarDadosProdutosServicos.UseVisualStyleBackColor = false;
+            // 
+            // txtBuscarDadosProdutosServicos
+            // 
+            this.txtBuscarDadosProdutosServicos.Location = new System.Drawing.Point(18, 26);
+            this.txtBuscarDadosProdutosServicos.Name = "txtBuscarDadosProdutosServicos";
+            this.txtBuscarDadosProdutosServicos.Size = new System.Drawing.Size(167, 20);
+            this.txtBuscarDadosProdutosServicos.TabIndex = 0;
+            this.txtBuscarDadosProdutosServicos.TextChanged += new System.EventHandler(this.txtBuscarDadosProdutosServicos_TextChanged);
             // 
             // btnSalvar
             // 
@@ -122,7 +126,7 @@
             this.dataGridView1.Size = new System.Drawing.Size(351, 396);
             this.dataGridView1.TabIndex = 5;
             // 
-            // dgvDadosProdutoServico
+            // frmDadosProdutoServico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -134,7 +138,7 @@
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.gbBuscarDadosProdutosServicos);
             this.Controls.Add(this.gbDadosProdutosServicos);
-            this.Name = "dgvDadosProdutoServico";
+            this.Name = "frmDadosProdutoServico";
             this.Text = "frmDadosProdutoServico";
             this.gbBuscarDadosProdutosServicos.ResumeLayout(false);
             this.gbBuscarDadosProdutosServicos.PerformLayout();

@@ -31,8 +31,8 @@
             this.gbTarefasProdutoServico = new System.Windows.Forms.GroupBox();
             this.dgvTarefasProdutoServico = new System.Windows.Forms.DataGridView();
             this.gbBuscarTarefasProdutosServicos = new System.Windows.Forms.GroupBox();
-            this.txtBuscarTarefasProdutoServico = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.txtBuscarTarefasProdutoServico = new System.Windows.Forms.TextBox();
             this.btnCadastrarTarefasProdudoServico = new System.Windows.Forms.Button();
             this.btnEditarTarefasProdutoServico = new System.Windows.Forms.Button();
             this.btnApagarTarefasProdutosServicos = new System.Windows.Forms.Button();
@@ -67,6 +67,7 @@
             // 
             // gbBuscarTarefasProdutosServicos
             // 
+            this.gbBuscarTarefasProdutosServicos.BackColor = System.Drawing.Color.Gainsboro;
             this.gbBuscarTarefasProdutosServicos.Controls.Add(this.btnBuscar);
             this.gbBuscarTarefasProdutosServicos.Controls.Add(this.txtBuscarTarefasProdutoServico);
             this.gbBuscarTarefasProdutosServicos.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -76,14 +77,7 @@
             this.gbBuscarTarefasProdutosServicos.TabIndex = 2;
             this.gbBuscarTarefasProdutosServicos.TabStop = false;
             this.gbBuscarTarefasProdutosServicos.Text = "Buscar";
-            // 
-            // txtBuscarTarefasProdutoServico
-            // 
-            this.txtBuscarTarefasProdutoServico.Font = new System.Drawing.Font("Arial", 10F);
-            this.txtBuscarTarefasProdutoServico.Location = new System.Drawing.Point(8, 23);
-            this.txtBuscarTarefasProdutoServico.Name = "txtBuscarTarefasProdutoServico";
-            this.txtBuscarTarefasProdutoServico.Size = new System.Drawing.Size(179, 23);
-            this.txtBuscarTarefasProdutoServico.TabIndex = 0;
+            this.gbBuscarTarefasProdutosServicos.Enter += new System.EventHandler(this.gbBuscarTarefasProdutosServicos_Enter);
             // 
             // btnBuscar
             // 
@@ -95,6 +89,14 @@
             this.btnBuscar.TabIndex = 1;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
+            // 
+            // txtBuscarTarefasProdutoServico
+            // 
+            this.txtBuscarTarefasProdutoServico.Font = new System.Drawing.Font("Arial", 10F);
+            this.txtBuscarTarefasProdutoServico.Location = new System.Drawing.Point(8, 23);
+            this.txtBuscarTarefasProdutoServico.Name = "txtBuscarTarefasProdutoServico";
+            this.txtBuscarTarefasProdutoServico.Size = new System.Drawing.Size(179, 23);
+            this.txtBuscarTarefasProdutoServico.TabIndex = 0;
             // 
             // btnCadastrarTarefasProdudoServico
             // 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace appComercio
 {
-    public static class apiRotas
+    public static class apiRotasController
     {
         private static readonly string baseUrl = "http://127.0.0.1:5000";
 

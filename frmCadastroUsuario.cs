@@ -27,7 +27,7 @@ namespace appComercio
 
         private async Task CarregarDados()
         {
-            string apiUrl = apiRotas.CadastroUsuario;
+            string apiUrl = apiRotasController.CadastroUsuario;
 
             using (HttpClient client = new HttpClient())
             {
@@ -39,7 +39,7 @@ namespace appComercio
                     if (response.IsSuccessStatusCode)
                     {
                         var jsonString = await response.Content.ReadAsStringAsync();
-                        var dados = JsonConvert.DeserializeObject<List<CadastroUsuario>>(jsonString);
+                        var dados = JsonConvert.DeserializeObject<List<CadastroUsuarioModel>>(jsonString);
 
                         dgvCadastroUsuario.DataSource = dados;
                     }

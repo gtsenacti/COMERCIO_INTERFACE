@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace appComercio
 {
-    public class CadastroUsuario
+    public class CadastroUsuarioModel
     {
         public int id { get; set; }
         public string NomeUsuario { get; set; }

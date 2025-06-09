@@ -1,0 +1,37 @@
+# Ignore as pastas geradas automaticamente
+bin/
+obj/
+.vs/
+
+# Arquivos de build
+*.user
+*.suo
+*.cache
+*.dbmdl
+*.log
+
+# Arquivos do Visual Studio
+*.ncb
+*.aps
+*.sdf
+*.opendb
+*.VC.db
+*.vssscc
+*.vsscc
+
+# Arquivos de pacotes NuGet
+packages/
+*.nupkg
+project.lock.json
+
+# Arquivos de publicação
+*.Publish.xml
+
+# Configurações de usuário (não compartilháveis)
+*.user
+*.vspscc
+
+# Pastas comuns de backup
+_ReSharper*/
+.idea/
+*.DotSettings.user

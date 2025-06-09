@@ -2,6 +2,7 @@
 bin/
 obj/
 .vs/
+obj\Debug\
 
 # Arquivos de build
 *.user

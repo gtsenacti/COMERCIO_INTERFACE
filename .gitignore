@@ -37,3 +37,9 @@ project.lock.json
 _ReSharper*/
 .idea/
 *.DotSettings.user
+/obj/Debug
+obj/Debug/appComercio.csproj.AssemblyReference.cache
+obj/Debug/DesignTimeResolveAssemblyReferences.cache
+obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/obj/Debug
+*.cache

@@ -3,6 +3,7 @@ bin/
 obj/
 .vs/
 obj\Debug\
+obj/Debug/
 
 # Arquivos de build
 *.user

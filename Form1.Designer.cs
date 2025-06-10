@@ -51,6 +51,7 @@
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(325, 20);
             this.txtSenha.TabIndex = 1;
+            this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
             // 
             // btnCadastrarUsuario
             // 

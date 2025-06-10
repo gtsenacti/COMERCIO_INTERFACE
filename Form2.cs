@@ -12,6 +12,12 @@ namespace appComercio
 {
     public partial class Cadastro : Form
     {
+        public static string CadastroUsuario;
+        public static  string CadastroSenha;
+        public static string ConfirmaSenha;
+
+
+
         public Cadastro()
         {
             InitializeComponent();
@@ -40,9 +46,9 @@ namespace appComercio
         private void button1_Click(object sender, EventArgs e)
         {
 
-            string CadastroUsuario = txtCadastroDeUsuario.Text;
-            string CadastroSenha = txtCadastroDeSenha.Text;
-            string ConfirmaSenha = txtConfirmarSenha.Text;
+            CadastroUsuario = txtCadastroDeUsuario.Text;
+            CadastroSenha = txtCadastroDeSenha.Text;
+            ConfirmaSenha = txtConfirmarSenha.Text;
 
             if (string.IsNullOrWhiteSpace(CadastroSenha) || string.IsNullOrWhiteSpace(CadastroUsuario) || string.IsNullOrWhiteSpace(ConfirmaSenha))
             {
@@ -53,10 +59,10 @@ namespace appComercio
             }
             else
             {
-                var LogInUsuario = CadastroUsuario;
-                var LogInSenha = CadastroSenha;
+                
                 MessageBox.Show("Cadstro feito com sucesso");
                 new Menu().Show();
+                this.Hide();
             }
         }
 

@@ -45,12 +45,31 @@ namespace appComercio
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            var MenuUsuario = txtUsuario.Text;
+            var MenuSenha = txtSenha.Text;
+            var usuario = Cadastro.CadastroUsuario;
+            var senha = Cadastro.CadastroSenha;
+            if (usuario == MenuUsuario && senha == MenuSenha) { 
             new TelaPrinciapal().Show();
-        }
+            this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("As informações estão incorretas");
+                txtSenha.Text = "";
+                txtUsuario.Text = "";
+            }
+
+            }
 
         private void btnSair_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtSenha_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -12,6 +12,7 @@ namespace appComercio
 {
     public partial class TelaPrinciapal : Form
     {
+
         public TelaPrinciapal()
         {
             InitializeComponent();

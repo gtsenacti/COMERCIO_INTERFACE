@@ -34,8 +34,8 @@ namespace appComercio
         {
             
             frmCadastroCliente FrmCadastroCliente = new frmCadastroCliente();
-            FrmCadastroCliente.Show();
-            this.Visible = false;
+            FrmCadastroCliente.ShowDialog();
+            
 
         }
 

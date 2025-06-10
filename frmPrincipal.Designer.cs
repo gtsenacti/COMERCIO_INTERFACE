@@ -73,8 +73,9 @@
             this.btnTarefasProdutosServico.Name = "btnTarefasProdutosServico";
             this.btnTarefasProdutosServico.Size = new System.Drawing.Size(239, 146);
             this.btnTarefasProdutosServico.TabIndex = 2;
-            this.btnTarefasProdutosServico.Text = "Tarefas";
+            this.btnTarefasProdutosServico.Text = "Estoque";
             this.btnTarefasProdutosServico.UseVisualStyleBackColor = true;
+            this.btnTarefasProdutosServico.Click += new System.EventHandler(this.btnTarefasProdutosServico_Click);
             // 
             // btnDadosProdutoServico
             // 
@@ -83,8 +84,9 @@
             this.btnDadosProdutoServico.Name = "btnDadosProdutoServico";
             this.btnDadosProdutoServico.Size = new System.Drawing.Size(230, 146);
             this.btnDadosProdutoServico.TabIndex = 1;
-            this.btnDadosProdutoServico.Text = "Dados";
+            this.btnDadosProdutoServico.Text = "Fornecedor";
             this.btnDadosProdutoServico.UseVisualStyleBackColor = true;
+            this.btnDadosProdutoServico.Click += new System.EventHandler(this.btnDadosProdutoServico_Click);
             // 
             // btnCadastroProdutoServico
             // 
@@ -95,6 +97,7 @@
             this.btnCadastroProdutoServico.TabIndex = 0;
             this.btnCadastroProdutoServico.Text = "Cadastro";
             this.btnCadastroProdutoServico.UseVisualStyleBackColor = true;
+            this.btnCadastroProdutoServico.Click += new System.EventHandler(this.btnCadastroProdutoServico_Click);
             // 
             // frmPrincipal
             // 

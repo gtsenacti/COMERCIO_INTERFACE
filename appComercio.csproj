@@ -48,11 +48,30 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BotaoModerno.cs" />
+    <Compile Include="BotaoModernoTela2.cs" />
+    <Compile Include="frmEstoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEstoque.Designer.cs">
+      <DependentUpon>frmEstoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroProdutoServico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroProdutoServico.Designer.cs">
+      <DependentUpon>frmCadastroProdutoServico.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCadastroCliente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCadastroCliente.Designer.cs">
       <DependentUpon>frmCadastroCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFornecedorProdutoServico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFornecedorProdutoServico.Designer.cs">
+      <DependentUpon>frmFornecedorProdutoServico.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -69,8 +88,17 @@
     <Compile Include="IModernRoundButton.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmEstoque.resx">
+      <DependentUpon>frmEstoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroProdutoServico.resx">
+      <DependentUpon>frmCadastroProdutoServico.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCadastroCliente.resx">
       <DependentUpon>frmCadastroCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFornecedorProdutoServico.resx">
+      <DependentUpon>frmFornecedorProdutoServico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>

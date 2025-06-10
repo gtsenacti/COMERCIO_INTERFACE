@@ -67,11 +67,11 @@
             // 
             // cbCadastroSetor
             // 
-            this.cbCadastroSetor.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbCadastroSetor.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCadastroSetor.FormattingEnabled = true;
             this.cbCadastroSetor.Location = new System.Drawing.Point(24, 179);
             this.cbCadastroSetor.Name = "cbCadastroSetor";
-            this.cbCadastroSetor.Size = new System.Drawing.Size(305, 28);
+            this.cbCadastroSetor.Size = new System.Drawing.Size(305, 26);
             this.cbCadastroSetor.TabIndex = 3;
             this.cbCadastroSetor.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -153,7 +153,7 @@
             this.btnBuscarUsuario.Name = "btnBuscarUsuario";
             this.btnBuscarUsuario.Size = new System.Drawing.Size(83, 35);
             this.btnBuscarUsuario.TabIndex = 6;
-            this.btnBuscarUsuario.Text = "Puscar";
+            this.btnBuscarUsuario.Text = "Buscar";
             this.btnBuscarUsuario.UseVisualStyleBackColor = false;
             // 
             // txtBuscarUsuario

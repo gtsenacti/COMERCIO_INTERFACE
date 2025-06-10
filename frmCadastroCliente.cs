@@ -17,18 +17,24 @@ namespace appComercio
         {
             InitializeComponent();
             this.Load += frmCadastroCliente_Load;
+
+            cbCadastroSetor.Items.Add("Administração");
+            cbCadastroSetor.Items.Add("Estoque");
+            cbCadastroSetor.Items.Add("Financeiro");
+            cbCadastroSetor.Items.Add("Secretaria");
+            cbCadastroSetor.Items.Add("Vendas");
         }
 
         private void frmCadastroCliente_Load(object sender, EventArgs e)
         {
             Color minhaCor = Color.FromArgb(107, 107, 107);
-            EstiloBotoes.AplicarEstiloArredondado(btnBuscarUsuario, minhaCor);
+            BotaoModernoTela2.AplicarEstiloArredondado(btnBuscarUsuario, minhaCor);
             Color minhasCor2 = Color.FromArgb(40, 46, 166);
-            EstiloBotoes.AplicarEstiloArredondado(btnSalvarCadastroUsuario, minhasCor2);
+            BotaoModernoTela2.AplicarEstiloArredondado(btnSalvarCadastroUsuario, minhasCor2);
             Color minhaCor3 = Color.FromArgb(40, 166, 73);
-            EstiloBotoes.AplicarEstiloArredondado(btnEditarCadastroUsuario, minhaCor3);
+            BotaoModernoTela2.AplicarEstiloArredondado(btnEditarCadastroUsuario, minhaCor3);
             Color minhaCor4 = Color.FromArgb(245, 98, 98);
-            EstiloBotoes.AplicarEstiloArredondado(btnApagarCadastroUsuario, minhaCor4);
+            BotaoModernoTela2.AplicarEstiloArredondado(btnApagarCadastroUsuario, minhaCor4);
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

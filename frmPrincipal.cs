@@ -28,5 +28,24 @@ namespace appComercio
             Color minhaCor3 = Color.FromArgb(245, 98, 98);
             EstiloBotoes.AplicarEstiloArredondado(btnTarefasProdutosServico, minhaCor3);
         }
+
+        private void btnCadastroProdutoServico_Click(object sender, EventArgs e)
+        {
+            frmCadastroProdutoServico CadastroProdutos = new frmCadastroProdutoServico();
+            CadastroProdutos.ShowDialog();
+            
+        }
+
+        private void btnDadosProdutoServico_Click(object sender, EventArgs e)
+        {
+            frmFornecedorProdutoServico FornecedorProdutos = new frmFornecedorProdutoServico();
+            FornecedorProdutos.ShowDialog();
+        }
+
+        private void btnTarefasProdutosServico_Click(object sender, EventArgs e)
+        {
+            frmEstoque estoque = new frmEstoque();
+            estoque.ShowDialog();
+        }
     }
 }

@@ -36,6 +36,13 @@
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnApagar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtCodigoProduto = new System.Windows.Forms.TextBox();
+            this.txtNomeItem = new System.Windows.Forms.TextBox();
+            this.txtCaracteristicasProduto = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.gbDadosProdutosServicos.SuspendLayout();
             this.gbBuscarDadosProdutosServicos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -43,6 +50,12 @@
             // gbDadosProdutosServicos
             // 
             this.gbDadosProdutosServicos.BackColor = System.Drawing.Color.Gainsboro;
+            this.gbDadosProdutosServicos.Controls.Add(this.label3);
+            this.gbDadosProdutosServicos.Controls.Add(this.label2);
+            this.gbDadosProdutosServicos.Controls.Add(this.label1);
+            this.gbDadosProdutosServicos.Controls.Add(this.txtCaracteristicasProduto);
+            this.gbDadosProdutosServicos.Controls.Add(this.txtNomeItem);
+            this.gbDadosProdutosServicos.Controls.Add(this.txtCodigoProduto);
             this.gbDadosProdutosServicos.Font = new System.Drawing.Font("Arial", 8F);
             this.gbDadosProdutosServicos.Location = new System.Drawing.Point(45, 30);
             this.gbDadosProdutosServicos.Name = "gbDadosProdutosServicos";
@@ -126,6 +139,54 @@
             this.dataGridView1.Size = new System.Drawing.Size(351, 396);
             this.dataGridView1.TabIndex = 5;
             // 
+            // txtCodigoProduto
+            // 
+            this.txtCodigoProduto.Location = new System.Drawing.Point(16, 39);
+            this.txtCodigoProduto.Name = "txtCodigoProduto";
+            this.txtCodigoProduto.Size = new System.Drawing.Size(196, 20);
+            this.txtCodigoProduto.TabIndex = 0;
+            // 
+            // txtNomeItem
+            // 
+            this.txtNomeItem.Location = new System.Drawing.Point(16, 92);
+            this.txtNomeItem.Name = "txtNomeItem";
+            this.txtNomeItem.Size = new System.Drawing.Size(196, 20);
+            this.txtNomeItem.TabIndex = 1;
+            // 
+            // txtCaracteristicasProduto
+            // 
+            this.txtCaracteristicasProduto.Location = new System.Drawing.Point(16, 151);
+            this.txtCaracteristicasProduto.Name = "txtCaracteristicasProduto";
+            this.txtCaracteristicasProduto.Size = new System.Drawing.Size(192, 20);
+            this.txtCaracteristicasProduto.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(80, 14);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Código Produto";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(13, 75);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(71, 14);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Nome do Item";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(13, 134);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(120, 14);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Caracteristicas Produto";
+            // 
             // frmDadosProdutoServico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -140,6 +201,8 @@
             this.Controls.Add(this.gbDadosProdutosServicos);
             this.Name = "frmDadosProdutoServico";
             this.Text = "frmDadosProdutoServico";
+            this.gbDadosProdutosServicos.ResumeLayout(false);
+            this.gbDadosProdutosServicos.PerformLayout();
             this.gbBuscarDadosProdutosServicos.ResumeLayout(false);
             this.gbBuscarDadosProdutosServicos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -157,5 +220,11 @@
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnApagar;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox txtCaracteristicasProduto;
+        private System.Windows.Forms.TextBox txtNomeItem;
+        private System.Windows.Forms.TextBox txtCodigoProduto;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
     }
 }

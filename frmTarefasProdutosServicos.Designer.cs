@@ -42,6 +42,11 @@
             this.rbMultiplicar = new System.Windows.Forms.RadioButton();
             this.rbDividir = new System.Windows.Forms.RadioButton();
             this.btnCalcular = new System.Windows.Forms.Button();
+            this.txtServicoProduto = new System.Windows.Forms.TextBox();
+            this.txtOpcionaisProduto = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.gbTarefasProdutoServico.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTarefasProdutoServico)).BeginInit();
             this.gbBuscarTarefasProdutosServicos.SuspendLayout();
             this.SuspendLayout();
@@ -49,6 +54,10 @@
             // gbTarefasProdutoServico
             // 
             this.gbTarefasProdutoServico.BackColor = System.Drawing.Color.Gainsboro;
+            this.gbTarefasProdutoServico.Controls.Add(this.label2);
+            this.gbTarefasProdutoServico.Controls.Add(this.label1);
+            this.gbTarefasProdutoServico.Controls.Add(this.txtOpcionaisProduto);
+            this.gbTarefasProdutoServico.Controls.Add(this.txtServicoProduto);
             this.gbTarefasProdutoServico.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbTarefasProdutoServico.Location = new System.Drawing.Point(19, 19);
             this.gbTarefasProdutoServico.Name = "gbTarefasProdutoServico";
@@ -201,6 +210,40 @@
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = false;
             // 
+            // txtServicoProduto
+            // 
+            this.txtServicoProduto.Location = new System.Drawing.Point(32, 52);
+            this.txtServicoProduto.Name = "txtServicoProduto";
+            this.txtServicoProduto.Size = new System.Drawing.Size(259, 22);
+            this.txtServicoProduto.TabIndex = 0;
+            // 
+            // txtOpcionaisProduto
+            // 
+            this.txtOpcionaisProduto.Location = new System.Drawing.Point(36, 128);
+            this.txtOpcionaisProduto.Name = "txtOpcionaisProduto";
+            this.txtOpcionaisProduto.Size = new System.Drawing.Size(254, 22);
+            this.txtOpcionaisProduto.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 8F);
+            this.label1.Location = new System.Drawing.Point(29, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 14);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Serviço";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 8F);
+            this.label2.Location = new System.Drawing.Point(33, 111);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(55, 14);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Opcionais";
+            // 
             // frmTarefasProdutosServicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -221,6 +264,8 @@
             this.Controls.Add(this.gbTarefasProdutoServico);
             this.Name = "frmTarefasProdutosServicos";
             this.Text = "frmTarefasProdutosServicos";
+            this.gbTarefasProdutoServico.ResumeLayout(false);
+            this.gbTarefasProdutoServico.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTarefasProdutoServico)).EndInit();
             this.gbBuscarTarefasProdutosServicos.ResumeLayout(false);
             this.gbBuscarTarefasProdutosServicos.PerformLayout();
@@ -245,5 +290,9 @@
         private System.Windows.Forms.RadioButton rbMultiplicar;
         private System.Windows.Forms.RadioButton rbDividir;
         private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtOpcionaisProduto;
+        private System.Windows.Forms.TextBox txtServicoProduto;
+        private System.Windows.Forms.Label label2;
     }
 }

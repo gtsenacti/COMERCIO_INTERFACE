@@ -25,8 +25,8 @@ namespace appComercio
         private void ResizeImage()
         {
          
-            Image imgOriginal = Properties.Resources.Model_dado_d20_RPG;
-            Image imgRedimencionada = new Bitmap(imgOriginal, new Size(207, 164));
+            Image imgOriginal = Properties.Resources.Dado1;
+            Image imgRedimencionada = new Bitmap(imgOriginal, new Size(193, 185));
             pbDado.Image = imgRedimencionada;
 
             Image imgOriginal1 = Properties.Resources.img;
@@ -51,7 +51,7 @@ namespace appComercio
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -81,6 +81,21 @@ namespace appComercio
         {
             new pbCadastro().Show();
             this.Hide();
+        }
+
+        private void TXusuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

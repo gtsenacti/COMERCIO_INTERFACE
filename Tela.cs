@@ -16,5 +16,10 @@ namespace appComercio
         {
             InitializeComponent();
         }
+
+        private void btCharecter_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

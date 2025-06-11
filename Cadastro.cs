@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -66,6 +68,7 @@ namespace appComercio
 
         private void label1_Click_1(object sender, EventArgs e)
         {
+            
 
         }
 
@@ -81,15 +84,32 @@ namespace appComercio
             }
             else if (senha != consenha)
             {
-                MessageBox.Show("A senha não foi digitada corretamente");
+                MessageBox.Show("As senhas não são iguais");
             }
             else
             {
 
-                MessageBox.Show("Cadstro feito com sucesso LEEEEEESGOOO!!!");
+                MessageBox.Show("Cadastro feito com sucesso LEEEEEESGOOO!!!");
                 new TelaLogin().Show();
                 this.Hide();
             }
         }
+
+        private void TxTusuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            new TelaLogin().Show();
+            this.Hide();
+        }
+        
     }
 }

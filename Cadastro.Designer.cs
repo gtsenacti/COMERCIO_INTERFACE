@@ -72,7 +72,7 @@
             this.TxTusuario.Multiline = true;
             this.TxTusuario.Name = "TxTusuario";
             this.TxTusuario.Size = new System.Drawing.Size(308, 25);
-            this.TxTusuario.TabIndex = 2;
+            this.TxTusuario.TabIndex = 1;
             this.TxTusuario.TextChanged += new System.EventHandler(this.TxTusuario_TextChanged);
             // 
             // Txtsenha
@@ -80,16 +80,18 @@
             this.Txtsenha.Location = new System.Drawing.Point(17, 160);
             this.Txtsenha.Multiline = true;
             this.Txtsenha.Name = "Txtsenha";
+            this.Txtsenha.PasswordChar = '*';
             this.Txtsenha.Size = new System.Drawing.Size(308, 25);
-            this.Txtsenha.TabIndex = 3;
+            this.Txtsenha.TabIndex = 2;
             // 
             // TxTconfirmar
             // 
             this.TxTconfirmar.Location = new System.Drawing.Point(17, 236);
             this.TxTconfirmar.Multiline = true;
             this.TxTconfirmar.Name = "TxTconfirmar";
+            this.TxTconfirmar.PasswordChar = '*';
             this.TxTconfirmar.Size = new System.Drawing.Size(308, 25);
-            this.TxTconfirmar.TabIndex = 4;
+            this.TxTconfirmar.TabIndex = 3;
             // 
             // label2
             // 
@@ -116,7 +118,7 @@
             this.Cadastrar.Location = new System.Drawing.Point(194, 284);
             this.Cadastrar.Name = "Cadastrar";
             this.Cadastrar.Size = new System.Drawing.Size(118, 23);
-            this.Cadastrar.TabIndex = 7;
+            this.Cadastrar.TabIndex = 5;
             this.Cadastrar.Text = "Cadastrar";
             this.Cadastrar.UseVisualStyleBackColor = true;
             this.Cadastrar.Click += new System.EventHandler(this.button1_Click);
@@ -137,13 +139,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(346, 333);
             this.panel1.TabIndex = 8;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(33, 284);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(118, 23);
-            this.button1.TabIndex = 8;
+            this.button1.TabIndex = 4;
             this.button1.Text = "Voltar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
@@ -157,6 +160,7 @@
             this.Controls.Add(this.pbchina);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "pbCadastro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro";
             this.Load += new System.EventHandler(this.pbCadastro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbchina)).EndInit();

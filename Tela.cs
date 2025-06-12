@@ -19,7 +19,26 @@ namespace appComercio
 
         private void btCharecter_Click(object sender, EventArgs e)
         {
+            new Criação().Show();
+            this.Hide();
+        }
 
+        private void btPersonagens_Click(object sender, EventArgs e)
+        {
+            new Personagenss().Show();
+            this.Hide();
+        }
+
+        private void btvoltarTELA_Click(object sender, EventArgs e)
+        {
+            new TelaLogin().Show();
+            this.Hide();
+        }
+
+        private void btCreditos_Click(object sender, EventArgs e)
+        {
+            new Creditos().Show();
+            this.Hide();
         }
     }
 }

@@ -73,6 +73,16 @@ namespace appComercio.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Creditos {
+            get {
+                object obj = ResourceManager.GetObject("Creditos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Dado {
             get {
                 object obj = ResourceManager.GetObject("Dado", resourceCulture);
@@ -146,6 +156,16 @@ namespace appComercio.Properties {
         internal static System.Drawing.Bitmap Model_dado_d20_RPG {
             get {
                 object obj = ResourceManager.GetObject("Model dado d20 RPG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RacaOgro {
+            get {
+                object obj = ResourceManager.GetObject("RacaOgro", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

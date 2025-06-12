@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,10 +14,17 @@ namespace appComercio
 
     public partial class Adicionar : Form
     {
+        public static List<Carta> CartasSalvas = new List<Carta>();
 
         public Adicionar()
         {
             InitializeComponent();
+            cbTipoCarta.Items.Add("Normal");
+            cbTipoCarta.Items.Add("Fusão");
+            cbTipoCarta.Items.Add("Sincron");
+            cbTipoCarta.Items.Add("XY");
+            cbTipoCarta.Items.Add("Pendolu");
+            cbTipoCarta.Items.Add("Link");
         }
 
 
@@ -48,17 +56,46 @@ namespace appComercio
         {
             public string NomeCarta { get;set; }
             public string DescricaoCarta { get; set; }
+            public int NivelCarta { get; set; }
+            public string TipoCarta { get; set; }
+            
         }
+       
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
         }
 
-        private void btSalvarCarta_Click(object sender, EventArgs e)
+        public void btSalvarCarta_Click(object sender, EventArgs e)
         {
-            var Carta1 = new Carta();
-            Carta1.NomeCarta = txtNomeCarta.Text;
-            Carta1.DescricaoCarta = txtDescricaoCarta.Text;
-            txtDescricaoCarta.Text = Carta1.NomeCarta;
+            var Cart = new Carta();
+            Cart.NomeCarta = txtNomeCarta.Text;
+            Cart.DescricaoCarta = txtDescricaoCarta.Text;
+            Cart.NivelCarta =  (int)nudNivelCarta.Value;
+            Cart.TipoCarta = cbTipoCarta.Text.Trim();
+            CartasSalvas.Add(Cart);
+            MessageBox.Show($"Carta #{Adicionar.CartasSalvas.Count} salva com sucesso!");
+          
+        }
+
+        private void txtDescricaoCarta_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nudNivelCarta_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            new TelaPrinciapal().Show();
+            this.Hide();
         }
     }
 }

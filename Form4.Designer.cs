@@ -37,6 +37,7 @@
             this.cbTipoCarta = new System.Windows.Forms.ComboBox();
             this.lblTipoCarta = new System.Windows.Forms.Label();
             this.btSalvarCarta = new System.Windows.Forms.Button();
+            this.btSair = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudNivelCarta)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,7 +68,8 @@
             0});
             this.nudNivelCarta.Name = "nudNivelCarta";
             this.nudNivelCarta.Size = new System.Drawing.Size(186, 20);
-            this.nudNivelCarta.TabIndex = 2;
+            this.nudNivelCarta.TabIndex = 1;
+            this.nudNivelCarta.ValueChanged += new System.EventHandler(this.nudNivelCarta_ValueChanged);
             // 
             // lblNivelCarta
             // 
@@ -94,7 +96,8 @@
             this.txtDescricaoCarta.Multiline = true;
             this.txtDescricaoCarta.Name = "txtDescricaoCarta";
             this.txtDescricaoCarta.Size = new System.Drawing.Size(185, 122);
-            this.txtDescricaoCarta.TabIndex = 5;
+            this.txtDescricaoCarta.TabIndex = 3;
+            this.txtDescricaoCarta.TextChanged += new System.EventHandler(this.txtDescricaoCarta_TextChanged);
             // 
             // cbTipoCarta
             // 
@@ -102,7 +105,7 @@
             this.cbTipoCarta.Location = new System.Drawing.Point(146, 306);
             this.cbTipoCarta.Name = "cbTipoCarta";
             this.cbTipoCarta.Size = new System.Drawing.Size(121, 21);
-            this.cbTipoCarta.TabIndex = 6;
+            this.cbTipoCarta.TabIndex = 4;
             this.cbTipoCarta.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // lblTipoCarta
@@ -119,16 +122,27 @@
             this.btSalvarCarta.Location = new System.Drawing.Point(144, 385);
             this.btSalvarCarta.Name = "btSalvarCarta";
             this.btSalvarCarta.Size = new System.Drawing.Size(75, 23);
-            this.btSalvarCarta.TabIndex = 8;
+            this.btSalvarCarta.TabIndex = 5;
             this.btSalvarCarta.Text = "Salvar";
             this.btSalvarCarta.UseVisualStyleBackColor = true;
             this.btSalvarCarta.Click += new System.EventHandler(this.btSalvarCarta_Click);
+            // 
+            // btSair
+            // 
+            this.btSair.Location = new System.Drawing.Point(256, 385);
+            this.btSair.Name = "btSair";
+            this.btSair.Size = new System.Drawing.Size(75, 23);
+            this.btSair.TabIndex = 6;
+            this.btSair.Text = "Sair";
+            this.btSair.UseVisualStyleBackColor = true;
+            this.btSair.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // Adicionar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btSair);
             this.Controls.Add(this.btSalvarCarta);
             this.Controls.Add(this.lblTipoCarta);
             this.Controls.Add(this.cbTipoCarta);
@@ -158,5 +172,6 @@
         private System.Windows.Forms.ComboBox cbTipoCarta;
         private System.Windows.Forms.Label lblTipoCarta;
         private System.Windows.Forms.Button btSalvarCarta;
+        private System.Windows.Forms.Button btSair;
     }
 }

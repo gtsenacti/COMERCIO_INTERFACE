@@ -49,6 +49,7 @@
             // 
             this.txtSenha.Location = new System.Drawing.Point(245, 279);
             this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(325, 20);
             this.txtSenha.TabIndex = 1;
             this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
@@ -90,7 +91,7 @@
             this.btnEntrar.Location = new System.Drawing.Point(310, 378);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(189, 40);
-            this.btnEntrar.TabIndex = 5;
+            this.btnEntrar.TabIndex = 3;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = false;
             this.btnEntrar.Click += new System.EventHandler(this.button1_Click_1);
@@ -101,7 +102,7 @@
             this.btnSair.Location = new System.Drawing.Point(537, 378);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(189, 40);
-            this.btnSair.TabIndex = 6;
+            this.btnSair.TabIndex = 4;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = false;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);

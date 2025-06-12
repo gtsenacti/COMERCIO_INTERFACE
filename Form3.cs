@@ -20,7 +20,7 @@ namespace appComercio
 
         private void Form3_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -42,6 +42,12 @@ namespace appComercio
         private void label1_Click_2(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new btVerCarta().Show();
+            this.Hide();
         }
     }
 }

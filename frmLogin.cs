@@ -46,9 +46,19 @@ namespace appComercio
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            frmPrincipal principal = new frmPrincipal();
-            principal.Show();
-            this.Visible=false;
+            string UsuarioCorreto = "admin";
+            string SenhaCorreto = "123456";
+
+            if (txtUsuario.Text == UsuarioCorreto && SenhaCorreto == SenhaCorreto)
+            {
+                frmPrincipal principal = new frmPrincipal();
+                principal.Show();
+                this.Visible = false;
+            }
+            else
+            {
+                MessageBox.Show("Usuário ou senha incorreto", "Erro de login", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

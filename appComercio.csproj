@@ -52,6 +52,12 @@
   <ItemGroup>
     <Compile Include="apiRotasController.cs" />
     <Compile Include="CadastroUsuarioModel.cs" />
+    <Compile Include="frmCadastroProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroProduto.Designer.cs">
+      <DependentUpon>frmCadastroProduto.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCadastroUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,13 +70,25 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCadastroProduto.resx">
+      <DependentUpon>frmCadastroProduto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCadastroUsuario.resx">
       <DependentUpon>frmCadastroUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -95,6 +113,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cadastroProduto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tarefas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pastaArquivos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appComercio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appComercio2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cadastroLogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cadastroLogin2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\entrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sair.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -22,5 +22,17 @@ namespace appComercio
             frmCadastroUsuario frmCadUsu = new frmCadastroUsuario();
             frmCadUsu.ShowDialog();
         }
+
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            frmPrincipal frmP = new frmPrincipal();
+            frmP.Show();
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -117,47 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Evee" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Evee.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PI" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PI.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Ghostly Forest from Qwertee _ Day of the Shirt" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ghostly Forest from Qwertee _ Day of the Shirt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pokemon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pokemon.logo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Pokemon Logo PNG" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pokemon Logo PNG.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Level Up Your Screen_ Find the Perfect Pokemon Wallpaper to Match Your Trainer Style 2024 134" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Level Up Your Screen_ Find the Perfect Pokemon Wallpaper to Match Your Trainer Style 2024 134.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="download (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\download (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pokemon.logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pokemon.logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="download" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\download.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Redraw Redesign Pokemon Pikachu Ball Rotate Seamless Pattern Editorial Photo - Illustration of mobile, figure_ 163875816" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Redraw Redesign Pokemon Pikachu Ball Rotate Seamless Pattern Editorial Photo - Illustration of mobile, figure_ 163875816.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="download (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\download (3).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="download (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\download (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pokelogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pokelogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="download (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\download (4).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>

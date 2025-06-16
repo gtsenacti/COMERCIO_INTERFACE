@@ -30,15 +30,15 @@
         {
             this.pbTelaLogin = new System.Windows.Forms.PictureBox();
             this.gbTelaLogin = new System.Windows.Forms.GroupBox();
+            this.lblTituloLogin = new System.Windows.Forms.Label();
+            this.lblUsuario = new System.Windows.Forms.Label();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.lblSenha = new System.Windows.Forms.Label();
+            this.txtSenha = new System.Windows.Forms.TextBox();
+            this.lblSetor = new System.Windows.Forms.Label();
+            this.cbSetor = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.cbSetor = new System.Windows.Forms.ComboBox();
-            this.lblSetor = new System.Windows.Forms.Label();
-            this.txtSenha = new System.Windows.Forms.TextBox();
-            this.lblSenha = new System.Windows.Forms.Label();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.lblUsuario = new System.Windows.Forms.Label();
-            this.lblTituloLogin = new System.Windows.Forms.Label();
             this.btnCadastrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbTelaLogin)).BeginInit();
             this.gbTelaLogin.SuspendLayout();
@@ -69,6 +69,75 @@
             this.gbTelaLogin.TabStop = false;
             this.gbTelaLogin.Text = "Dados do usuário";
             // 
+            // lblTituloLogin
+            // 
+            this.lblTituloLogin.AutoSize = true;
+            this.lblTituloLogin.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTituloLogin.Location = new System.Drawing.Point(51, 31);
+            this.lblTituloLogin.Name = "lblTituloLogin";
+            this.lblTituloLogin.Size = new System.Drawing.Size(240, 29);
+            this.lblTituloLogin.TabIndex = 6;
+            this.lblTituloLogin.Text = "Sistemas de Gestão";
+            // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.Location = new System.Drawing.Point(6, 70);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(75, 19);
+            this.lblUsuario.TabIndex = 5;
+            this.lblUsuario.Text = "Usuário:";
+            // 
+            // txtUsuario
+            // 
+            this.txtUsuario.Location = new System.Drawing.Point(7, 91);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(324, 26);
+            this.txtUsuario.TabIndex = 4;
+            // 
+            // lblSenha
+            // 
+            this.lblSenha.AutoSize = true;
+            this.lblSenha.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSenha.Location = new System.Drawing.Point(3, 120);
+            this.lblSenha.Name = "lblSenha";
+            this.lblSenha.Size = new System.Drawing.Size(64, 19);
+            this.lblSenha.TabIndex = 3;
+            this.lblSenha.Text = "Senha:";
+            // 
+            // txtSenha
+            // 
+            this.txtSenha.Location = new System.Drawing.Point(6, 141);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.Size = new System.Drawing.Size(325, 26);
+            this.txtSenha.TabIndex = 2;
+            // 
+            // lblSetor
+            // 
+            this.lblSetor.AutoSize = true;
+            this.lblSetor.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSetor.Location = new System.Drawing.Point(3, 170);
+            this.lblSetor.Name = "lblSetor";
+            this.lblSetor.Size = new System.Drawing.Size(56, 19);
+            this.lblSetor.TabIndex = 1;
+            this.lblSetor.Text = "Setor:";
+            // 
+            // cbSetor
+            // 
+            this.cbSetor.FormattingEnabled = true;
+            this.cbSetor.Items.AddRange(new object[] {
+            "",
+            "Administrativo",
+            "Estoque",
+            "Financeiro",
+            "Secretariado",
+            "Vendas"});
+            this.cbSetor.Location = new System.Drawing.Point(6, 191);
+            this.cbSetor.Name = "cbSetor";
+            this.cbSetor.Size = new System.Drawing.Size(325, 26);
+            this.cbSetor.TabIndex = 0;
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.LimeGreen;
@@ -97,75 +166,6 @@
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // cbSetor
-            // 
-            this.cbSetor.FormattingEnabled = true;
-            this.cbSetor.Items.AddRange(new object[] {
-            "",
-            "Administrativo",
-            "Estoque",
-            "Financeiro",
-            "Secretariado",
-            "Vendas"});
-            this.cbSetor.Location = new System.Drawing.Point(6, 191);
-            this.cbSetor.Name = "cbSetor";
-            this.cbSetor.Size = new System.Drawing.Size(325, 26);
-            this.cbSetor.TabIndex = 0;
-            // 
-            // lblSetor
-            // 
-            this.lblSetor.AutoSize = true;
-            this.lblSetor.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSetor.Location = new System.Drawing.Point(3, 170);
-            this.lblSetor.Name = "lblSetor";
-            this.lblSetor.Size = new System.Drawing.Size(56, 19);
-            this.lblSetor.TabIndex = 1;
-            this.lblSetor.Text = "Setor:";
-            // 
-            // txtSenha
-            // 
-            this.txtSenha.Location = new System.Drawing.Point(6, 141);
-            this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(325, 26);
-            this.txtSenha.TabIndex = 2;
-            // 
-            // lblSenha
-            // 
-            this.lblSenha.AutoSize = true;
-            this.lblSenha.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSenha.Location = new System.Drawing.Point(3, 120);
-            this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(64, 19);
-            this.lblSenha.TabIndex = 3;
-            this.lblSenha.Text = "Senha:";
-            // 
-            // txtUsuario
-            // 
-            this.txtUsuario.Location = new System.Drawing.Point(7, 91);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(324, 26);
-            this.txtUsuario.TabIndex = 4;
-            // 
-            // lblUsuario
-            // 
-            this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(6, 70);
-            this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(75, 19);
-            this.lblUsuario.TabIndex = 5;
-            this.lblUsuario.Text = "Usuário:";
-            // 
-            // lblTituloLogin
-            // 
-            this.lblTituloLogin.AutoSize = true;
-            this.lblTituloLogin.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTituloLogin.Location = new System.Drawing.Point(51, 31);
-            this.lblTituloLogin.Name = "lblTituloLogin";
-            this.lblTituloLogin.Size = new System.Drawing.Size(240, 29);
-            this.lblTituloLogin.TabIndex = 6;
-            this.lblTituloLogin.Text = "Sistemas de Gestão";
-            // 
             // btnCadastrar
             // 
             this.btnCadastrar.BackColor = System.Drawing.Color.SteelBlue;
@@ -184,7 +184,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(624, 292);
+            this.ClientSize = new System.Drawing.Size(741, 404);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);

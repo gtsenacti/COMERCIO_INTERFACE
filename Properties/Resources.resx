@@ -118,14 +118,71 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="images (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LFP586" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LFP586.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Nokk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Nokk.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Smoke_Grenade" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Smoke_Grenade.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="F2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\F2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="R6 Black Ice Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\R6 Black Ice Background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shock-Drones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shock-Drones.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="download" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\download.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cosmeticos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cosmeticos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="R6-operator-twitch-elite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\R6-operator-twitch-elite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="417" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\417.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Y0R6_BADGE_Twitch_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Y0R6_BADGE_Twitch_L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="P9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\P9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Wallpaper Psicodelico" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Wallpaper Psicodelico.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Cosplay Costumes, Cosplay Shoes, Cosplay Wigs Latest &amp; Greatest - CosplayClass_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cosplay Costumes, Cosplay Shoes, Cosplay Wigs Latest &amp; Greatest - CosplayClass_.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SG-CQB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SG-CQB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Clip Art Png For Free - Rainbow Six Siege Png, Transparent Png(800x440) - PngFind" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Clip Art Png For Free - Rainbow Six Siege Png, Transparent Png(800x440) - PngFind.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="download (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\download (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rainbow six siege" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rainbow six siege.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Claymore" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Claymore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cosmeticos2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cosmeticos2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="android-rainbow-six-siege-background-900-x-1600-u3q538ux7mm2on7e" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\android-rainbow-six-siege-background-900-x-1600-u3q538ux7mm2on7e.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,13 +190,22 @@
   <data name="spr.monitor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\spr.monitor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Cosplay Costumes, Cosplay Shoes, Cosplay Wigs Latest &amp; Greatest - CosplayClass_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cosplay Costumes, Cosplay Shoes, Cosplay Wigs Latest &amp; Greatest - CosplayClass_.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Daco_4138609" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Daco_4138609.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="download" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\download.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Rainbow six siege Twitch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rainbow six siege Twitch.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Oregon _ Maps _ Tom Clancy's Rainbow Six Siege _ Ubisoft (CA)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Oregon _ Maps _ Tom Clancy's Rainbow Six Siege _ Ubisoft (CA).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="R6_Siege_X_Logo_V2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\R6_Siege_X_Logo_V2.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Twitch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Twitch.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fundo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fundo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -28,22 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnCosmeticos = new System.Windows.Forms.Button();
             this.btnMapas = new System.Windows.Forms.Button();
             this.btnPersonagens = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button3
+            // btnCosmeticos
             // 
-            this.button3.Location = new System.Drawing.Point(570, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(218, 311);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnCosmeticos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCosmeticos.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnCosmeticos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(77)))), ((int)(((byte)(80)))));
+            this.btnCosmeticos.Image = global::appComercio.Properties.Resources.cosmeticos2;
+            this.btnCosmeticos.Location = new System.Drawing.Point(570, 12);
+            this.btnCosmeticos.Name = "btnCosmeticos";
+            this.btnCosmeticos.Size = new System.Drawing.Size(218, 311);
+            this.btnCosmeticos.TabIndex = 2;
+            this.btnCosmeticos.Text = "Cosméticos";
+            this.btnCosmeticos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnCosmeticos.UseVisualStyleBackColor = true;
+            this.btnCosmeticos.Click += new System.EventHandler(this.btnCosmeticos_Click);
             // 
             // btnMapas
             // 
             this.btnMapas.DialogResult = System.Windows.Forms.DialogResult.Retry;
+            this.btnMapas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMapas.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold);
             this.btnMapas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(77)))), ((int)(((byte)(80)))));
             this.btnMapas.Image = global::appComercio.Properties.Resources.Oregon___Maps___Tom_Clancy_s_Rainbow_Six_Siege___Ubisoft__CA_;
@@ -58,6 +66,7 @@
             // 
             // btnPersonagens
             // 
+            this.btnPersonagens.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPersonagens.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPersonagens.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(77)))), ((int)(((byte)(80)))));
             this.btnPersonagens.Image = global::appComercio.Properties.Resources.Cosplay_Costumes__Cosplay_Shoes__Cosplay_Wigs_Latest___Greatest___CosplayClass_;
@@ -76,7 +85,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 339);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnCosmeticos);
             this.Controls.Add(this.btnMapas);
             this.Controls.Add(this.btnPersonagens);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -91,6 +100,6 @@
 
         private System.Windows.Forms.Button btnPersonagens;
         private System.Windows.Forms.Button btnMapas;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnCosmeticos;
     }
 }

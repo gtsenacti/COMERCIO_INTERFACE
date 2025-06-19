@@ -30,20 +30,22 @@
         {
             this.dgvCadastroUsuario = new System.Windows.Forms.DataGridView();
             this.gbCadastroUsuario = new System.Windows.Forms.GroupBox();
-            this.txtCadastroNome = new System.Windows.Forms.TextBox();
-            this.txtCadastroSenha = new System.Windows.Forms.TextBox();
-            this.txtCadastroSetor = new System.Windows.Forms.TextBox();
-            this.lblNome = new System.Windows.Forms.Label();
-            this.lblSenha = new System.Windows.Forms.Label();
-            this.lblSetor = new System.Windows.Forms.Label();
             this.lblBuscar = new System.Windows.Forms.Label();
             this.txtBuscar = new System.Windows.Forms.TextBox();
+            this.lblSetor = new System.Windows.Forms.Label();
+            this.lblSenha = new System.Windows.Forms.Label();
+            this.lblNome = new System.Windows.Forms.Label();
+            this.txtCadastroSetor = new System.Windows.Forms.TextBox();
+            this.txtCadastroSenha = new System.Windows.Forms.TextBox();
+            this.txtCadastroNome = new System.Windows.Forms.TextBox();
             this.btnApagar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
+            this.pbLogoCadastroUsuario = new System.Windows.Forms.PictureBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCadastroUsuario)).BeginInit();
             this.gbCadastroUsuario.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogoCadastroUsuario)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvCadastroUsuario
@@ -56,6 +58,7 @@
             // 
             // gbCadastroUsuario
             // 
+            this.gbCadastroUsuario.Controls.Add(this.pbLogoCadastroUsuario);
             this.gbCadastroUsuario.Controls.Add(this.btnBuscar);
             this.gbCadastroUsuario.Controls.Add(this.lblBuscar);
             this.gbCadastroUsuario.Controls.Add(this.txtBuscar);
@@ -73,63 +76,6 @@
             this.gbCadastroUsuario.TabIndex = 1;
             this.gbCadastroUsuario.TabStop = false;
             this.gbCadastroUsuario.Text = "Cadastrar novo usuário";
-            // 
-            // txtCadastroNome
-            // 
-            this.txtCadastroNome.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCadastroNome.Location = new System.Drawing.Point(6, 86);
-            this.txtCadastroNome.Name = "txtCadastroNome";
-            this.txtCadastroNome.Size = new System.Drawing.Size(297, 26);
-            this.txtCadastroNome.TabIndex = 0;
-            // 
-            // txtCadastroSenha
-            // 
-            this.txtCadastroSenha.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCadastroSenha.Location = new System.Drawing.Point(6, 142);
-            this.txtCadastroSenha.Name = "txtCadastroSenha";
-            this.txtCadastroSenha.Size = new System.Drawing.Size(297, 26);
-            this.txtCadastroSenha.TabIndex = 1;
-            // 
-            // txtCadastroSetor
-            // 
-            this.txtCadastroSetor.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCadastroSetor.Location = new System.Drawing.Point(6, 199);
-            this.txtCadastroSetor.Name = "txtCadastroSetor";
-            this.txtCadastroSetor.Size = new System.Drawing.Size(297, 26);
-            this.txtCadastroSetor.TabIndex = 2;
-            // 
-            // lblNome
-            // 
-            this.lblNome.AutoSize = true;
-            this.lblNome.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNome.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lblNome.Location = new System.Drawing.Point(3, 64);
-            this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(60, 19);
-            this.lblNome.TabIndex = 3;
-            this.lblNome.Text = "Nome:";
-            // 
-            // lblSenha
-            // 
-            this.lblSenha.AutoSize = true;
-            this.lblSenha.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSenha.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lblSenha.Location = new System.Drawing.Point(3, 120);
-            this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(64, 19);
-            this.lblSenha.TabIndex = 4;
-            this.lblSenha.Text = "Senha:";
-            // 
-            // lblSetor
-            // 
-            this.lblSetor.AutoSize = true;
-            this.lblSetor.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSetor.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lblSetor.Location = new System.Drawing.Point(2, 177);
-            this.lblSetor.Name = "lblSetor";
-            this.lblSetor.Size = new System.Drawing.Size(56, 19);
-            this.lblSetor.TabIndex = 5;
-            this.lblSetor.Text = "Setor:";
             // 
             // lblBuscar
             // 
@@ -149,6 +95,63 @@
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(297, 26);
             this.txtBuscar.TabIndex = 3;
+            // 
+            // lblSetor
+            // 
+            this.lblSetor.AutoSize = true;
+            this.lblSetor.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSetor.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.lblSetor.Location = new System.Drawing.Point(2, 241);
+            this.lblSetor.Name = "lblSetor";
+            this.lblSetor.Size = new System.Drawing.Size(56, 19);
+            this.lblSetor.TabIndex = 5;
+            this.lblSetor.Text = "Setor:";
+            // 
+            // lblSenha
+            // 
+            this.lblSenha.AutoSize = true;
+            this.lblSenha.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSenha.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.lblSenha.Location = new System.Drawing.Point(3, 184);
+            this.lblSenha.Name = "lblSenha";
+            this.lblSenha.Size = new System.Drawing.Size(64, 19);
+            this.lblSenha.TabIndex = 4;
+            this.lblSenha.Text = "Senha:";
+            // 
+            // lblNome
+            // 
+            this.lblNome.AutoSize = true;
+            this.lblNome.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.lblNome.Location = new System.Drawing.Point(3, 128);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(60, 19);
+            this.lblNome.TabIndex = 3;
+            this.lblNome.Text = "Nome:";
+            // 
+            // txtCadastroSetor
+            // 
+            this.txtCadastroSetor.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCadastroSetor.Location = new System.Drawing.Point(6, 263);
+            this.txtCadastroSetor.Name = "txtCadastroSetor";
+            this.txtCadastroSetor.Size = new System.Drawing.Size(297, 26);
+            this.txtCadastroSetor.TabIndex = 2;
+            // 
+            // txtCadastroSenha
+            // 
+            this.txtCadastroSenha.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCadastroSenha.Location = new System.Drawing.Point(6, 206);
+            this.txtCadastroSenha.Name = "txtCadastroSenha";
+            this.txtCadastroSenha.Size = new System.Drawing.Size(297, 26);
+            this.txtCadastroSenha.TabIndex = 1;
+            // 
+            // txtCadastroNome
+            // 
+            this.txtCadastroNome.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCadastroNome.Location = new System.Drawing.Point(6, 150);
+            this.txtCadastroNome.Name = "txtCadastroNome";
+            this.txtCadastroNome.Size = new System.Drawing.Size(297, 26);
+            this.txtCadastroNome.TabIndex = 0;
             // 
             // btnApagar
             // 
@@ -189,6 +192,16 @@
             this.btnSalvar.TabIndex = 5;
             this.btnSalvar.UseVisualStyleBackColor = false;
             // 
+            // pbLogoCadastroUsuario
+            // 
+            this.pbLogoCadastroUsuario.Image = global::appComercio.Properties.Resources.usuarios;
+            this.pbLogoCadastroUsuario.Location = new System.Drawing.Point(6, 25);
+            this.pbLogoCadastroUsuario.Name = "pbLogoCadastroUsuario";
+            this.pbLogoCadastroUsuario.Size = new System.Drawing.Size(103, 100);
+            this.pbLogoCadastroUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbLogoCadastroUsuario.TabIndex = 8;
+            this.pbLogoCadastroUsuario.TabStop = false;
+            // 
             // btnBuscar
             // 
             this.btnBuscar.BackColor = System.Drawing.Color.PaleGoldenrod;
@@ -196,9 +209,9 @@
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBuscar.ForeColor = System.Drawing.Color.PaleGoldenrod;
             this.btnBuscar.Image = global::appComercio.Properties.Resources.buscar;
-            this.btnBuscar.Location = new System.Drawing.Point(223, 350);
+            this.btnBuscar.Location = new System.Drawing.Point(111, 350);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(80, 57);
+            this.btnBuscar.Size = new System.Drawing.Size(86, 56);
             this.btnBuscar.TabIndex = 4;
             this.btnBuscar.UseVisualStyleBackColor = false;
             // 
@@ -220,6 +233,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvCadastroUsuario)).EndInit();
             this.gbCadastroUsuario.ResumeLayout(false);
             this.gbCadastroUsuario.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogoCadastroUsuario)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -240,5 +254,6 @@
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnApagar;
+        private System.Windows.Forms.PictureBox pbLogoCadastroUsuario;
     }
 }

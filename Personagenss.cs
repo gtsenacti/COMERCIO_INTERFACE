@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static appComercio.Criação;
 
 namespace appComercio
 {
@@ -33,6 +34,11 @@ namespace appComercio
             new Tela().Show();
             this.Hide();
 
+        }
+
+        private void btDelete_Click(object sender, EventArgs e)
+        {
+                                                         
         }
     }
 }

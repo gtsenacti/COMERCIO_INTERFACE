@@ -19,9 +19,7 @@ namespace appComercio
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Image imgOriginal1 = Properties.Resources.Creditos;
-            Image imgRedimencionada1 = new Bitmap(imgOriginal1, new Size(800, 456));
-            pbcreditos.Image = imgRedimencionada1;
+       
         }
 
         private void button1_Click(object sender, EventArgs e)

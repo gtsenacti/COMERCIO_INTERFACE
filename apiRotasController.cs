@@ -12,7 +12,7 @@ namespace appComercio
 
         public static string CadastroUsuario => $"{baseUrl}/CadastroUsuario";
         // Adicione mais endpoints aqui, se quiser:
-        // public static string Produtos => $"{baseUrl}/Produtos";
+        public static string CadastroProduto => $"{baseUrl}/CadastroProduto";
         // public static string Clientes => $"{baseUrl}/Clientes";
     }
 }

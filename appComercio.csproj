@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="apiRotasController.cs" />
+    <Compile Include="CadastroProdutoModel.cs" />
     <Compile Include="CadastroUsuarioModel.cs" />
     <Compile Include="frmCadastroProduto.cs">
       <SubType>Form</SubType>
@@ -149,6 +150,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\usuarios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\produtos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\produtosMaior.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

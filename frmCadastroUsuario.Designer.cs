@@ -30,6 +30,8 @@
         {
             this.dgvCadastroUsuario = new System.Windows.Forms.DataGridView();
             this.gbCadastroUsuario = new System.Windows.Forms.GroupBox();
+            this.pbLogoCadastroUsuario = new System.Windows.Forms.PictureBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.lblBuscar = new System.Windows.Forms.Label();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.lblSetor = new System.Windows.Forms.Label();
@@ -41,8 +43,8 @@
             this.btnApagar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
-            this.pbLogoCadastroUsuario = new System.Windows.Forms.PictureBox();
-            this.btnBuscar = new System.Windows.Forms.Button();
+            this.rbNomeUusuario = new System.Windows.Forms.RadioButton();
+            this.rbSetorUsuario = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCadastroUsuario)).BeginInit();
             this.gbCadastroUsuario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogoCadastroUsuario)).BeginInit();
@@ -55,9 +57,12 @@
             this.dgvCadastroUsuario.Name = "dgvCadastroUsuario";
             this.dgvCadastroUsuario.Size = new System.Drawing.Size(311, 517);
             this.dgvCadastroUsuario.TabIndex = 0;
+            this.dgvCadastroUsuario.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCadastroUsuario_CellClick);
             // 
             // gbCadastroUsuario
             // 
+            this.gbCadastroUsuario.Controls.Add(this.rbSetorUsuario);
+            this.gbCadastroUsuario.Controls.Add(this.rbNomeUusuario);
             this.gbCadastroUsuario.Controls.Add(this.pbLogoCadastroUsuario);
             this.gbCadastroUsuario.Controls.Add(this.btnBuscar);
             this.gbCadastroUsuario.Controls.Add(this.lblBuscar);
@@ -76,6 +81,29 @@
             this.gbCadastroUsuario.TabIndex = 1;
             this.gbCadastroUsuario.TabStop = false;
             this.gbCadastroUsuario.Text = "Cadastrar novo usuário";
+            // 
+            // pbLogoCadastroUsuario
+            // 
+            this.pbLogoCadastroUsuario.Image = global::appComercio.Properties.Resources.usuarios;
+            this.pbLogoCadastroUsuario.Location = new System.Drawing.Point(6, 25);
+            this.pbLogoCadastroUsuario.Name = "pbLogoCadastroUsuario";
+            this.pbLogoCadastroUsuario.Size = new System.Drawing.Size(103, 100);
+            this.pbLogoCadastroUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbLogoCadastroUsuario.TabIndex = 8;
+            this.pbLogoCadastroUsuario.TabStop = false;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBuscar.ForeColor = System.Drawing.Color.PaleGoldenrod;
+            this.btnBuscar.Image = global::appComercio.Properties.Resources.buscar;
+            this.btnBuscar.Location = new System.Drawing.Point(223, 351);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(80, 54);
+            this.btnBuscar.TabIndex = 4;
+            this.btnBuscar.UseVisualStyleBackColor = false;
             // 
             // lblBuscar
             // 
@@ -165,6 +193,7 @@
             this.btnApagar.Size = new System.Drawing.Size(86, 69);
             this.btnApagar.TabIndex = 7;
             this.btnApagar.UseVisualStyleBackColor = false;
+            this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
             // 
             // btnEditar
             // 
@@ -178,6 +207,7 @@
             this.btnEditar.Size = new System.Drawing.Size(86, 69);
             this.btnEditar.TabIndex = 6;
             this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnSalvar
             // 
@@ -191,29 +221,29 @@
             this.btnSalvar.Size = new System.Drawing.Size(86, 69);
             this.btnSalvar.TabIndex = 5;
             this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
-            // pbLogoCadastroUsuario
+            // rbNomeUusuario
             // 
-            this.pbLogoCadastroUsuario.Image = global::appComercio.Properties.Resources.usuarios;
-            this.pbLogoCadastroUsuario.Location = new System.Drawing.Point(6, 25);
-            this.pbLogoCadastroUsuario.Name = "pbLogoCadastroUsuario";
-            this.pbLogoCadastroUsuario.Size = new System.Drawing.Size(103, 100);
-            this.pbLogoCadastroUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pbLogoCadastroUsuario.TabIndex = 8;
-            this.pbLogoCadastroUsuario.TabStop = false;
+            this.rbNomeUusuario.AutoSize = true;
+            this.rbNomeUusuario.Location = new System.Drawing.Point(6, 367);
+            this.rbNomeUusuario.Name = "rbNomeUusuario";
+            this.rbNomeUusuario.Size = new System.Drawing.Size(100, 23);
+            this.rbNomeUusuario.TabIndex = 9;
+            this.rbNomeUusuario.TabStop = true;
+            this.rbNomeUusuario.Text = "por nome";
+            this.rbNomeUusuario.UseVisualStyleBackColor = true;
             // 
-            // btnBuscar
+            // rbSetorUsuario
             // 
-            this.btnBuscar.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnBuscar.ForeColor = System.Drawing.Color.PaleGoldenrod;
-            this.btnBuscar.Image = global::appComercio.Properties.Resources.buscar;
-            this.btnBuscar.Location = new System.Drawing.Point(111, 350);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(86, 56);
-            this.btnBuscar.TabIndex = 4;
-            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.rbSetorUsuario.AutoSize = true;
+            this.rbSetorUsuario.Location = new System.Drawing.Point(112, 367);
+            this.rbSetorUsuario.Name = "rbSetorUsuario";
+            this.rbSetorUsuario.Size = new System.Drawing.Size(96, 23);
+            this.rbSetorUsuario.TabIndex = 10;
+            this.rbSetorUsuario.TabStop = true;
+            this.rbSetorUsuario.Text = "por setor";
+            this.rbSetorUsuario.UseVisualStyleBackColor = true;
             // 
             // frmCadastroUsuario
             // 
@@ -255,5 +285,7 @@
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnApagar;
         private System.Windows.Forms.PictureBox pbLogoCadastroUsuario;
+        private System.Windows.Forms.RadioButton rbSetorUsuario;
+        private System.Windows.Forms.RadioButton rbNomeUusuario;
     }
 }

@@ -1,2 +1,2 @@
-# APP_COMERCIO_INTERFACE
-Repositório destinado ao aplicativo de comércio produto/serviço.
+# PROJETO_APPCOMERCIO_INTERFACE
+Repositório da Interface destinado ao projeto appComercio (C# WINDOWS FORMS).

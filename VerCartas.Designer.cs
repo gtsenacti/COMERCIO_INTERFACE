@@ -28,33 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.btMostrarCarta = new System.Windows.Forms.Button();
             this.btSair = new System.Windows.Forms.Button();
+            this.btRemover = new System.Windows.Forms.Button();
+            this.dgvCartas = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCartas)).BeginInit();
             this.SuspendLayout();
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(12, 12);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(776, 355);
-            this.listBox1.TabIndex = 0;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
-            // 
-            // btMostrarCarta
-            // 
-            this.btMostrarCarta.Location = new System.Drawing.Point(217, 401);
-            this.btMostrarCarta.Name = "btMostrarCarta";
-            this.btMostrarCarta.Size = new System.Drawing.Size(101, 23);
-            this.btMostrarCarta.TabIndex = 1;
-            this.btMostrarCarta.Text = "Mostrar cartas";
-            this.btMostrarCarta.UseVisualStyleBackColor = true;
-            this.btMostrarCarta.Click += new System.EventHandler(this.button1_Click);
             // 
             // btSair
             // 
-            this.btSair.Location = new System.Drawing.Point(379, 401);
+            this.btSair.Location = new System.Drawing.Point(501, 401);
             this.btSair.Name = "btSair";
             this.btSair.Size = new System.Drawing.Size(101, 23);
             this.btSair.TabIndex = 2;
@@ -62,24 +44,43 @@
             this.btSair.UseVisualStyleBackColor = true;
             this.btSair.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // btRemover
+            // 
+            this.btRemover.Location = new System.Drawing.Point(191, 401);
+            this.btRemover.Name = "btRemover";
+            this.btRemover.Size = new System.Drawing.Size(75, 23);
+            this.btRemover.TabIndex = 3;
+            this.btRemover.Text = "Remover";
+            this.btRemover.UseVisualStyleBackColor = true;
+            // 
+            // dgvCartas
+            // 
+            this.dgvCartas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCartas.Location = new System.Drawing.Point(23, 12);
+            this.dgvCartas.Name = "dgvCartas";
+            this.dgvCartas.Size = new System.Drawing.Size(765, 363);
+            this.dgvCartas.TabIndex = 4;
+            this.dgvCartas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvCartas_CellContentClick);
+            // 
             // btVerCarta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dgvCartas);
+            this.Controls.Add(this.btRemover);
             this.Controls.Add(this.btSair);
-            this.Controls.Add(this.btMostrarCarta);
-            this.Controls.Add(this.listBox1);
             this.Name = "btVerCarta";
             this.Text = "VerCartas";
+            this.Load += new System.EventHandler(this.btVerCarta_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCartas)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button btMostrarCarta;
         private System.Windows.Forms.Button btSair;
+        private System.Windows.Forms.Button btRemover;
+        private System.Windows.Forms.DataGridView dgvCartas;
     }
 }

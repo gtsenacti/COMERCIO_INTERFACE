@@ -30,6 +30,8 @@
         {
             this.dgvCadastroUsuario = new System.Windows.Forms.DataGridView();
             this.gbCadastroUsuario = new System.Windows.Forms.GroupBox();
+            this.rbSetorUsuario = new System.Windows.Forms.RadioButton();
+            this.rbNomeUusuario = new System.Windows.Forms.RadioButton();
             this.pbLogoCadastroUsuario = new System.Windows.Forms.PictureBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.lblBuscar = new System.Windows.Forms.Label();
@@ -43,8 +45,6 @@
             this.btnApagar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
-            this.rbNomeUusuario = new System.Windows.Forms.RadioButton();
-            this.rbSetorUsuario = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCadastroUsuario)).BeginInit();
             this.gbCadastroUsuario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogoCadastroUsuario)).BeginInit();
@@ -82,6 +82,28 @@
             this.gbCadastroUsuario.TabStop = false;
             this.gbCadastroUsuario.Text = "Cadastrar novo usuário";
             // 
+            // rbSetorUsuario
+            // 
+            this.rbSetorUsuario.AutoSize = true;
+            this.rbSetorUsuario.Location = new System.Drawing.Point(112, 367);
+            this.rbSetorUsuario.Name = "rbSetorUsuario";
+            this.rbSetorUsuario.Size = new System.Drawing.Size(96, 23);
+            this.rbSetorUsuario.TabIndex = 10;
+            this.rbSetorUsuario.TabStop = true;
+            this.rbSetorUsuario.Text = "por setor";
+            this.rbSetorUsuario.UseVisualStyleBackColor = true;
+            // 
+            // rbNomeUusuario
+            // 
+            this.rbNomeUusuario.AutoSize = true;
+            this.rbNomeUusuario.Location = new System.Drawing.Point(6, 367);
+            this.rbNomeUusuario.Name = "rbNomeUusuario";
+            this.rbNomeUusuario.Size = new System.Drawing.Size(100, 23);
+            this.rbNomeUusuario.TabIndex = 9;
+            this.rbNomeUusuario.TabStop = true;
+            this.rbNomeUusuario.Text = "por nome";
+            this.rbNomeUusuario.UseVisualStyleBackColor = true;
+            // 
             // pbLogoCadastroUsuario
             // 
             this.pbLogoCadastroUsuario.Image = global::appComercio.Properties.Resources.usuarios;
@@ -104,6 +126,7 @@
             this.btnBuscar.Size = new System.Drawing.Size(80, 54);
             this.btnBuscar.TabIndex = 4;
             this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // lblBuscar
             // 
@@ -222,28 +245,6 @@
             this.btnSalvar.TabIndex = 5;
             this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
-            // 
-            // rbNomeUusuario
-            // 
-            this.rbNomeUusuario.AutoSize = true;
-            this.rbNomeUusuario.Location = new System.Drawing.Point(6, 367);
-            this.rbNomeUusuario.Name = "rbNomeUusuario";
-            this.rbNomeUusuario.Size = new System.Drawing.Size(100, 23);
-            this.rbNomeUusuario.TabIndex = 9;
-            this.rbNomeUusuario.TabStop = true;
-            this.rbNomeUusuario.Text = "por nome";
-            this.rbNomeUusuario.UseVisualStyleBackColor = true;
-            // 
-            // rbSetorUsuario
-            // 
-            this.rbSetorUsuario.AutoSize = true;
-            this.rbSetorUsuario.Location = new System.Drawing.Point(112, 367);
-            this.rbSetorUsuario.Name = "rbSetorUsuario";
-            this.rbSetorUsuario.Size = new System.Drawing.Size(96, 23);
-            this.rbSetorUsuario.TabIndex = 10;
-            this.rbSetorUsuario.TabStop = true;
-            this.rbSetorUsuario.Text = "por setor";
-            this.rbSetorUsuario.UseVisualStyleBackColor = true;
             // 
             // frmCadastroUsuario
             // 

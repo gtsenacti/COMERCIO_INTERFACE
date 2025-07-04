@@ -1,16 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Net.Http.Headers;
+using System.Net;
 using System.Net.Http;
-using Newtonsoft.Json;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Net;
+using Newtonsoft.Json;
 
 namespace appComercio
 {
@@ -141,7 +137,7 @@ namespace appComercio
             var novoUsuario = new
             {
                 NomeUsuario = txtCadastroNome.Text.Trim(),
-                SenhaUsuario= txtCadastroSenha.Text,       
+                SenhaUsuario = txtCadastroSenha.Text,
                 SetorUsuario = txtCadastroSetor.Text.Trim()
             };
 
@@ -256,6 +252,11 @@ namespace appComercio
             txtCadastroSenha.Clear();
             txtCadastroSetor.Clear();
             txtCadastroNome.Focus();
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -14,6 +14,5 @@ namespace appComercio
         public string DescricaoCarta { get; set; }
         public string NivelCarta { get; set; }
 
-
     }
 }

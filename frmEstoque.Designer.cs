@@ -29,6 +29,19 @@
         private void InitializeComponent()
         {
             this.gbCadastroProdutoServico = new System.Windows.Forms.GroupBox();
+            this.lblQuantEstoqueEstoqueProdutoServico = new System.Windows.Forms.Label();
+            this.txtQuantEstoqueEstoqueProdutoServico = new System.Windows.Forms.TextBox();
+            this.ckbDesativadoEstoqueProdutoServico = new System.Windows.Forms.CheckBox();
+            this.lblDataValidadeEstoqueProdutoServico = new System.Windows.Forms.Label();
+            this.txtDataValidadeEstoqueProdutoServico = new System.Windows.Forms.TextBox();
+            this.lblPrecoVendaEstoqueProdutoServico = new System.Windows.Forms.Label();
+            this.txtPrecoVendaEstoqueProdutoServico = new System.Windows.Forms.TextBox();
+            this.lblPrecoCustoEstoqueProdutoServico = new System.Windows.Forms.Label();
+            this.txtPrecoCustoEstoqueProdutoServico = new System.Windows.Forms.TextBox();
+            this.lblEstMaximoEstoqueProdutoServico = new System.Windows.Forms.Label();
+            this.txtEstMaximoEstoqueProdutoServico = new System.Windows.Forms.TextBox();
+            this.lblEstMinimoEstoqueProdutoServico = new System.Windows.Forms.Label();
+            this.txtEstMinimoEstoqueProdutoServico = new System.Windows.Forms.TextBox();
             this.txtNumeroNotaEstoqueProdutoServico = new System.Windows.Forms.TextBox();
             this.txtFornEstoqueProdutoServico = new System.Windows.Forms.TextBox();
             this.lblFornEstoqueProdutoServico = new System.Windows.Forms.Label();
@@ -39,30 +52,17 @@
             this.lblCodEstoqueProdutoServico = new System.Windows.Forms.Label();
             this.txtCodEstoqueProdutoServico = new System.Windows.Forms.TextBox();
             this.txtProdEstoqueProdutoServico = new System.Windows.Forms.TextBox();
-            this.lblEstMinimoEstoqueProdutoServico = new System.Windows.Forms.Label();
-            this.txtEstMinimoEstoqueProdutoServico = new System.Windows.Forms.TextBox();
-            this.lblEstMaximoEstoqueProdutoServico = new System.Windows.Forms.Label();
-            this.txtEstMaximoEstoqueProdutoServico = new System.Windows.Forms.TextBox();
-            this.lblPrecoVendaEstoqueProdutoServico = new System.Windows.Forms.Label();
-            this.txtPrecoVendaEstoqueProdutoServico = new System.Windows.Forms.TextBox();
-            this.lblPrecoCustoEstoqueProdutoServico = new System.Windows.Forms.Label();
-            this.txtPrecoCustoEstoqueProdutoServico = new System.Windows.Forms.TextBox();
-            this.lblDataValidadeEstoqueProdutoServico = new System.Windows.Forms.Label();
-            this.txtDataValidadeEstoqueProdutoServico = new System.Windows.Forms.TextBox();
-            this.ckbDesativadoEstoqueProdutoServico = new System.Windows.Forms.CheckBox();
-            this.dgvCadastroProdutoServico = new System.Windows.Forms.DataGridView();
+            this.dgvEstoqueProdutoServico = new System.Windows.Forms.DataGridView();
             this.btnCadEstoqueProdutoServico = new System.Windows.Forms.Button();
             this.btnApagarEstoqueProdutoServico = new System.Windows.Forms.Button();
             this.btnEditarEstoqueProdutoServico = new System.Windows.Forms.Button();
-            this.lblQuantEstoqueEstoqueProdutoServico = new System.Windows.Forms.Label();
-            this.txtQuantEstoqueEstoqueProdutoServico = new System.Windows.Forms.TextBox();
             this.gbBuscarCadastroProdutoServico = new System.Windows.Forms.GroupBox();
             this.rbNomeEstoqueProdutoServicoBucar = new System.Windows.Forms.RadioButton();
             this.rbEstoqueProdutoServicoBucar = new System.Windows.Forms.RadioButton();
             this.btnBuscEstoqueProdutoServico = new System.Windows.Forms.Button();
             this.txtBuscEstoqueProdutoServico = new System.Windows.Forms.TextBox();
             this.gbCadastroProdutoServico.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCadastroProdutoServico)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEstoqueProdutoServico)).BeginInit();
             this.gbBuscarCadastroProdutoServico.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -94,10 +94,129 @@
             this.gbCadastroProdutoServico.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbCadastroProdutoServico.Location = new System.Drawing.Point(12, 12);
             this.gbCadastroProdutoServico.Name = "gbCadastroProdutoServico";
-            this.gbCadastroProdutoServico.Size = new System.Drawing.Size(776, 215);
+            this.gbCadastroProdutoServico.Size = new System.Drawing.Size(787, 215);
             this.gbCadastroProdutoServico.TabIndex = 2;
             this.gbCadastroProdutoServico.TabStop = false;
             this.gbCadastroProdutoServico.Text = "Cadastro Produtos/Serviço";
+            // 
+            // lblQuantEstoqueEstoqueProdutoServico
+            // 
+            this.lblQuantEstoqueEstoqueProdutoServico.AutoSize = true;
+            this.lblQuantEstoqueEstoqueProdutoServico.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuantEstoqueEstoqueProdutoServico.Location = new System.Drawing.Point(511, 161);
+            this.lblQuantEstoqueEstoqueProdutoServico.Name = "lblQuantEstoqueEstoqueProdutoServico";
+            this.lblQuantEstoqueEstoqueProdutoServico.Size = new System.Drawing.Size(151, 19);
+            this.lblQuantEstoqueEstoqueProdutoServico.TabIndex = 23;
+            this.lblQuantEstoqueEstoqueProdutoServico.Text = "Quant. no Estoque";
+            // 
+            // txtQuantEstoqueEstoqueProdutoServico
+            // 
+            this.txtQuantEstoqueEstoqueProdutoServico.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQuantEstoqueEstoqueProdutoServico.Location = new System.Drawing.Point(533, 183);
+            this.txtQuantEstoqueEstoqueProdutoServico.Name = "txtQuantEstoqueEstoqueProdutoServico";
+            this.txtQuantEstoqueEstoqueProdutoServico.Size = new System.Drawing.Size(78, 26);
+            this.txtQuantEstoqueEstoqueProdutoServico.TabIndex = 11;
+            // 
+            // ckbDesativadoEstoqueProdutoServico
+            // 
+            this.ckbDesativadoEstoqueProdutoServico.AutoSize = true;
+            this.ckbDesativadoEstoqueProdutoServico.Location = new System.Drawing.Point(674, 161);
+            this.ckbDesativadoEstoqueProdutoServico.Name = "ckbDesativadoEstoqueProdutoServico";
+            this.ckbDesativadoEstoqueProdutoServico.Size = new System.Drawing.Size(96, 44);
+            this.ckbDesativadoEstoqueProdutoServico.TabIndex = 12;
+            this.ckbDesativadoEstoqueProdutoServico.Text = "Produto \r\nDesativado";
+            this.ckbDesativadoEstoqueProdutoServico.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ckbDesativadoEstoqueProdutoServico.UseVisualStyleBackColor = true;
+            // 
+            // lblDataValidadeEstoqueProdutoServico
+            // 
+            this.lblDataValidadeEstoqueProdutoServico.AutoSize = true;
+            this.lblDataValidadeEstoqueProdutoServico.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDataValidadeEstoqueProdutoServico.Location = new System.Drawing.Point(52, 161);
+            this.lblDataValidadeEstoqueProdutoServico.Name = "lblDataValidadeEstoqueProdutoServico";
+            this.lblDataValidadeEstoqueProdutoServico.Size = new System.Drawing.Size(136, 19);
+            this.lblDataValidadeEstoqueProdutoServico.TabIndex = 20;
+            this.lblDataValidadeEstoqueProdutoServico.Text = "Data de Validade";
+            // 
+            // txtDataValidadeEstoqueProdutoServico
+            // 
+            this.txtDataValidadeEstoqueProdutoServico.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDataValidadeEstoqueProdutoServico.Location = new System.Drawing.Point(20, 184);
+            this.txtDataValidadeEstoqueProdutoServico.Name = "txtDataValidadeEstoqueProdutoServico";
+            this.txtDataValidadeEstoqueProdutoServico.Size = new System.Drawing.Size(200, 26);
+            this.txtDataValidadeEstoqueProdutoServico.TabIndex = 8;
+            // 
+            // lblPrecoVendaEstoqueProdutoServico
+            // 
+            this.lblPrecoVendaEstoqueProdutoServico.AutoSize = true;
+            this.lblPrecoVendaEstoqueProdutoServico.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrecoVendaEstoqueProdutoServico.Location = new System.Drawing.Point(364, 162);
+            this.lblPrecoVendaEstoqueProdutoServico.Name = "lblPrecoVendaEstoqueProdutoServico";
+            this.lblPrecoVendaEstoqueProdutoServico.Size = new System.Drawing.Size(129, 19);
+            this.lblPrecoVendaEstoqueProdutoServico.TabIndex = 18;
+            this.lblPrecoVendaEstoqueProdutoServico.Text = "Preço de Venda";
+            // 
+            // txtPrecoVendaEstoqueProdutoServico
+            // 
+            this.txtPrecoVendaEstoqueProdutoServico.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrecoVendaEstoqueProdutoServico.Location = new System.Drawing.Point(386, 184);
+            this.txtPrecoVendaEstoqueProdutoServico.Name = "txtPrecoVendaEstoqueProdutoServico";
+            this.txtPrecoVendaEstoqueProdutoServico.Size = new System.Drawing.Size(78, 26);
+            this.txtPrecoVendaEstoqueProdutoServico.TabIndex = 10;
+            // 
+            // lblPrecoCustoEstoqueProdutoServico
+            // 
+            this.lblPrecoCustoEstoqueProdutoServico.AutoSize = true;
+            this.lblPrecoCustoEstoqueProdutoServico.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrecoCustoEstoqueProdutoServico.Location = new System.Drawing.Point(228, 161);
+            this.lblPrecoCustoEstoqueProdutoServico.Name = "lblPrecoCustoEstoqueProdutoServico";
+            this.lblPrecoCustoEstoqueProdutoServico.Size = new System.Drawing.Size(127, 19);
+            this.lblPrecoCustoEstoqueProdutoServico.TabIndex = 16;
+            this.lblPrecoCustoEstoqueProdutoServico.Text = "Preço de Custo";
+            // 
+            // txtPrecoCustoEstoqueProdutoServico
+            // 
+            this.txtPrecoCustoEstoqueProdutoServico.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrecoCustoEstoqueProdutoServico.Location = new System.Drawing.Point(250, 183);
+            this.txtPrecoCustoEstoqueProdutoServico.Name = "txtPrecoCustoEstoqueProdutoServico";
+            this.txtPrecoCustoEstoqueProdutoServico.Size = new System.Drawing.Size(78, 26);
+            this.txtPrecoCustoEstoqueProdutoServico.TabIndex = 9;
+            // 
+            // lblEstMaximoEstoqueProdutoServico
+            // 
+            this.lblEstMaximoEstoqueProdutoServico.AutoSize = true;
+            this.lblEstMaximoEstoqueProdutoServico.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstMaximoEstoqueProdutoServico.Location = new System.Drawing.Point(622, 95);
+            this.lblEstMaximoEstoqueProdutoServico.Name = "lblEstMaximoEstoqueProdutoServico";
+            this.lblEstMaximoEstoqueProdutoServico.Size = new System.Drawing.Size(136, 19);
+            this.lblEstMaximoEstoqueProdutoServico.TabIndex = 14;
+            this.lblEstMaximoEstoqueProdutoServico.Text = "Estoque Máximo";
+            // 
+            // txtEstMaximoEstoqueProdutoServico
+            // 
+            this.txtEstMaximoEstoqueProdutoServico.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEstMaximoEstoqueProdutoServico.Location = new System.Drawing.Point(644, 117);
+            this.txtEstMaximoEstoqueProdutoServico.Name = "txtEstMaximoEstoqueProdutoServico";
+            this.txtEstMaximoEstoqueProdutoServico.Size = new System.Drawing.Size(78, 26);
+            this.txtEstMaximoEstoqueProdutoServico.TabIndex = 7;
+            // 
+            // lblEstMinimoEstoqueProdutoServico
+            // 
+            this.lblEstMinimoEstoqueProdutoServico.AutoSize = true;
+            this.lblEstMinimoEstoqueProdutoServico.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstMinimoEstoqueProdutoServico.Location = new System.Drawing.Point(486, 94);
+            this.lblEstMinimoEstoqueProdutoServico.Name = "lblEstMinimoEstoqueProdutoServico";
+            this.lblEstMinimoEstoqueProdutoServico.Size = new System.Drawing.Size(131, 19);
+            this.lblEstMinimoEstoqueProdutoServico.TabIndex = 12;
+            this.lblEstMinimoEstoqueProdutoServico.Text = "Estoque Mínima";
+            // 
+            // txtEstMinimoEstoqueProdutoServico
+            // 
+            this.txtEstMinimoEstoqueProdutoServico.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEstMinimoEstoqueProdutoServico.Location = new System.Drawing.Point(508, 116);
+            this.txtEstMinimoEstoqueProdutoServico.Name = "txtEstMinimoEstoqueProdutoServico";
+            this.txtEstMinimoEstoqueProdutoServico.Size = new System.Drawing.Size(78, 26);
+            this.txtEstMinimoEstoqueProdutoServico.TabIndex = 6;
             // 
             // txtNumeroNotaEstoqueProdutoServico
             // 
@@ -189,114 +308,13 @@
             this.txtProdEstoqueProdutoServico.Size = new System.Drawing.Size(305, 26);
             this.txtProdEstoqueProdutoServico.TabIndex = 4;
             // 
-            // lblEstMinimoEstoqueProdutoServico
+            // dgvEstoqueProdutoServico
             // 
-            this.lblEstMinimoEstoqueProdutoServico.AutoSize = true;
-            this.lblEstMinimoEstoqueProdutoServico.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstMinimoEstoqueProdutoServico.Location = new System.Drawing.Point(486, 94);
-            this.lblEstMinimoEstoqueProdutoServico.Name = "lblEstMinimoEstoqueProdutoServico";
-            this.lblEstMinimoEstoqueProdutoServico.Size = new System.Drawing.Size(131, 19);
-            this.lblEstMinimoEstoqueProdutoServico.TabIndex = 12;
-            this.lblEstMinimoEstoqueProdutoServico.Text = "Estoque Mínima";
-            // 
-            // txtEstMinimoEstoqueProdutoServico
-            // 
-            this.txtEstMinimoEstoqueProdutoServico.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEstMinimoEstoqueProdutoServico.Location = new System.Drawing.Point(508, 116);
-            this.txtEstMinimoEstoqueProdutoServico.Name = "txtEstMinimoEstoqueProdutoServico";
-            this.txtEstMinimoEstoqueProdutoServico.Size = new System.Drawing.Size(78, 26);
-            this.txtEstMinimoEstoqueProdutoServico.TabIndex = 6;
-            // 
-            // lblEstMaximoEstoqueProdutoServico
-            // 
-            this.lblEstMaximoEstoqueProdutoServico.AutoSize = true;
-            this.lblEstMaximoEstoqueProdutoServico.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstMaximoEstoqueProdutoServico.Location = new System.Drawing.Point(622, 95);
-            this.lblEstMaximoEstoqueProdutoServico.Name = "lblEstMaximoEstoqueProdutoServico";
-            this.lblEstMaximoEstoqueProdutoServico.Size = new System.Drawing.Size(136, 19);
-            this.lblEstMaximoEstoqueProdutoServico.TabIndex = 14;
-            this.lblEstMaximoEstoqueProdutoServico.Text = "Estoque Máximo";
-            // 
-            // txtEstMaximoEstoqueProdutoServico
-            // 
-            this.txtEstMaximoEstoqueProdutoServico.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEstMaximoEstoqueProdutoServico.Location = new System.Drawing.Point(644, 117);
-            this.txtEstMaximoEstoqueProdutoServico.Name = "txtEstMaximoEstoqueProdutoServico";
-            this.txtEstMaximoEstoqueProdutoServico.Size = new System.Drawing.Size(78, 26);
-            this.txtEstMaximoEstoqueProdutoServico.TabIndex = 7;
-            // 
-            // lblPrecoVendaEstoqueProdutoServico
-            // 
-            this.lblPrecoVendaEstoqueProdutoServico.AutoSize = true;
-            this.lblPrecoVendaEstoqueProdutoServico.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecoVendaEstoqueProdutoServico.Location = new System.Drawing.Point(364, 162);
-            this.lblPrecoVendaEstoqueProdutoServico.Name = "lblPrecoVendaEstoqueProdutoServico";
-            this.lblPrecoVendaEstoqueProdutoServico.Size = new System.Drawing.Size(129, 19);
-            this.lblPrecoVendaEstoqueProdutoServico.TabIndex = 18;
-            this.lblPrecoVendaEstoqueProdutoServico.Text = "Preço de Venda";
-            // 
-            // txtPrecoVendaEstoqueProdutoServico
-            // 
-            this.txtPrecoVendaEstoqueProdutoServico.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrecoVendaEstoqueProdutoServico.Location = new System.Drawing.Point(386, 184);
-            this.txtPrecoVendaEstoqueProdutoServico.Name = "txtPrecoVendaEstoqueProdutoServico";
-            this.txtPrecoVendaEstoqueProdutoServico.Size = new System.Drawing.Size(78, 26);
-            this.txtPrecoVendaEstoqueProdutoServico.TabIndex = 10;
-            // 
-            // lblPrecoCustoEstoqueProdutoServico
-            // 
-            this.lblPrecoCustoEstoqueProdutoServico.AutoSize = true;
-            this.lblPrecoCustoEstoqueProdutoServico.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecoCustoEstoqueProdutoServico.Location = new System.Drawing.Point(228, 161);
-            this.lblPrecoCustoEstoqueProdutoServico.Name = "lblPrecoCustoEstoqueProdutoServico";
-            this.lblPrecoCustoEstoqueProdutoServico.Size = new System.Drawing.Size(127, 19);
-            this.lblPrecoCustoEstoqueProdutoServico.TabIndex = 16;
-            this.lblPrecoCustoEstoqueProdutoServico.Text = "Preço de Custo";
-            // 
-            // txtPrecoCustoEstoqueProdutoServico
-            // 
-            this.txtPrecoCustoEstoqueProdutoServico.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrecoCustoEstoqueProdutoServico.Location = new System.Drawing.Point(250, 183);
-            this.txtPrecoCustoEstoqueProdutoServico.Name = "txtPrecoCustoEstoqueProdutoServico";
-            this.txtPrecoCustoEstoqueProdutoServico.Size = new System.Drawing.Size(78, 26);
-            this.txtPrecoCustoEstoqueProdutoServico.TabIndex = 9;
-            // 
-            // lblDataValidadeEstoqueProdutoServico
-            // 
-            this.lblDataValidadeEstoqueProdutoServico.AutoSize = true;
-            this.lblDataValidadeEstoqueProdutoServico.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDataValidadeEstoqueProdutoServico.Location = new System.Drawing.Point(52, 161);
-            this.lblDataValidadeEstoqueProdutoServico.Name = "lblDataValidadeEstoqueProdutoServico";
-            this.lblDataValidadeEstoqueProdutoServico.Size = new System.Drawing.Size(136, 19);
-            this.lblDataValidadeEstoqueProdutoServico.TabIndex = 20;
-            this.lblDataValidadeEstoqueProdutoServico.Text = "Data de Validade";
-            // 
-            // txtDataValidadeEstoqueProdutoServico
-            // 
-            this.txtDataValidadeEstoqueProdutoServico.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataValidadeEstoqueProdutoServico.Location = new System.Drawing.Point(20, 184);
-            this.txtDataValidadeEstoqueProdutoServico.Name = "txtDataValidadeEstoqueProdutoServico";
-            this.txtDataValidadeEstoqueProdutoServico.Size = new System.Drawing.Size(200, 26);
-            this.txtDataValidadeEstoqueProdutoServico.TabIndex = 8;
-            // 
-            // ckbDesativadoEstoqueProdutoServico
-            // 
-            this.ckbDesativadoEstoqueProdutoServico.AutoSize = true;
-            this.ckbDesativadoEstoqueProdutoServico.Location = new System.Drawing.Point(674, 161);
-            this.ckbDesativadoEstoqueProdutoServico.Name = "ckbDesativadoEstoqueProdutoServico";
-            this.ckbDesativadoEstoqueProdutoServico.Size = new System.Drawing.Size(96, 44);
-            this.ckbDesativadoEstoqueProdutoServico.TabIndex = 12;
-            this.ckbDesativadoEstoqueProdutoServico.Text = "Produto \r\nDesativado";
-            this.ckbDesativadoEstoqueProdutoServico.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.ckbDesativadoEstoqueProdutoServico.UseVisualStyleBackColor = true;
-            // 
-            // dgvCadastroProdutoServico
-            // 
-            this.dgvCadastroProdutoServico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCadastroProdutoServico.Location = new System.Drawing.Point(12, 227);
-            this.dgvCadastroProdutoServico.Name = "dgvCadastroProdutoServico";
-            this.dgvCadastroProdutoServico.Size = new System.Drawing.Size(776, 149);
-            this.dgvCadastroProdutoServico.TabIndex = 17;
+            this.dgvEstoqueProdutoServico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEstoqueProdutoServico.Location = new System.Drawing.Point(12, 233);
+            this.dgvEstoqueProdutoServico.Name = "dgvEstoqueProdutoServico";
+            this.dgvEstoqueProdutoServico.Size = new System.Drawing.Size(1170, 494);
+            this.dgvEstoqueProdutoServico.TabIndex = 17;
             // 
             // btnCadEstoqueProdutoServico
             // 
@@ -304,7 +322,7 @@
             this.btnCadEstoqueProdutoServico.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCadEstoqueProdutoServico.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCadEstoqueProdutoServico.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadEstoqueProdutoServico.Location = new System.Drawing.Point(8, 405);
+            this.btnCadEstoqueProdutoServico.Location = new System.Drawing.Point(805, 176);
             this.btnCadEstoqueProdutoServico.Name = "btnCadEstoqueProdutoServico";
             this.btnCadEstoqueProdutoServico.Size = new System.Drawing.Size(129, 45);
             this.btnCadEstoqueProdutoServico.TabIndex = 13;
@@ -317,7 +335,7 @@
             this.btnApagarEstoqueProdutoServico.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnApagarEstoqueProdutoServico.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnApagarEstoqueProdutoServico.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnApagarEstoqueProdutoServico.Location = new System.Drawing.Point(315, 405);
+            this.btnApagarEstoqueProdutoServico.Location = new System.Drawing.Point(1052, 173);
             this.btnApagarEstoqueProdutoServico.Name = "btnApagarEstoqueProdutoServico";
             this.btnApagarEstoqueProdutoServico.Size = new System.Drawing.Size(120, 45);
             this.btnApagarEstoqueProdutoServico.TabIndex = 15;
@@ -330,30 +348,12 @@
             this.btnEditarEstoqueProdutoServico.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEditarEstoqueProdutoServico.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEditarEstoqueProdutoServico.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditarEstoqueProdutoServico.Location = new System.Drawing.Point(159, 405);
+            this.btnEditarEstoqueProdutoServico.Location = new System.Drawing.Point(941, 174);
             this.btnEditarEstoqueProdutoServico.Name = "btnEditarEstoqueProdutoServico";
-            this.btnEditarEstoqueProdutoServico.Size = new System.Drawing.Size(129, 46);
+            this.btnEditarEstoqueProdutoServico.Size = new System.Drawing.Size(105, 46);
             this.btnEditarEstoqueProdutoServico.TabIndex = 14;
             this.btnEditarEstoqueProdutoServico.Text = "Editar";
             this.btnEditarEstoqueProdutoServico.UseVisualStyleBackColor = false;
-            // 
-            // lblQuantEstoqueEstoqueProdutoServico
-            // 
-            this.lblQuantEstoqueEstoqueProdutoServico.AutoSize = true;
-            this.lblQuantEstoqueEstoqueProdutoServico.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuantEstoqueEstoqueProdutoServico.Location = new System.Drawing.Point(511, 161);
-            this.lblQuantEstoqueEstoqueProdutoServico.Name = "lblQuantEstoqueEstoqueProdutoServico";
-            this.lblQuantEstoqueEstoqueProdutoServico.Size = new System.Drawing.Size(151, 19);
-            this.lblQuantEstoqueEstoqueProdutoServico.TabIndex = 23;
-            this.lblQuantEstoqueEstoqueProdutoServico.Text = "Quant. no Estoque";
-            // 
-            // txtQuantEstoqueEstoqueProdutoServico
-            // 
-            this.txtQuantEstoqueEstoqueProdutoServico.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtQuantEstoqueEstoqueProdutoServico.Location = new System.Drawing.Point(533, 183);
-            this.txtQuantEstoqueEstoqueProdutoServico.Name = "txtQuantEstoqueEstoqueProdutoServico";
-            this.txtQuantEstoqueEstoqueProdutoServico.Size = new System.Drawing.Size(78, 26);
-            this.txtQuantEstoqueEstoqueProdutoServico.TabIndex = 11;
             // 
             // gbBuscarCadastroProdutoServico
             // 
@@ -362,9 +362,9 @@
             this.gbBuscarCadastroProdutoServico.Controls.Add(this.btnBuscEstoqueProdutoServico);
             this.gbBuscarCadastroProdutoServico.Controls.Add(this.txtBuscEstoqueProdutoServico);
             this.gbBuscarCadastroProdutoServico.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbBuscarCadastroProdutoServico.Location = new System.Drawing.Point(456, 382);
+            this.gbBuscarCadastroProdutoServico.Location = new System.Drawing.Point(805, 21);
             this.gbBuscarCadastroProdutoServico.Name = "gbBuscarCadastroProdutoServico";
-            this.gbBuscarCadastroProdutoServico.Size = new System.Drawing.Size(343, 80);
+            this.gbBuscarCadastroProdutoServico.Size = new System.Drawing.Size(367, 80);
             this.gbBuscarCadastroProdutoServico.TabIndex = 18;
             this.gbBuscarCadastroProdutoServico.TabStop = false;
             // 
@@ -399,7 +399,7 @@
             this.btnBuscEstoqueProdutoServico.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscEstoqueProdutoServico.Location = new System.Drawing.Point(255, 40);
             this.btnBuscEstoqueProdutoServico.Name = "btnBuscEstoqueProdutoServico";
-            this.btnBuscEstoqueProdutoServico.Size = new System.Drawing.Size(82, 33);
+            this.btnBuscEstoqueProdutoServico.Size = new System.Drawing.Size(106, 33);
             this.btnBuscEstoqueProdutoServico.TabIndex = 19;
             this.btnBuscEstoqueProdutoServico.Text = "Buscar";
             this.btnBuscEstoqueProdutoServico.UseVisualStyleBackColor = false;
@@ -417,9 +417,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(811, 462);
+            this.ClientSize = new System.Drawing.Size(1184, 761);
             this.Controls.Add(this.gbBuscarCadastroProdutoServico);
-            this.Controls.Add(this.dgvCadastroProdutoServico);
+            this.Controls.Add(this.dgvEstoqueProdutoServico);
             this.Controls.Add(this.btnCadEstoqueProdutoServico);
             this.Controls.Add(this.btnApagarEstoqueProdutoServico);
             this.Controls.Add(this.btnEditarEstoqueProdutoServico);
@@ -428,7 +428,7 @@
             this.Text = "Estoque dos Produtos Serviços";
             this.gbCadastroProdutoServico.ResumeLayout(false);
             this.gbCadastroProdutoServico.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCadastroProdutoServico)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEstoqueProdutoServico)).EndInit();
             this.gbBuscarCadastroProdutoServico.ResumeLayout(false);
             this.gbBuscarCadastroProdutoServico.PerformLayout();
             this.ResumeLayout(false);
@@ -461,7 +461,7 @@
         private System.Windows.Forms.TextBox txtDataValidadeEstoqueProdutoServico;
         private System.Windows.Forms.Label lblQuantEstoqueEstoqueProdutoServico;
         private System.Windows.Forms.TextBox txtQuantEstoqueEstoqueProdutoServico;
-        private System.Windows.Forms.DataGridView dgvCadastroProdutoServico;
+        private System.Windows.Forms.DataGridView dgvEstoqueProdutoServico;
         private System.Windows.Forms.Button btnCadEstoqueProdutoServico;
         private System.Windows.Forms.Button btnApagarEstoqueProdutoServico;
         private System.Windows.Forms.Button btnEditarEstoqueProdutoServico;

@@ -170,9 +170,9 @@
             this.gbBuscarFornecedorProdutoServico.Controls.Add(this.btnBuscFornecedorProdutoServico);
             this.gbBuscarFornecedorProdutoServico.Controls.Add(this.txtBuscFornecedorProdutoServico);
             this.gbBuscarFornecedorProdutoServico.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbBuscarFornecedorProdutoServico.Location = new System.Drawing.Point(12, 366);
+            this.gbBuscarFornecedorProdutoServico.Location = new System.Drawing.Point(394, 22);
             this.gbBuscarFornecedorProdutoServico.Name = "gbBuscarFornecedorProdutoServico";
-            this.gbBuscarFornecedorProdutoServico.Size = new System.Drawing.Size(343, 80);
+            this.gbBuscarFornecedorProdutoServico.Size = new System.Drawing.Size(767, 80);
             this.gbBuscarFornecedorProdutoServico.TabIndex = 10;
             this.gbBuscarFornecedorProdutoServico.TabStop = false;
             // 
@@ -205,9 +205,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnBuscFornecedorProdutoServico.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnBuscFornecedorProdutoServico.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscFornecedorProdutoServico.Location = new System.Drawing.Point(255, 40);
+            this.btnBuscFornecedorProdutoServico.Location = new System.Drawing.Point(602, 40);
             this.btnBuscFornecedorProdutoServico.Name = "btnBuscFornecedorProdutoServico";
-            this.btnBuscFornecedorProdutoServico.Size = new System.Drawing.Size(82, 33);
+            this.btnBuscFornecedorProdutoServico.Size = new System.Drawing.Size(159, 33);
             this.btnBuscFornecedorProdutoServico.TabIndex = 4;
             this.btnBuscFornecedorProdutoServico.Text = "Buscar";
             this.btnBuscFornecedorProdutoServico.UseVisualStyleBackColor = false;
@@ -217,15 +217,15 @@
             this.txtBuscFornecedorProdutoServico.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscFornecedorProdutoServico.Location = new System.Drawing.Point(8, 40);
             this.txtBuscFornecedorProdutoServico.Name = "txtBuscFornecedorProdutoServico";
-            this.txtBuscFornecedorProdutoServico.Size = new System.Drawing.Size(241, 32);
+            this.txtBuscFornecedorProdutoServico.Size = new System.Drawing.Size(588, 32);
             this.txtBuscFornecedorProdutoServico.TabIndex = 3;
             // 
             // dgvFornecedorProdutoServico
             // 
             this.dgvFornecedorProdutoServico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFornecedorProdutoServico.Location = new System.Drawing.Point(361, 12);
+            this.dgvFornecedorProdutoServico.Location = new System.Drawing.Point(12, 375);
             this.dgvFornecedorProdutoServico.Name = "dgvFornecedorProdutoServico";
-            this.dgvFornecedorProdutoServico.Size = new System.Drawing.Size(427, 374);
+            this.dgvFornecedorProdutoServico.Size = new System.Drawing.Size(1143, 380);
             this.dgvFornecedorProdutoServico.TabIndex = 14;
             // 
             // btnCadFornecedorProdutoServico
@@ -234,9 +234,9 @@
             this.btnCadFornecedorProdutoServico.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCadFornecedorProdutoServico.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCadFornecedorProdutoServico.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadFornecedorProdutoServico.Location = new System.Drawing.Point(361, 392);
+            this.btnCadFornecedorProdutoServico.Location = new System.Drawing.Point(394, 315);
             this.btnCadFornecedorProdutoServico.Name = "btnCadFornecedorProdutoServico";
-            this.btnCadFornecedorProdutoServico.Size = new System.Drawing.Size(129, 45);
+            this.btnCadFornecedorProdutoServico.Size = new System.Drawing.Size(210, 45);
             this.btnCadFornecedorProdutoServico.TabIndex = 15;
             this.btnCadFornecedorProdutoServico.Text = "Cadastrar";
             this.btnCadFornecedorProdutoServico.UseVisualStyleBackColor = false;
@@ -247,9 +247,9 @@
             this.btnApagarFornecedorProdutoServico.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnApagarFornecedorProdutoServico.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnApagarFornecedorProdutoServico.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnApagarFornecedorProdutoServico.Location = new System.Drawing.Point(668, 392);
+            this.btnApagarFornecedorProdutoServico.Location = new System.Drawing.Point(970, 317);
             this.btnApagarFornecedorProdutoServico.Name = "btnApagarFornecedorProdutoServico";
-            this.btnApagarFornecedorProdutoServico.Size = new System.Drawing.Size(120, 45);
+            this.btnApagarFornecedorProdutoServico.Size = new System.Drawing.Size(185, 45);
             this.btnApagarFornecedorProdutoServico.TabIndex = 17;
             this.btnApagarFornecedorProdutoServico.Text = "Apagar";
             this.btnApagarFornecedorProdutoServico.UseVisualStyleBackColor = false;
@@ -260,9 +260,9 @@
             this.btnEditarFornecedorProdutoServico.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEditarFornecedorProdutoServico.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEditarFornecedorProdutoServico.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditarFornecedorProdutoServico.Location = new System.Drawing.Point(512, 392);
+            this.btnEditarFornecedorProdutoServico.Location = new System.Drawing.Point(686, 315);
             this.btnEditarFornecedorProdutoServico.Name = "btnEditarFornecedorProdutoServico";
-            this.btnEditarFornecedorProdutoServico.Size = new System.Drawing.Size(129, 46);
+            this.btnEditarFornecedorProdutoServico.Size = new System.Drawing.Size(205, 46);
             this.btnEditarFornecedorProdutoServico.TabIndex = 16;
             this.btnEditarFornecedorProdutoServico.Text = "Editar";
             this.btnEditarFornecedorProdutoServico.UseVisualStyleBackColor = false;
@@ -272,7 +272,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1184, 761);
             this.Controls.Add(this.btnCadFornecedorProdutoServico);
             this.Controls.Add(this.btnApagarFornecedorProdutoServico);
             this.Controls.Add(this.btnEditarFornecedorProdutoServico);

@@ -146,23 +146,24 @@
             // pbFundo
             // 
             this.pbFundo.BackgroundImage = global::appComercio.Properties.Resources.img;
-            this.pbFundo.Location = new System.Drawing.Point(267, -2);
+            this.pbFundo.Location = new System.Drawing.Point(279, -19);
             this.pbFundo.Name = "pbFundo";
-            this.pbFundo.Size = new System.Drawing.Size(534, 452);
+            this.pbFundo.Size = new System.Drawing.Size(527, 469);
             this.pbFundo.TabIndex = 0;
             this.pbFundo.TabStop = false;
+            this.pbFundo.Click += new System.EventHandler(this.pbFundo_Click);
             // 
             // TelaLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(801, 445);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pbFundo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "TelaLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TelaLogin";
+            this.Text = "020";
             this.Load += new System.EventHandler(this.TelaLogin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

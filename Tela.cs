@@ -40,5 +40,10 @@ namespace appComercio
             new Creditos().Show();
             this.Hide();
         }
+
+        private void Tela_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -1,22 +1,23 @@
-﻿using System;
+﻿using appComercio;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace appComercio
+namespace appComercio_samuel
 {
+
     internal static class Program
     {
-        /// <summary>
-        /// Ponto de entrada principal para o aplicativo.
-        /// </summary>
         [STAThread]
+
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TelaLogin());
+            Application.Run(new TelaLogin()); // Substitua "Form1" pelo nome do seu formulário principal
         }
     }
 }

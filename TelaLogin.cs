@@ -97,5 +97,10 @@ namespace appComercio
         {
 
         }
+
+        private void pbFundo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

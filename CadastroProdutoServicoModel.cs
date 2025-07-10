@@ -8,8 +8,8 @@ namespace appComercio
 {
     public class CadastroProdutoServicoModel
     {
-        public long Id { get; set; }
-        public int CodBarra { get; set; }
+        public int id { get; set; }
+        public long CodBarra { get; set; }
         public string InformeProduto { get; set; }
         public string Fornecedor { get; set; }
         public string TipoFornecedor { get; set; }

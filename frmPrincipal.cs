@@ -47,5 +47,10 @@ namespace appComercio
             frmEstoque estoque = new frmEstoque();
             estoque.ShowDialog();
         }
+
+        private void frmPrincipal_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -109,6 +109,7 @@
             this.Controls.Add(this.lblProdutoServico);
             this.Name = "frmPrincipal";
             this.Text = "frmPrincipal";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmPrincipal_FormClosed);
             this.tlpTelaPrincipal.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

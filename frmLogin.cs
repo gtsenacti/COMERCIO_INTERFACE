@@ -15,38 +15,33 @@ namespace appComercio
         public frmLogin()
         {
             InitializeComponent();
-            alteraImagensPic();
-        }
-
-        private void alteraImagensPic()
-        {
-            //Para o botão personagens
-            Image imgOriginal = Properties.Resources.Fundo;
-            Image imgRedimencionada = new Bitmap(imgOriginal, new Size(852, 508));
-            pbBackground.Image = imgRedimencionada;
         }
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
+            // Código executado ao carregar o formulário (se necessário)
+        }
 
+        private void pbTelaLogin_Click(object sender, EventArgs e)
+        {
+            // Clique na imagem (se tiver funcionalidade)
+        }
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+            // Quando o texto do usuário mudar (se necessário)
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            frmCadastro frmCadastro = new frmCadastro();
-            frmCadastro.Show();
-        }
+            this.Hide(); // Oculta temporariamente o formulário de login
 
-        private void btnEntrar_Click(object sender, EventArgs e)
-        {
-            frmPrincipal frmPrincipal = new frmPrincipal();
-            frmPrincipal.Show();
-            this.Hide();
-        }
+            using (Cadastro cadastro = new Cadastro()) // Certifique-se de que sua classe se chama 'Cadastro'
+            {
+                cadastro.ShowDialog(); // Abre o cadastro de forma modal
+            }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Close();
+            this.Show(); // Reexibe o formulário de login depois que o cadastro for fechado
         }
     }
 }

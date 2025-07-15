@@ -1,6 +1,6 @@
 ﻿namespace appComercio
 {
-    partial class frmCadastro
+    partial class Cadastro
     {
         /// <summary>
         /// Required designer variable.
@@ -28,172 +28,278 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnCadastrar = new System.Windows.Forms.Button();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.txtSenha = new System.Windows.Forms.TextBox();
-            this.lblSenha = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.pbTelaLogin = new System.Windows.Forms.PictureBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.txtSenha = new System.Windows.Forms.TextBox();
+            this.btnCadastroUsuario = new System.Windows.Forms.Button();
+            this.btnApagarUsuario = new System.Windows.Forms.Button();
+            this.lblTituloLogin = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
+            this.cbSetor = new System.Windows.Forms.ComboBox();
+            this.gbTelaCadastro = new System.Windows.Forms.GroupBox();
+            this.cbkativo = new System.Windows.Forms.CheckBox();
+            this.gbbuscausuario = new System.Windows.Forms.GroupBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pbBackground = new System.Windows.Forms.PictureBox();
-            this.pbLogo = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pbBackground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnCadastrarUsuario = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pbTelaLogin)).BeginInit();
+            this.gbTelaCadastro.SuspendLayout();
+            this.gbbuscausuario.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnCadastrar
+            // pbTelaLogin
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(51, 450);
-            this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(174, 29);
-            this.btnCadastrar.TabIndex = 20;
-            this.btnCadastrar.Text = "Cadastrar-se";
-            this.btnCadastrar.UseVisualStyleBackColor = true;
-            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click_1);
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(19, 311);
-            this.txtEmail.Multiline = true;
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(240, 30);
-            this.txtEmail.TabIndex = 19;
-            // 
-            // lblEmail
-            // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(16, 295);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(32, 13);
-            this.lblEmail.TabIndex = 18;
-            this.lblEmail.Text = "Email";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(212, 142);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(0, 0);
-            this.textBox6.TabIndex = 17;
-            // 
-            // txtSenha
-            // 
-            this.txtSenha.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSenha.Location = new System.Drawing.Point(19, 372);
-            this.txtSenha.Multiline = true;
-            this.txtSenha.Name = "txtSenha";
-            this.txtSenha.PasswordChar = '*';
-            this.txtSenha.Size = new System.Drawing.Size(240, 30);
-            this.txtSenha.TabIndex = 16;
-            this.txtSenha.UseSystemPasswordChar = true;
-            // 
-            // lblSenha
-            // 
-            this.lblSenha.AutoSize = true;
-            this.lblSenha.Location = new System.Drawing.Point(16, 356);
-            this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(38, 13);
-            this.lblSenha.TabIndex = 15;
-            this.lblSenha.Text = "Senha";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(212, 217);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(0, 0);
-            this.textBox4.TabIndex = 14;
+            this.pbTelaLogin.Location = new System.Drawing.Point(390, 83);
+            this.pbTelaLogin.Name = "pbTelaLogin";
+            this.pbTelaLogin.Size = new System.Drawing.Size(272, 222);
+            this.pbTelaLogin.TabIndex = 1;
+            this.pbTelaLogin.TabStop = false;
+            this.pbTelaLogin.Click += new System.EventHandler(this.pbTelaLogin_Click);
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(19, 257);
-            this.txtUsuario.Multiline = true;
+            this.txtUsuario.BackColor = System.Drawing.SystemColors.Control;
+            this.txtUsuario.Location = new System.Drawing.Point(6, 54);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(240, 30);
-            this.txtUsuario.TabIndex = 13;
+            this.txtUsuario.Size = new System.Drawing.Size(324, 26);
+            this.txtUsuario.TabIndex = 5;
+            // 
+            // txtSenha
+            // 
+            this.txtSenha.BackColor = System.Drawing.SystemColors.Control;
+            this.txtSenha.Location = new System.Drawing.Point(7, 124);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.Size = new System.Drawing.Size(324, 26);
+            this.txtSenha.TabIndex = 6;
+            // 
+            // btnCadastroUsuario
+            // 
+            this.btnCadastroUsuario.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnCadastroUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCadastroUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCadastroUsuario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastroUsuario.Location = new System.Drawing.Point(63, 391);
+            this.btnCadastroUsuario.Name = "btnCadastroUsuario";
+            this.btnCadastroUsuario.Size = new System.Drawing.Size(129, 45);
+            this.btnCadastroUsuario.TabIndex = 8;
+            this.btnCadastroUsuario.Text = "Cadastro     ";
+            this.btnCadastroUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCadastroUsuario.UseVisualStyleBackColor = false;
+            this.btnCadastroUsuario.Click += new System.EventHandler(this.btnCadastroUsuario_Click);
+            // 
+            // btnApagarUsuario
+            // 
+            this.btnApagarUsuario.BackColor = System.Drawing.Color.LightCoral;
+            this.btnApagarUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnApagarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnApagarUsuario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnApagarUsuario.Location = new System.Drawing.Point(481, 393);
+            this.btnApagarUsuario.Name = "btnApagarUsuario";
+            this.btnApagarUsuario.Size = new System.Drawing.Size(124, 45);
+            this.btnApagarUsuario.TabIndex = 9;
+            this.btnApagarUsuario.Text = "Sair           ";
+            this.btnApagarUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnApagarUsuario.UseVisualStyleBackColor = false;
+            this.btnApagarUsuario.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
+            // lblTituloLogin
+            // 
+            this.lblTituloLogin.AutoSize = true;
+            this.lblTituloLogin.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTituloLogin.Location = new System.Drawing.Point(217, 9);
+            this.lblTituloLogin.Name = "lblTituloLogin";
+            this.lblTituloLogin.Size = new System.Drawing.Size(264, 29);
+            this.lblTituloLogin.TabIndex = 10;
+            this.lblTituloLogin.Text = "Sistemas De Cadastro";
+            this.lblTituloLogin.Click += new System.EventHandler(this.lblTituloLogin_Click);
             // 
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(16, 241);
+            this.lblUsuario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.Location = new System.Drawing.Point(6, 32);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(43, 13);
-            this.lblUsuario.TabIndex = 12;
-            this.lblUsuario.Text = "Usuário";
+            this.lblUsuario.Size = new System.Drawing.Size(75, 19);
+            this.lblUsuario.TabIndex = 13;
+            this.lblUsuario.Text = "Usuário:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(6, 102);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(64, 19);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Senha:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(6, 172);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 19);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Setor:";
+            // 
+            // cbSetor
+            // 
+            this.cbSetor.BackColor = System.Drawing.SystemColors.Control;
+            this.cbSetor.FormattingEnabled = true;
+            this.cbSetor.Items.AddRange(new object[] {
+            "",
+            "Administrativo",
+            "Estoque",
+            "Financeiro",
+            "Secretariado",
+            "Vendas"});
+            this.cbSetor.Location = new System.Drawing.Point(5, 194);
+            this.cbSetor.Name = "cbSetor";
+            this.cbSetor.Size = new System.Drawing.Size(325, 26);
+            this.cbSetor.TabIndex = 16;
+            // 
+            // gbTelaCadastro
+            // 
+            this.gbTelaCadastro.Controls.Add(this.cbkativo);
+            this.gbTelaCadastro.Controls.Add(this.txtSenha);
+            this.gbTelaCadastro.Controls.Add(this.label2);
+            this.gbTelaCadastro.Controls.Add(this.cbSetor);
+            this.gbTelaCadastro.Controls.Add(this.lblUsuario);
+            this.gbTelaCadastro.Controls.Add(this.txtUsuario);
+            this.gbTelaCadastro.Controls.Add(this.label1);
+            this.gbTelaCadastro.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbTelaCadastro.Location = new System.Drawing.Point(1, 41);
+            this.gbTelaCadastro.Name = "gbTelaCadastro";
+            this.gbTelaCadastro.Size = new System.Drawing.Size(344, 255);
+            this.gbTelaCadastro.TabIndex = 17;
+            this.gbTelaCadastro.TabStop = false;
+            this.gbTelaCadastro.Text = "Dados do Cadastro";
+            // 
+            // cbkativo
+            // 
+            this.cbkativo.AutoSize = true;
+            this.cbkativo.Location = new System.Drawing.Point(11, 235);
+            this.cbkativo.Name = "cbkativo";
+            this.cbkativo.Size = new System.Drawing.Size(15, 14);
+            this.cbkativo.TabIndex = 18;
+            this.cbkativo.UseVisualStyleBackColor = true;
+            this.cbkativo.CheckedChanged += new System.EventHandler(this.cbkativo_CheckedChanged);
+            // 
+            // gbbuscausuario
+            // 
+            this.gbbuscausuario.Controls.Add(this.btnBuscar);
+            this.gbbuscausuario.Controls.Add(this.textBox1);
+            this.gbbuscausuario.Location = new System.Drawing.Point(1, 297);
+            this.gbbuscausuario.Name = "gbbuscausuario";
+            this.gbbuscausuario.Size = new System.Drawing.Size(344, 74);
+            this.gbbuscausuario.TabIndex = 18;
+            this.gbbuscausuario.TabStop = false;
+            this.gbbuscausuario.Text = "Busca usuario";
+            this.gbbuscausuario.Enter += new System.EventHandler(this.gbbuscausuario_Enter);
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.SystemColors.Control;
+            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBuscar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Location = new System.Drawing.Point(221, 26);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(110, 34);
+            this.btnBuscar.TabIndex = 10;
+            this.btnBuscar.Text = "Buscar       ";
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(212, 71);
-            this.textBox1.Multiline = true;
+            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox1.Location = new System.Drawing.Point(7, 34);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(0, 0);
-            this.textBox1.TabIndex = 11;
+            this.textBox1.Size = new System.Drawing.Size(195, 20);
+            this.textBox1.TabIndex = 7;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // pbBackground
+            // dataGridView1
             // 
-            this.pbBackground.BackgroundImage = global::appComercio.Properties.Resources.R6_Black_Ice_Background;
-            this.pbBackground.Location = new System.Drawing.Point(291, -1);
-            this.pbBackground.Name = "pbBackground";
-            this.pbBackground.Size = new System.Drawing.Size(556, 492);
-            this.pbBackground.TabIndex = 10;
-            this.pbBackground.TabStop = false;
-            this.pbBackground.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(351, 53);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(353, 318);
+            this.dataGridView1.TabIndex = 22;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // pbLogo
+            // btnCadastrarUsuario
             // 
-            this.pbLogo.Location = new System.Drawing.Point(19, 12);
-            this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(240, 199);
-            this.pbLogo.TabIndex = 21;
-            this.pbLogo.TabStop = false;
+            this.btnCadastrarUsuario.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnCadastrarUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCadastrarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCadastrarUsuario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastrarUsuario.Location = new System.Drawing.Point(275, 391);
+            this.btnCadastrarUsuario.Name = "btnCadastrarUsuario";
+            this.btnCadastrarUsuario.Size = new System.Drawing.Size(129, 45);
+            this.btnCadastrarUsuario.TabIndex = 23;
+            this.btnCadastrarUsuario.Text = "Cadastrar    ";
+            this.btnCadastrarUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCadastrarUsuario.UseVisualStyleBackColor = false;
+            this.btnCadastrarUsuario.Click += new System.EventHandler(this.btnCadastrarUsuario_Click);
             // 
-            // frmCadastro
+            // Cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(847, 489);
-            this.Controls.Add(this.pbLogo);
-            this.Controls.Add(this.btnCadastrar);
-            this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.txtSenha);
-            this.Controls.Add(this.lblSenha);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.txtUsuario);
-            this.Controls.Add(this.lblUsuario);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.pbBackground);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmCadastro";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmCadastro";
-            this.Load += new System.EventHandler(this.frmCadastro_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pbBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ClientSize = new System.Drawing.Size(716, 450);
+            this.Controls.Add(this.btnCadastrarUsuario);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.gbbuscausuario);
+            this.Controls.Add(this.gbTelaCadastro);
+            this.Controls.Add(this.lblTituloLogin);
+            this.Controls.Add(this.btnApagarUsuario);
+            this.Controls.Add(this.btnCadastroUsuario);
+            this.Controls.Add(this.pbTelaLogin);
+            this.Name = "Cadastro";
+            this.Text = "Cadastro";
+            ((System.ComponentModel.ISupportInitialize)(this.pbTelaLogin)).EndInit();
+            this.gbTelaCadastro.ResumeLayout(false);
+            this.gbTelaCadastro.PerformLayout();
+            this.gbbuscausuario.ResumeLayout(false);
+            this.gbbuscausuario.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pbBackground;
-        private System.Windows.Forms.Button btnCadastrar;
-        private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox txtSenha;
-        private System.Windows.Forms.Label lblSenha;
-        private System.Windows.Forms.TextBox textBox4;
+
+        private System.Windows.Forms.PictureBox pbTelaLogin;
         private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.TextBox txtSenha;
+        private System.Windows.Forms.Button btnCadastroUsuario;
+        private System.Windows.Forms.Button btnApagarUsuario;
+        private System.Windows.Forms.Label lblTituloLogin;
         private System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker2;
+        private System.Windows.Forms.ComboBox cbSetor;
+        private System.Windows.Forms.GroupBox gbTelaCadastro;
+        private System.Windows.Forms.CheckBox cbkativo;
+        private System.Windows.Forms.GroupBox gbbuscausuario;
+        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.PictureBox pbLogo;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnCadastrarUsuario;
     }
 }

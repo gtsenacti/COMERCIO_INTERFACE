@@ -47,11 +47,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmtarefas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>frmtarefas.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCadastro.Designer.cs">
       <DependentUpon>frmCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadatroProdutoServiços.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadatroProdutoServiços.Designer.cs">
+      <DependentUpon>frmCadatroProdutoServiços.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDadosProdutosServiço.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDadosProdutosServiço.Designer.cs">
+      <DependentUpon>frmDadosProdutosServiço.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -59,40 +78,28 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPersonagens.cs">
+    <Compile Include="frmProdutoServiço.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmPersonagens.Designer.cs">
-      <DependentUpon>frmPersonagens.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmPrincipal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmPrincipal.Designer.cs">
-      <DependentUpon>frmPrincipal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmTwitch.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmTwitch.Designer.cs">
-      <DependentUpon>frmTwitch.cs</DependentUpon>
+    <Compile Include="frmProdutoServiço.Designer.cs">
+      <DependentUpon>frmProdutoServiço.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmCadastro.resx">
       <DependentUpon>frmCadastro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCadatroProdutoServiços.resx">
+      <DependentUpon>frmCadatroProdutoServiços.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDadosProdutosServiço.resx">
+      <DependentUpon>frmDadosProdutosServiço.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmPersonagens.resx">
-      <DependentUpon>frmPersonagens.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmPrincipal.resx">
-      <DependentUpon>frmPrincipal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmTwitch.resx">
-      <DependentUpon>frmTwitch.cs</DependentUpon>
+    <EmbeddedResource Include="frmProdutoServiço.resx">
+      <DependentUpon>frmProdutoServiço.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -116,96 +123,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\spr.monitor.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\download.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\android-rainbow-six-siege-background-900-x-1600-u3q538ux7mm2on7e.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Wallpaper Psicodelico.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\images.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\images %281%29.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Cosplay Costumes, Cosplay Shoes, Cosplay Wigs Latest &amp; Greatest - CosplayClass_.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Oregon _ Maps _ Tom Clancy%27s Rainbow Six Siege _ Ubisoft %28CA%29.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cosmeticos.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cosmeticos2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Twitch.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Rainbow six siege Twitch.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Y0R6_BADGE_Twitch_L.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\R6-operator-twitch-elite.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Claymore.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Smoke_Grenade.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\417.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\F2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\P9.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SG-CQB.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\LFP586.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Shock-Drones.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\R6 Black Ice Background.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\R6_Siege_X_Logo_V2.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Daco_4138609.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Clip Art Png For Free - Rainbow Six Siege Png, Transparent Png%28800x440%29 - PngFind.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Rainbow six siege.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\download %281%29.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Nokk.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Fundo.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

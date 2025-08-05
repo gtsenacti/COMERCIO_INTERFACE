@@ -90,6 +90,7 @@
             this.txtSenha.Size = new System.Drawing.Size(240, 30);
             this.txtSenha.TabIndex = 16;
             this.txtSenha.UseSystemPasswordChar = true;
+            this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
             // 
             // lblSenha
             // 

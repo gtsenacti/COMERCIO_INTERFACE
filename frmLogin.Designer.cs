@@ -49,6 +49,7 @@
             this.pbBackground.Size = new System.Drawing.Size(852, 508);
             this.pbBackground.TabIndex = 31;
             this.pbBackground.TabStop = false;
+            this.pbBackground.Click += new System.EventHandler(this.pbBackground_Click);
             // 
             // btnEntrar
             // 

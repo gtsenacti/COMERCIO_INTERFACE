@@ -22,9 +22,10 @@ namespace appComercio
         {
             //Para o botão personagens
             Image imgOriginal = Properties.Resources.Fundo;
-            Image imgRedimencionada = new Bitmap(imgOriginal, new Size(852, 508));
+            Image imgRedimencionada = new Bitmap(imgOriginal, new Size(852,508));
             pbBackground.Image = imgRedimencionada;
         }
+        //852, 508
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
@@ -47,6 +48,11 @@ namespace appComercio
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void pbBackground_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

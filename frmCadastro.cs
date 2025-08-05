@@ -116,6 +116,11 @@ namespace appComercio
             txtEmail.Clear();
             txtUsuario.Focus();
         }
+
+        private void txtSenha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

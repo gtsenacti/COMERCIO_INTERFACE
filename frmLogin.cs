@@ -25,7 +25,10 @@ namespace appComercio
 
         private void btnSair_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            //Application.Exit();
+
+            frmAgenda frma = new frmAgenda();
+            frma.ShowDialog();
         }
     }
 }

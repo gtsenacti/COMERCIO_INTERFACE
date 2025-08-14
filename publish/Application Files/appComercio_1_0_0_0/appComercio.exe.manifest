@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="appComercio.exe" version="1.0.0.0" publicKeyToken="09630781861a5bcc" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="iconeAplicativo.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="appComercio" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="appComercio.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opções de Manifesto do UAC
+          Para alterar o nível de Controle de Conta de Usuário do Windows, substitua o nó
+          requestedExecutionLevel por um dos seguintes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Para utilizar a Virtualização de Arquivos e Registro para manter a compatibilidade com versões anteriores,
+         exclua o nó requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="appComercio.exe" size="594368">
+      <assemblyIdentity name="appComercio" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>mF9khmBWdmZRfr/6oXQwjigYlJfrskx7dI23bpKHXcU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="711952">
+      <assemblyIdentity name="Newtonsoft.Json" version="13.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>4eJ697B+7t9c5xqSVfBCKBam/FhJpIPGcU4bRyBE+p0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="appComercio.exe.config" size="553">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dF4D8kJLiJuYWc2MsoNU9RmlIRNMhlHJ3lE0/S2ouB0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ContatosDB.mdf" size="8388608" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dH6g484D25YtR6C6FZedhaFUa3ExW707hmbZettINCs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ContatosDB_log.ldf" size="8388608" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>77N8gKGLwzSh+lmgMl0QTHxuCyKDNXTtaZ6MkZKSSjE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="iconeAplicativo.ico" size="400957">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>im7w4+89B14XFT2pgDgBo2qDU7Ze7jCj19a9C5zR8+g=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=SENAC_EDUC\13993" issuerKeyHash="b05dc79e218dc89d64b4ab9189b9127d54450ca1" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>eNN3HUZpOwoW0+WHU4V+Q+SB/wxGMeMDUJyh/mW/GZA=</DigestValue></Reference></SignedInfo><SignatureValue>xYfMZHr4SjrqO8sbr8SXBD1h/JrZXj9CbI/8OoMpmwJZa9g3LS6weWZsfEH494GfajD9RYTtjImzTLPf1Sw9v7WasXccqK069ab9XEkqz3V1tc/V2qD1vG4/zQMD/LQS/UtxGJrArlISnbH3Yhg5O/K7bjl65aq5N0igrVyr0uw=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>zMJBdTLm5swhRbu/nDYGThic8nR8LtNksdR3vkl/71FpAlSLRXxc+Yy34dDfZUqVmTSJqooKbyGt9XI9p/cGFrpc8NYHztkaeZ7mbmiKCR8Ab7JgZlUC2uMxkmVi4IBMV4VR+KDZw5tihLbitIDE0f82Hze0SexlSr4RM70UFxk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="9019bf65fea19c5003e331460cff81e4437e855387e5d3160a3b69461d77d378" Description="" Url=""><as:assemblyIdentity name="appComercio.exe" version="1.0.0.0" publicKeyToken="09630781861a5bcc" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=SENAC_EDUC\13993</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>VfncjLntw17TWwfD3VOievEciFmRLSr35CQkpGFA51U=</DigestValue></Reference></SignedInfo><SignatureValue>DtWqcYw6ArLxOhdHPVxVd/3fA7bNwQuUEnRouOX8urlDJcjo3GKUwHwcRrUDjB6MrhfRJKE0Fo6VkdcR67RAqLg3dEUYHJVJuUlWi0tQRMT0YZ18ldp4FlNoVS+j8s09EzQBCt/Mgda7GBmMlC+14mGSLKvo8F1UhZp/SEa0aZA=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>zMJBdTLm5swhRbu/nDYGThic8nR8LtNksdR3vkl/71FpAlSLRXxc+Yy34dDfZUqVmTSJqooKbyGt9XI9p/cGFrpc8NYHztkaeZ7mbmiKCR8Ab7JgZlUC2uMxkmVi4IBMV4VR+KDZw5tihLbitIDE0f82Hze0SexlSr4RM70UFxk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUKgAwIBAgIQLgpSGDqSm7xIM0aJJBC6dTANBgkqhkiG9w0BAQsFADArMSkwJwYDVQQDHiAAUwBFAE4AQQBDAF8ARQBEAFUAQwBcADEAMwA5ADkAMzAeFw0yNTA3MDcyMzI2MDFaFw0yNjA3MDgwNTI2MDFaMCsxKTAnBgNVBAMeIABTAEUATgBBAEMAXwBFAEQAVQBDAFwAMQAzADkAOQAzMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDMwkF1MubmzCFFu7+cNgZOGJzydHwu02Sx1He+SX/vUWkCVItFfFz5jLfh0N9lSpWZNImqigpvIa31cj2n9wYWulzw1gfO2Rp5nuZuaIoJHwBvsmBmVQLa4zGSZWLggExXhVH4oNnDm2KEtuK0gMTR/zYfN7RJ7GVKvhEzvRQXGQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAC7W9HXRd8VCDxpNOtIwVrzOn+kLkJv4zan5C73xLVLPs9TRJ9hV2z0km+b7v5RwVx8A6mjd/8QRx968d+GlZHq+cCvaQvz512Z1LcTuiycyL+h1i0EKM3kkhaAdU6AioWjfSP/W8zrU+anYl7+Ql4ouMh47YECB20Vb8J82XHj4</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
